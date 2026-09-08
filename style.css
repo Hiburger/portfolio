@@ -274,6 +274,40 @@ h1 {
   margin-bottom: 1.4rem;
 }
 
+h1 .i-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+h1 .i-tittle {
+  position: absolute;
+  top: 0.175em;
+  left: 50%;
+  width: 0.135em;
+  height: 0.135em;
+  border-radius: 50%;
+  background: currentColor;
+  transform: translateX(-50%);
+  animation: tittle-hop 6s var(--spring-soft) infinite 2s;
+  transition: background 0.2s ease;
+}
+
+h1:hover .i-tittle {
+  background: var(--accent);
+}
+
+@keyframes tittle-hop {
+  0%, 90%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  94% {
+    transform: translateX(-50%) translateY(-0.24em);
+  }
+  97% {
+    transform: translateX(-50%) translateY(0.04em);
+  }
+}
+
 .banner {
   background: var(--accent);
   color: var(--on-accent);
@@ -1026,6 +1060,10 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  h1 .i-tittle {
+    animation: none !important;
   }
 
   * {
