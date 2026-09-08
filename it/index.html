@@ -491,7 +491,7 @@
           { transform: tx(from), easing: "ease-in" },
           { transform: "translate(" + mx + "px," + my + "px)", offset: 0.5, easing: "ease-out" },
           { transform: tx(to) }
-        ], { duration: 380 });
+        ], { duration: 380, fill: "forwards" });
       }
       function wait(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
       var seq = wait(700);
