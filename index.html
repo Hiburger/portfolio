@@ -477,11 +477,12 @@
       links.forEach(function (a) { byHref[a.getAttribute("href")] = a; });
       var path = ["#about", "#open-source", "#toolbox", "#photography", "#open-source"];
       var tr = tittle.getBoundingClientRect();
+      var size = tr.width * 1.25;
       var pts = path.map(function (h) {
         var a = byHref[h];
         if (!a) return null;
         var r = a.getBoundingClientRect();
-        return { x: r.left + r.width / 2, y: r.top - tr.height / 2 };
+        return { x: r.left + r.width / 2, y: r.top - size / 2 };
       });
       pts.push({ x: tr.left + tr.width / 2, y: tr.top + tr.height / 2 });
       if (pts.indexOf(null) !== -1) return;
@@ -489,13 +490,13 @@
       var dot = document.createElement("span");
       dot.setAttribute("aria-hidden", "true");
       dot.style.cssText =
-        "position:fixed;left:0;top:0;width:" + tr.width + "px;height:" + tr.height +
+        "position:fixed;left:0;top:0;width:" + size + "px;height:" + size +
         "px;border-radius:50%;background:var(--ink);transition:background .2s ease;z-index:60;pointer-events:none;opacity:0;transform:translate(" +
-        (pts[0].x - tr.width / 2) + "px," + (pts[0].y - tr.height / 2) + "px)";
+        (pts[0].x - size / 2) + "px," + (pts[0].y - size / 2) + "px)";
       document.body.appendChild(dot);
       dot.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 150, fill: "forwards" });
       function tx(p) {
-        return "translate(" + (p.x - tr.width / 2) + "px," + (p.y - tr.height / 2) + "px)";
+        return "translate(" + (p.x - size / 2) + "px," + (p.y - size / 2) + "px)";
       }
       function hop(from, to) {
         var mx = (from.x + to.x) / 2;
