@@ -281,15 +281,38 @@ h1 .i-wrap {
 
 h1 .i-tittle {
   position: absolute;
-  top: 0.175em;
+  top: 0.165em;
   left: 50%;
-  width: 0.135em;
-  height: 0.135em;
+  width: 0.155em;
+  height: 0.155em;
   border-radius: 50%;
   background: currentColor;
   transform: translateX(-50%);
-  animation: tittle-hop 6s var(--spring-soft) infinite 2s;
+  animation:
+    tittle-drop 0.9s ease-out 0.6s 1 backwards,
+    tittle-hop 6s var(--spring-soft) infinite 4s;
   transition: background 0.2s ease;
+}
+
+h1:hover .i-tittle {
+  background: var(--accent);
+}
+
+@keyframes tittle-drop {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-0.55em);
+  }
+  55% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0.07em);
+  }
+  75% {
+    transform: translateX(-50%) translateY(-0.1em);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
 }
 
 h1:hover .i-tittle {
