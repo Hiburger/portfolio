@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=16.37">
+  <link rel="stylesheet" href="../style.css?v=16.38">
   <script>
     (function () {
       try {
@@ -451,6 +451,65 @@
         "%csalut, toi qui traînes dans la console.\nalors.... on fait quoi ?\npsst : reviens vers 3h du matin.\nGabriel",
         "color: #6e675c; font-family: monospace; font-style: italic"
       );
+    })();
+  </script>
+  <script>
+    (function () {
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var tittle = document.querySelector("h1 .i-tittle");
+      var links = document.querySelectorAll("nav.top a[href^='#']");
+      if (reduce || !tittle || links.length < 5 || !("animate" in Element.prototype)) return;
+      var byHref = {};
+      links.forEach(function (a) { byHref[a.getAttribute("href")] = a; });
+      var path = ["#about", "#open-source", "#toolbox", "#photography", "#open-source"];
+      var tr = tittle.getBoundingClientRect();
+      var pts = path.map(function (h) {
+        var a = byHref[h];
+        if (!a) return null;
+        var r = a.getBoundingClientRect();
+        return { x: r.left + r.width / 2, y: r.top + r.height / 2 };
+      });
+      pts.push({ x: tr.left + tr.width / 2, y: tr.top + tr.height / 2 });
+      if (pts.indexOf(null) !== -1) return;
+      tittle.style.opacity = "0";
+      var dot = document.createElement("span");
+      dot.setAttribute("aria-hidden", "true");
+      dot.style.cssText =
+        "position:fixed;left:0;top:0;width:" + tr.width + "px;height:" + tr.height +
+        "px;border-radius:50%;background:var(--ink);z-index:60;pointer-events:none;opacity:0;transform:translate(" +
+        (pts[0].x - tr.width / 2) + "px," + (pts[0].y - tr.height / 2) + "px)";
+      document.body.appendChild(dot);
+      function tx(p) {
+        return "translate(" + (p.x - tr.width / 2) + "px," + (p.y - tr.height / 2) + "px)";
+      }
+      function hop(from, to) {
+        var mx = (from.x + to.x) / 2;
+        var my = Math.min(from.y, to.y) - Math.max(18, Math.abs(to.x - from.x) * 0.22);
+        dot.animate([
+          { transform: tx(from), easing: "ease-in" },
+          { transform: "translate(" + mx + "px," + my + "px)", offset: 0.5, easing: "ease-out" },
+          { transform: tx(to) }
+        ], { duration: 380 });
+      }
+      function wait(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
+      var seq = wait(450);
+      for (var i = 1; i < pts.length; i++) {
+        (function (from, to) {
+          seq = seq.then(function () {
+            hop(from, to);
+            return wait(450);
+          });
+        })(pts[i - 1], pts[i]);
+      }
+      function restore() {
+        tittle.style.opacity = "1";
+        if (dot.parentNode) dot.remove();
+      }
+      seq.then(function () {
+        dot.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 130, fill: "forwards" });
+        tittle.style.opacity = "1";
+        setTimeout(function () { dot.remove(); }, 200);
+      }, restore);
     })();
   </script>
 </body>
