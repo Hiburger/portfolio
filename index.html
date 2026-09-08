@@ -17,10 +17,11 @@
   <meta name="twitter:card" content="summary">
   <link rel="alternate" hreflang="en" href="https://gabriel.olynthe.org/">
   <link rel="alternate" hreflang="fr" href="https://gabriel.olynthe.org/fr/">
+  <link rel="alternate" hreflang="it" href="https://gabriel.olynthe.org/it/">
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="style.css?v=16.24">
+  <link rel="stylesheet" href="style.css?v=16.25">
   <script>
     (function () {
       try {
@@ -51,7 +52,11 @@
         <a href="#photography">Photography</a>
         <a href="#toolbox">Toolbox</a>
         <a href="#contact">Contact</a>
-        <a href="fr/" hreflang="fr" title="Version française">FR</a>
+        <select id="lang-switch" aria-label="Language">
+          <option value="./" selected>EN</option>
+          <option value="fr/">FR</option>
+          <option value="it/">IT</option>
+        </select>
         <div class="theme-switch" id="theme-switch" role="group" aria-label="Colour theme">
           <span class="theme-thumb" aria-hidden="true"></span>
           <button type="button" class="theme-opt" data-theme-choice="light" aria-pressed="false">light</button>
@@ -159,7 +164,7 @@
           </figure>
           <figure>
             <a href="photos/03.jpg" target="_blank" rel="noopener">
-              <img src="photos/03.jpg" alt="Black and white — hands gently holding a tiny leaf" width="2000" height="1632" loading="lazy">
+              <img src="photos/03.jpg" alt="Black and white, hands gently holding a tiny leaf" width="2000" height="1632" loading="lazy">
             </a>
             <figcaption>03</figcaption>
           </figure>
@@ -195,7 +200,7 @@
               <li><span class="tag">Home Lab Hardware</span>GMKtec K8 Plus AMD Ryzen™ 7 8845HS, RPi 5 (8GO), RPi 3 (2GO)</li>
               <li><span class="tag">DIY</span>Arduino Uno R3 x2, Arduino Nano x2</li>
               <li><span class="tag">Computers</span>Too many. <br> Primary: MacBookPro 2026 (M5 Pro) / Secondary: XPS 15 7590 & Omen Tower (forgot the name)</li>
-              <li><span class="tag">OS</span>Cachy Linux // macOS // Debian Trixie</li>
+              <li><span class="tag">OS</span>GrapheneOS // Cachy Linux // macOS // Debian Trixie</li>
               <li><span class="tag">Mobile</span>Pixel 9 Pro XL, iPad Pro (M2), Quest 3, Pixel Watch 5</li>
             </ul>
             <p class="sub-label">favorite groups (order matters!)</p>
@@ -210,7 +215,7 @@
           <figure class="hero-photo">
             <img src="messy_server_rack.jpg" alt="A messy server rack covered in tangled cables" width="1440" height="1920">
             <figcaption>Be assured, that's just an image i found on the internet; not my actual homelab. But it's pretty close to its state.... Let's move on !
-              <span class="photo-credit">photo: Kim Scarborough — Wikimedia Commons (CC BY-SA 2.0)</span>
+              <span class="photo-credit">photo: Kim Scarborough, Wikimedia Commons (CC BY-SA 2.0)</span>
             </figcaption>
           </figure>
         </div>
@@ -295,6 +300,10 @@
         });
       });
       window.addEventListener("resize", render);
+      var ls = document.getElementById("lang-switch");
+      if (ls) ls.addEventListener("change", function () {
+        location.href = ls.value;
+      });
       render();
     })();
   </script>
@@ -412,7 +421,7 @@
       var b = document.querySelector(".banner");
       var h = new Date().getHours();
       if (b && h >= 1 && h < 5) {
-        b.textContent = "it's " + h + "am — shouldn't you be asleep ?";
+        b.textContent = "it's " + h + "am, shouldn't you be asleep ?";
       }
       var base = document.title;
       document.addEventListener("visibilitychange", function () {
@@ -428,7 +437,7 @@
         "color: #0f8a7d; font-family: monospace; font-weight: bold"
       );
       console.log(
-        "%chello, fellow console person.\nsooo.... what are we doing?\npsst: come back around 3am.\n— Gabriel",
+        "%chello, fellow console person.\nsooo.... what are we doing?\npsst: come back around 3am.\nGabriel",
         "color: #6e675c; font-family: monospace; font-style: italic"
       );
     })();

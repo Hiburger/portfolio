@@ -130,6 +130,26 @@ a:focus-visible {
   transform: translateY(-1px);
 }
 
+#lang-switch {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  cursor: pointer;
+  transition: border-radius 0.3s var(--spring), border-color 0.2s ease, color 0.2s ease;
+}
+
+#lang-switch:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  border-radius: 12px;
+}
+
 .theme-switch {
   position: relative;
   display: inline-flex;
