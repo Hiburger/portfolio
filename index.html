@@ -21,7 +21,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="style.css?v=16.25">
+  <link rel="stylesheet" href="style.css?v=16.26">
   <script>
     (function () {
       try {
@@ -52,11 +52,14 @@
         <a href="#photography">Photography</a>
         <a href="#toolbox">Toolbox</a>
         <a href="#contact">Contact</a>
-        <select id="lang-switch" aria-label="Language">
-          <option value="./" selected>EN</option>
-          <option value="fr/">FR</option>
-          <option value="it/">IT</option>
-        </select>
+        <div class="lang-switch">
+          <button type="button" class="lang-btn" aria-haspopup="true">EN</button>
+          <ul class="lang-menu">
+            <li><a href="./" hreflang="en" aria-current="page">EN</a></li>
+            <li><a href="fr/" hreflang="fr">FR</a></li>
+            <li><a href="it/" hreflang="it">IT</a></li>
+          </ul>
+        </div>
         <div class="theme-switch" id="theme-switch" role="group" aria-label="Colour theme">
           <span class="theme-thumb" aria-hidden="true"></span>
           <button type="button" class="theme-opt" data-theme-choice="light" aria-pressed="false">light</button>
@@ -68,6 +71,12 @@
           <h1>Gabriel<span class="version">v16.8</span></h1>
           <p class="lede">Apprentice infrastructure engineer at <a href="https://www.infomaniak.com">Infomaniak</a> by day, photographer whenever the light is good, open source person the rest of the time.</p>
           <p class="coords">Geneva, Switzerland // 46.20° N ; 6.14° E</p>
+          <p class="langs">
+            <svg class="flag" viewBox="0 0 3 2" role="img" aria-label="Français"><rect width="1" height="2" fill="#002395"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ED2939"/></svg>
+            <svg class="flag" viewBox="0 0 3 2" role="img" aria-label="Italiano"><rect width="1" height="2" fill="#009246"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#CE2B37"/></svg>
+            <svg class="flag" viewBox="0 0 20 14" role="img" aria-label="English"><rect width="20" height="14" fill="#fff"/><rect width="20" height="2" fill="#B22234"/><rect y="4" width="20" height="2" fill="#B22234"/><rect y="8" width="20" height="2" fill="#B22234"/><rect y="12" width="20" height="2" fill="#B22234"/><rect width="9" height="8" fill="#3C3B6E"/></svg>
+            <span>languages I speak &amp; understand</span>
+          </p>
         </div>
         <figure class="hero-photo">
           <span class="frame">
@@ -300,10 +309,6 @@
         });
       });
       window.addEventListener("resize", render);
-      var ls = document.getElementById("lang-switch");
-      if (ls) ls.addEventListener("change", function () {
-        location.href = ls.value;
-      });
       render();
     })();
   </script>
