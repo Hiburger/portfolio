@@ -520,12 +520,12 @@
           seq = seq.then(function () {
             var to = last ? base : {
               x: base.x + (Math.random() * 2 - 1) * 14,
-              y: base.y + (Math.random() * 2 - 1) * 4
+              y: base.y + Math.random() * 4
             };
             if (last) dot.style.background = "var(--accent)";
             var d = hop(from, to);
             from = to;
-            return wait(d + 900 + Math.random() * 1300);
+            return wait(last ? d : d + 900 + Math.random() * 1300);
           });
         })(pts[i], i === pts.length - 1);
       }
