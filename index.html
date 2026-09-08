@@ -477,6 +477,7 @@
         "px;border-radius:50%;background:var(--ink);z-index:60;pointer-events:none;opacity:0;transform:translate(" +
         (pts[0].x - tr.width / 2) + "px," + (pts[0].y - tr.height / 2) + "px)";
       document.body.appendChild(dot);
+      dot.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 150, fill: "forwards" });
       function tx(p) {
         return "translate(" + (p.x - tr.width / 2) + "px," + (p.y - tr.height / 2) + "px)";
       }
