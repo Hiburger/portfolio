@@ -1,0 +1,9 @@
+# local asset stash — originals keep EXIF/GPS, never publish
+site_assets/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# local test scratch
+test-*.html

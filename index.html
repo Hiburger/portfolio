@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>GABRIEL 😊</title>
+  <meta name="description" content="Gabriel, IT infrastructure & operations apprentice at Infomaniak, open source contributor, and photographer. Geneva, Switzerland.">
+  <meta property="og:title" content="Gabriel">
+  <meta property="og:description" content="Infrastructure apprentice at Infomaniak, open source contributor, photographer.">
+  <meta property="og:url" content="https://gabriel.olynthe.org">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://gabriel.olynthe.org/favicon.jpg">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Gabriel holding his Nikon camera">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.jpg?v=2" type="image/jpeg">
+  <link rel="stylesheet" href="style.css?v=16.24">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "dark" || t === "light") document.documentElement.dataset.theme = t;
+        var s = document.documentElement.style;
+        var al = localStorage.getItem("accent-light");
+        var ad = localStorage.getItem("accent-dark");
+        if (al) s.setProperty("--accent-user", al);
+        if (ad) s.setProperty("--accent-user-dark", ad);
+        var ol = localStorage.getItem("on-accent-light");
+        var od = localStorage.getItem("on-accent-dark");
+        if (ol) s.setProperty("--on-accent-user", ol);
+        if (od) s.setProperty("--on-accent-user-dark", od);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <p class="banner">Hi there ! Welcome to my new portfolio :)</p>
+
+  <div class="wrap">
+    <header class="hero">
+      <nav class="top" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#open-source">Open source</a>
+        <a href="#photography">Photography</a>
+        <a href="#toolbox">Toolbox</a>
+        <a href="#contact">Contact</a>
+        <div class="theme-switch" id="theme-switch" role="group" aria-label="Colour theme">
+          <span class="theme-thumb" aria-hidden="true"></span>
+          <button type="button" class="theme-opt" data-theme-choice="light" aria-pressed="false">claire</button>
+          <button type="button" class="theme-opt" data-theme-choice="dark" aria-pressed="false">dark</button>
+        </div>
+      </nav>
+      <div class="hero-row">
+        <div>
+          <h1>Gabriel<span class="version">v16.8</span></h1>
+          <p class="lede">Apprentice infrastructure engineer at <a href="https://www.infomaniak.com">Infomaniak</a> by day, photographer whenever the light is good, open source person the rest of the time.</p>
+          <p class="coords">Geneva, Switzerland // 46.20° N ; 6.14° E</p>
+        </div>
+        <figure class="hero-photo">
+          <span class="frame">
+            <span class="halo" aria-hidden="true"></span>
+            <img src="favicon.jpg?v=2" alt="Portrait of Gabriel" width="640" height="640">
+          </span>
+          <figcaption>Yes... that's me from a few months back. And yes, the forest is a green screen. When I go out to shoot I usually go alone, so there's no one to take a picture of me, and even if I wasn't alone, I'd be too shy to ask anyway :(</figcaption>
+        </figure>
+      </div>
+    </header>
+  </div>
+
+  <main id="main">
+    <div class="wrap">
+      <section id="about" class="section" aria-label="About">
+        <h2 class="label">~/home/gabrielp/quick-facts/</h2>
+        <div class="about-prose">
+          <p>Hi ! I'm Gabriel, an apprentice IT Infrastructure &amp; Operations Specialist at <a href="https://www.infomaniak.com">Infomaniak Network SA</a>, the friendly ethical cloud provider based in Geneva, Switzerland. A good part of my week goes into learning networking, devlopment, judging big tech, and helping others use and enjoy technology, and I genuinely have fun doing so.</p>
+          <p>The rest goes into photography... mostly wildlife and the night sky. I'm also strongly advocating for free and open source software, and have a full homelab running Proxmox VE, Snowflakes, Immich, Docker and more self-hosted services than strictly necessary</p>
+          <p>I'm also a student at the <a href="https://edu.ge.ch/secondaire2/centre-de-formation-professionnelle-technique/le-cfpt">CFPT</a>, currently exploring machine learning, and the founder of the <a href="https://olynthe.org">Olynthe Initiative</a>, a small effort to support digital rights and FOSS.</p>
+        </div>
+        <aside class="roadmap">
+          <h3>roadmap</h3>
+          <div class="lane lane-past">
+            <p class="lane-label">so far</p>
+            <ul>
+              <li><span class="year">12.2009</span>I came to life. <br> ..well technically i was already a thing since around 9 months</li>
+              <li><span class="year">05.2016</span>I started taking pictures and enjoyed doing so</li>
+              <li><span class="year">12.2021</span>Founded The Olynthe Initiative (previously Q-BIT Technology)</li>
+              <li><span class="year">08.2025</span>Joined Infomaniak Network as an apprentice</li>
+              <li><span class="year">10.2025</span>Officially stopped using Windows and quit big tech</li>
+              <li><span class="year">05.2026</span>Started actively contributing to OSS and creating software</li>
+            </ul>
+          </div>
+          <div class="lane">
+            <p class="lane-label">up next</p>
+            <ul>
+              <li class="next"><span class="year">next</span>Get better at photography and get new gear</li>
+              <li class="next"><span class="year">next</span>Finish my apprenticeship (2.5 years to go)</li>
+              <li class="next"><span class="year">next</span>Have more than 200 CPUs in my collection of CPUs</li>
+              <li class="next"><span class="year">someday</span>Stop working at for-profits, but for humans</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section id="open-source" class="section" aria-label="Open source">
+        <h2 class="label">~/home/gabrielp/dev/</h2>
+        <p>I care about software that respects its users. Here is what I build and where I help.</p>
+        <ul class="projects">
+          <li class="project">
+            <h3><a href="https://github.com/Hiburger/JWStreak">JWStreak</a></h3>
+            <p class="tag">dart / gpl-3.0 / <a href="https://jws.olynthe.org">jws.olynthe.org</a></p>
+            <p>A friendly Flutter app that helps people build a daily Bible-reading habit. Everything on-device, nothing leaves your phone.</p>
+          </li>
+          <li class="project">
+            <h3><a href="https://github.com/BasaltOS-org">BasaltOS</a></h3>
+            <p class="tag">AlmaLinux-based operating system | work in progress</p>
+            <p>Project leader on an independent open source operating system. Early days, big dreams.</p>
+          </li>
+          <li class="project">
+            <h3><a href="https://olynthe.org">The Olynthe Initiative</a></h3>
+            <p class="tag">digital rights & free software</p>
+            <p>Founded to support digital rights and FOSS initiatives, and home of this very domain</p>
+          </li>
+        </ul>
+        <ul class="mini">
+          <li><a href="https://github.com/sky-map-team/">Sky Map</a>, contributing to the #1 open-sourced astronomy app for Android</li>
+          <li><a href="https://github.com/google-ai-edge/gallery">Google AI Edge Gallery</a>, on-device LLMs & LAMs FLOSS app</li>
+          <li><a href="https://huggingface.co/the-art-of-linux">Hugging Face</a>, where my hardware can be seen</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="wrap">
+      <section id="photography" class="section" aria-label="Photography">
+        <div class="section-head">
+          <h2 class="label">~/home/gabrielp/pictures/</h2>
+          <p class="gear">The Gear: Nikon D7000 | GoPro hero 12 | Pixel 9 Pro XL</p>
+        </div>
+        <p>Here are a few frames I like ! I deeply hope you'll like them too :)</p>
+        <div class="gallery">
+          <figure>
+            <a href="photos/01.jpg" target="_blank" rel="noopener">
+              <img src="photos/01.jpg" alt="A ginger cat prowling through dewy grass" width="2000" height="1676" loading="lazy">
+            </a>
+            <figcaption>01</figcaption>
+          </figure>
+          <figure>
+            <a href="photos/02.jpg" target="_blank" rel="noopener">
+              <img src="photos/02.jpg" alt="A blue speedwell flower in close-up" width="1507" height="2000" loading="lazy">
+            </a>
+            <figcaption>02</figcaption>
+          </figure>
+          <figure>
+            <a href="photos/03.jpg" target="_blank" rel="noopener">
+              <img src="photos/03.jpg" alt="Black and white — hands gently holding a tiny leaf" width="2000" height="1632" loading="lazy">
+            </a>
+            <figcaption>03</figcaption>
+          </figure>
+          <figure>
+            <a href="photos/04.jpg" target="_blank" rel="noopener">
+              <img src="photos/04.jpg" alt="The Milky Way over a dark night sky" width="1506" height="2000" loading="lazy">
+            </a>
+            <figcaption>04</figcaption>
+          </figure>
+          <figure>
+            <a href="photos/05.jpg" target="_blank" rel="noopener">
+              <img src="photos/05.jpg" alt="A house sparrow in sharp profile" width="1428" height="2000" loading="lazy">
+            </a>
+            <figcaption>05</figcaption>
+          </figure>
+          <figure>
+            <a href="photos/06.jpg" target="_blank" rel="noopener">
+              <img src="photos/06.jpg" alt="Two sparrows perched on a branch" width="1518" height="1107" loading="lazy">
+            </a>
+            <figcaption>06</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+
+    <div class="wrap">
+      <section id="toolbox" class="section" aria-label="Toolbox">
+        <h2 class="label">~/home/gabrielp/tools/</h2>
+        <p>What I reach for every day at work, in the homelab, and everywhere in between.</p>
+        <div class="hero-row">
+          <div>
+            <ul class="links">
+              <li><span class="tag">Home Lab Hardware</span>GMKtec K8 Plus AMD Ryzen™ 7 8845HS, RPi 5 (8GO), RPi 3 (2GO)</li>
+              <li><span class="tag">DIY</span>Arduino Uno R3 x2, Arduino Nano x2</li>
+              <li><span class="tag">Computers</span>Too many. <br> Primary: MacBookPro 2026 (M5 Pro) / Secondary: XPS 15 7590 & Omen Tower (forgot the name)</li>
+              <li><span class="tag">OS</span>Cachy Linux // macOS // Debian Trixie</li>
+              <li><span class="tag">Mobile</span>Pixel 9 Pro XL, iPad Pro (M2), Quest 3, Pixel Watch 5</li>
+            </ul>
+            <p class="sub-label">favorite groups (order matters!)</p>
+            <ul class="links">
+              <li><span class="tag">Phones</span>Google Pixel, Fairphone, Nothing</li>
+              <li><span class="tag">Computers</span>Framework, Apple, Dell</li>
+              <li><span class="tag">Cameras</span>Nikon, Lumix, Fujifilm</li>
+              <li><span class="tag">DIY boards</span>Raspberry Pi, Arduino, Flipper Zero</li>
+              <li><span class="tag">IDE</span>Zed (Preview)</li>
+            </ul>
+          </div>
+          <figure class="hero-photo">
+            <img src="messy_server_rack.jpg" alt="A messy server rack covered in cables" width="1010" height="1347">
+            <figcaption>Be assured, that's just an image i found on the internet; not my actual homelab. But it's pretty close to its state.... Let's move on !
+              <span class="photo-credit">photo: Taylor Vick — Unsplash (free license)</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+
+    <div class="wrap">
+      <section id="contact" class="section" aria-label="Contact">
+        <h2 class="label">~/home/gabrielp/contacts/</h2>
+        <p>I'm shy, but I don't bite. Please come say hi! <br> And kindly mention you came from this site, or I might assume you're a scammer (I started getting used to it sadly) :( </p>
+        <a class="email" href="mailto:gabriel.paesano@olynthe.org">gabriel.paesano@olynthe.org</a>
+        <ul class="links">
+          <li><span class="tag">GutHib</span><a href="https://github.com/Hiburger">@Hiburger</a></li>
+          <li><span class="tag">Instagram</span><a href="https://instagram.com/hello_iam_gabriel">@hello_iam_gabriel</a></li>
+          <li><span class="tag">Reddit</span><a href="https://www.reddit.com/user/Guy_From_The_Cloud/">u/Guy_From_The_Cloud</a></li>
+          <li><span class="tag">YouTube</span><a href="https://youtube.com/@gabrielpaesano">@gabrielpaesano</a></li>
+          <li><span class="tag">LinkedIn</span><a href="https://www.linkedin.com/in/gabriel-p-150632375">in/gabriel-p</a></li>
+          <li><span class="tag">Hugging Face</span><a href="https://huggingface.co/the-art-of-linux">the-art-of-linux</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <div class="wrap">
+    <footer>
+      <span>I’ll always be there for you, but... will you ?</span>
+      <span>© 2048 Gabriel Paesano</span>
+      <button type="button" class="repaint" id="repaint">repaint</button>
+    </footer>
+  </div>
+
+  <dialog class="colour-modal" id="colour-modal" aria-labelledby="colour-title">
+    <form method="dialog">
+      <p class="colour-label">~/home/gabrielp/.config/</p>
+      <h2 id="colour-title">Hey! :) <br> May I ask you a question ?</h2>
+      <p>What's your favourite colour? <br> Pick one and the whole site wears it: links, dates, buttons, everything. So everyone likes the colour !</p>
+      <div class="swatches">
+        <button type="button" class="swatch" data-colour="#0f8a7d" style="background: #0f8a7d" aria-label="turquoise"></button>
+        <button type="button" class="swatch" data-colour="#a44a1f" style="background: #a44a1f" aria-label="terracotta"></button>
+        <button type="button" class="swatch" data-colour="#b07d2a" style="background: #b07d2a" aria-label="ochre"></button>
+        <button type="button" class="swatch" data-colour="#3f6b3a" style="background: #3f6b3a" aria-label="forest"></button>
+        <button type="button" class="swatch" data-colour="#2b4a8b" style="background: #2b4a8b" aria-label="denim"></button>
+        <button type="button" class="swatch" data-colour="#7a3b5c" style="background: #7a3b5c" aria-label="plum"></button>
+        <label class="swatch-custom" aria-label="pick any colour">+
+          <input type="color" value="#0f8a7d">
+        </label>
+      </div>
+      <div class="colour-actions">
+        <span class="colour-note">no cookies, just colours !!</span>
+        <button class="colour-skip" value="cancel">keep turquoise</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var sw = document.getElementById("theme-switch");
+      var thumb = sw.querySelector(".theme-thumb");
+      var opts = sw.querySelectorAll(".theme-opt");
+      var mq = window.matchMedia("(prefers-color-scheme: dark)");
+      function currentIsDark() {
+        return root.dataset.theme === "dark" || (!root.dataset.theme && mq.matches);
+      }
+      function render() {
+        var dark = currentIsDark();
+        opts.forEach(function (b) {
+          var active = (b.dataset.themeChoice === "dark") === dark;
+          b.classList.toggle("is-active", active);
+          b.setAttribute("aria-pressed", active ? "true" : "false");
+          if (active) {
+            thumb.style.width = b.offsetWidth + "px";
+            thumb.style.transform = "translateX(" + b.offsetLeft + "px)";
+          }
+        });
+      }
+      opts.forEach(function (b) {
+        b.addEventListener("click", function () {
+          root.dataset.theme = b.dataset.themeChoice;
+          try { localStorage.setItem("theme", b.dataset.themeChoice); } catch (e) {}
+          render();
+        });
+      });
+      window.addEventListener("resize", render);
+      render();
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var lane = document.querySelector(".roadmap .lane-past");
+      if (!lane || !("IntersectionObserver" in window)) return;
+      var ul = lane.querySelector("ul");
+      var fill = document.createElement("span");
+      fill.className = "lane-fill";
+      fill.setAttribute("aria-hidden", "true");
+      ul.appendChild(fill);
+      var items = ul.querySelectorAll("li");
+      items.forEach(function (li, i) {
+        li.style.setProperty("--d", (((i + 1) / items.length) * 1.5).toFixed(2) + "s");
+      });
+      var last = items[items.length - 1];
+      function size() {
+        fill.style.width = (last.offsetLeft + 7) + "px";
+      }
+      size();
+      window.addEventListener("resize", size);
+      var drawn = false;
+      function draw() {
+        if (drawn) return;
+        drawn = true;
+        ul.classList.add("is-drawn");
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            draw();
+            io.disconnect();
+          }
+        });
+      }, { threshold: 0.4 });
+      io.observe(lane);
+      setTimeout(draw, 2500);
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var dlg = document.getElementById("colour-modal");
+      if (!dlg || !dlg.showModal) return;
+      function store(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+      function read(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+      function hexToHsl(hex) {
+        var r = parseInt(hex.slice(1, 3), 16) / 255;
+        var g = parseInt(hex.slice(3, 5), 16) / 255;
+        var b = parseInt(hex.slice(5, 7), 16) / 255;
+        var max = Math.max(r, g, b), min = Math.min(r, g, b), h = 0, s = 0, l = (max + min) / 2;
+        if (max !== min) {
+          var d = max - min;
+          s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+          if (max === r) h = ((g - b) / d + (g < b ? 6 : 0)) / 6;
+          else if (max === g) h = ((b - r) / d + 2) / 6;
+          else h = ((r - g) / d + 4) / 6;
+        }
+        return [h, s, l];
+      }
+      function hslToHex(h, s, l) {
+        function f(n) {
+          var k = (n + h * 12) % 12;
+          var a = s * Math.min(l, 1 - l);
+          var v = l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1));
+          return Math.round(255 * v);
+        }
+        return "#" + ((1 << 24) + (f(0) << 16) + (f(8) << 8) + f(4)).toString(16).slice(1);
+      }
+      function tune(hex, lmin, lmax) {
+        var c = hexToHsl(hex);
+        return hslToHex(c[0], c[1], Math.min(lmax, Math.max(lmin, c[2])));
+      }
+      function inkFor(hex) {
+        var r = parseInt(hex.slice(1, 3), 16), g = parseInt(hex.slice(3, 5), 16), b = parseInt(hex.slice(5, 7), 16);
+        return (r * 299 + g * 587 + b * 114) / 1000 > 150 ? "#171511" : "#faf8f3";
+      }
+      function choose(hex) {
+        if (!/^#[0-9a-fA-F]{6}$/.test(hex)) return;
+        var light = tune(hex, 0.3, 0.52);
+        var dark = tune(hex, 0.58, 0.74);
+        root.style.setProperty("--accent-user", light);
+        root.style.setProperty("--accent-user-dark", dark);
+        root.style.setProperty("--on-accent-user", inkFor(light));
+        root.style.setProperty("--on-accent-user-dark", inkFor(dark));
+        store("accent-light", light);
+        store("accent-dark", dark);
+        store("on-accent-light", inkFor(light));
+        store("on-accent-dark", inkFor(dark));
+      }
+      dlg.querySelectorAll(".swatch").forEach(function (b) {
+        b.addEventListener("click", function (e) {
+          e.preventDefault();
+          choose(b.dataset.colour);
+          dlg.close();
+        });
+      });
+      var picker = dlg.querySelector(".swatch-custom input");
+      if (picker) {
+        picker.addEventListener("input", function () { choose(picker.value); });
+        picker.addEventListener("change", function () { dlg.close(); });
+      }
+      dlg.addEventListener("close", function () { store("accent-asked", "1"); });
+      if (!read("accent-asked")) dlg.showModal();
+      var rp = document.getElementById("repaint");
+      if (rp) rp.addEventListener("click", function () { dlg.showModal(); });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var b = document.querySelector(".banner");
+      var h = new Date().getHours();
+      if (b && h >= 1 && h < 5) {
+        b.textContent = "it's " + h + "am — shouldn't you be asleep ?";
+      }
+      var base = document.title;
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+          document.title = "come back :(";
+        } else {
+          document.title = "oh hi again";
+          window.setTimeout(function () { document.title = base; }, 1600);
+        }
+      });
+      console.log(
+        "%c~/home/gabrielp $ cat .secret",
+        "color: #0f8a7d; font-family: monospace; font-weight: bold"
+      );
+      console.log(
+        "%chello, fellow console person.\nsooo.... what are we doing?\npsst: come back around 3am.\n— Gabriel",
+        "color: #6e675c; font-family: monospace; font-style: italic"
+      );
+    })();
+  </script>
+</body>
+</html>
