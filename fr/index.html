@@ -485,7 +485,7 @@
       }
       function hop(from, to) {
         var mx = (from.x + to.x) / 2;
-        var my = Math.min(from.y, to.y) - 30;
+        var my = Math.min(from.y, to.y) - (24 + Math.random() * 16);
         dot.animate([
           { transform: tx(from), easing: "ease-in" },
           { transform: "translate(" + mx + "px," + my + "px)", offset: 0.5, easing: "ease-out" },
@@ -494,13 +494,19 @@
       }
       function wait(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
       var seq = wait(500 + Math.random() * 400);
+      var from = pts[0];
       for (var i = 1; i < pts.length; i++) {
-        (function (from, to) {
+        (function (base, last) {
           seq = seq.then(function () {
+            var to = last ? base : {
+              x: base.x + (Math.random() * 2 - 1) * 5,
+              y: base.y + (Math.random() * 2 - 1) * 4
+            };
             hop(from, to);
+            from = to;
             return wait(1280 + Math.random() * 1300);
           });
-        })(pts[i - 1], pts[i]);
+        })(pts[i], i === pts.length - 1);
       }
       function restore() {
         tittle.style.opacity = "1";
