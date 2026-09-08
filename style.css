@@ -5,6 +5,7 @@
   --accent: var(--accent-user, #0f8a7d);
   --on-accent: var(--on-accent-user, var(--bg));
   --line: #e6e1d6;
+  --line-strong: #c9c2b2;
   --card: #f2eee5;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --serif: Charter, "Bitstream Charter", "Iowan Old Style", Georgia, serif;
@@ -22,6 +23,7 @@
     --accent: var(--accent-user-dark, #56d9cf);
     --on-accent: var(--on-accent-user-dark, var(--bg));
     --line: #2e2b25;
+    --line-strong: #4a453c;
     --card: #201d18;
   }
 }
@@ -33,6 +35,7 @@
   --accent: var(--accent-user-dark, #56d9cf);
   --on-accent: var(--on-accent-user-dark, var(--bg));
   --line: #2e2b25;
+  --line-strong: #4a453c;
   --card: #201d18;
 }
 
@@ -409,7 +412,7 @@ h1 {
 
 .section {
   padding: 3.5rem 0;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--line-strong);
   scroll-margin-top: 2rem;
 }
 
@@ -975,7 +978,7 @@ h1 {
 }
 
 footer {
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--line-strong);
   margin-top: 3.5rem;
   padding: 2rem 0 3rem;
   font-family: var(--mono);
@@ -985,6 +988,23 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.6rem;
+}
+
+.hosted {
+  flex-basis: 100%;
+  padding-top: 0.7rem;
+  border-top: 1px dashed var(--line-strong);
+}
+
+.hosted a {
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.15s ease;
+}
+
+.hosted a:hover {
+  color: var(--accent);
 }
 
 @media (max-width: 560px) {
