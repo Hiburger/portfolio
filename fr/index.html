@@ -493,12 +493,12 @@
         ], { duration: 380, fill: "forwards" });
       }
       function wait(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
-      var seq = wait(700);
+      var seq = wait(500 + Math.random() * 400);
       for (var i = 1; i < pts.length; i++) {
         (function (from, to) {
           seq = seq.then(function () {
             hop(from, to);
-            return wait(1880);
+            return wait(1280 + Math.random() * 1300);
           });
         })(pts[i - 1], pts[i]);
       }
