@@ -21,7 +21,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="style.css?v=16.33">
+  <link rel="stylesheet" href="style.css?v=16.35">
   <script>
     (function () {
       try {
@@ -310,7 +310,10 @@
         });
       });
       window.addEventListener("resize", render);
+      thumb.style.transition = "none";
       render();
+      void thumb.offsetWidth;
+      thumb.style.transition = "";
     })();
   </script>
 
