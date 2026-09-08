@@ -288,28 +288,11 @@ h1 .i-tittle {
   border-radius: 50%;
   background: currentColor;
   transform: translateX(-50%);
-  animation: tittle-hop 6s var(--spring-soft) infinite 4s;
   transition: background 0.2s ease, opacity 0.15s ease;
 }
 
 h1:hover .i-tittle {
   background: var(--accent);
-}
-
-h1:hover .i-tittle {
-  background: var(--accent);
-}
-
-@keyframes tittle-hop {
-  0%, 90%, 100% {
-    transform: translateX(-50%) translateY(0);
-  }
-  94% {
-    transform: translateX(-50%) translateY(-0.24em);
-  }
-  97% {
-    transform: translateX(-50%) translateY(0.04em);
-  }
 }
 
 .banner {
