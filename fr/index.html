@@ -518,8 +518,8 @@
         (function (base, last) {
           seq = seq.then(function () {
             var to = last ? base : {
-              x: base.x + (Math.random() * 2 - 1) * 14,
-              y: base.y + Math.random() * 4
+              x: base.x + (Math.random() * 2 - 1) * 20,
+              y: base.y + Math.random() * 6
             };
             if (last) dot.style.background = "var(--accent)";
             var d = hop(from, to);
