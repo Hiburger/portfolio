@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://gabriel.olynthe.org/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gabriel.olynthe.org/"/>
+    <loc>https://gabriel.olynthe.org/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabriel.olynthe.org/en/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://gabriel.olynthe.org/fr/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://gabriel.olynthe.org/it/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabriel.olynthe.org/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabriel.olynthe.org/en/"/>
   </url>
   <url>
     <loc>https://gabriel.olynthe.org/fr/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gabriel.olynthe.org/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabriel.olynthe.org/en/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://gabriel.olynthe.org/fr/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://gabriel.olynthe.org/it/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabriel.olynthe.org/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabriel.olynthe.org/en/"/>
   </url>
   <url>
     <loc>https://gabriel.olynthe.org/it/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gabriel.olynthe.org/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabriel.olynthe.org/en/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://gabriel.olynthe.org/fr/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://gabriel.olynthe.org/it/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabriel.olynthe.org/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabriel.olynthe.org/en/"/>
   </url>
 </urlset>
