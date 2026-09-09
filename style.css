@@ -1006,6 +1006,28 @@ h1:hover .i-tittle {
   border-radius: 34px;
 }
 
+.contact-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 0.6rem 0 1.8rem;
+}
+
+.contact-btns .email {
+  margin: 0;
+}
+
+.email.discord {
+  background: var(--card);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.email.discord:hover {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
 .email:active {
   border-radius: 10px;
 }
