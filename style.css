@@ -1436,7 +1436,7 @@ footer {
     pointer-events: none;
     z-index: 9998;
     opacity: 0;
-    transition: opacity 0.18s ease, left 0.16s ease-out, top 0.16s ease-out, width 0.26s var(--spring-soft), height 0.26s var(--spring-soft), border-radius 0.26s var(--spring-soft), border-color 0.2s ease, background-color 0.2s ease, transform 0.12s ease;
+    transition: opacity 0.18s ease, left 0.22s cubic-bezier(0.22, 0.61, 0.36, 1), top 0.22s cubic-bezier(0.22, 0.61, 0.36, 1), width 0.22s cubic-bezier(0.22, 0.61, 0.36, 1), height 0.22s cubic-bezier(0.22, 0.61, 0.36, 1), border-radius 0.22s cubic-bezier(0.22, 0.61, 0.36, 1), border-color 0.2s ease, background-color 0.2s ease, transform 0.12s ease;
   }
 
   html.cursor-on .cursor-dot {

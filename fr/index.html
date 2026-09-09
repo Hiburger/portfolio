@@ -25,7 +25,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=16.75">
+  <link rel="stylesheet" href="../style.css?v=16.77">
   <script>
     (function () {
       try {
@@ -673,20 +673,16 @@
       document.body.appendChild(dot);
       document.documentElement.classList.add("cursor-on");
       var visible = false;
-      function place(e) {
-        var dlg = document.querySelector("dialog[open]");
-        if (dlg) {
-          dot.style.opacity = "0";
-          visible = false;
-          return;
+      var hoverEl = null;
+      var collapseTimer = null;
+      function clearCollapse() {
+        if (collapseTimer) {
+          clearTimeout(collapseTimer);
+          collapseTimer = null;
         }
-        if (!visible) {
-          dot.style.opacity = "1";
-          visible = true;
-        }
-        var el = e.target && e.target.closest ? e.target.closest("a, button, input, label, [role='button']") : null;
-        if (el && el.closest(".gallery")) el = null;
-        if (el && getComputedStyle(el).display !== "inline") {
+      }
+      function morph(el, e) {
+        if (el) {
           var r = el.getBoundingClientRect();
           dot.style.left = r.left + "px";
           dot.style.top = r.top + "px";
@@ -702,6 +698,42 @@
           dot.style.height = "22px";
           dot.style.borderRadius = "50%";
           dot.classList.remove("is-target");
+        }
+      }
+      function place(e) {
+        var dlg = document.querySelector("dialog[open]");
+        if (dlg) {
+          clearCollapse();
+          dot.style.opacity = "0";
+          visible = false;
+          hoverEl = null;
+          return;
+        }
+        if (!visible) {
+          dot.style.opacity = "1";
+          visible = true;
+        }
+        var el = e.target && e.target.closest ? e.target.closest("a, button, input, label, [role='button']") : null;
+        if (el && el.closest(".gallery")) el = null;
+        if (el) {
+          clearCollapse();
+          hoverEl = el;
+          morph(el, e);
+        } else if (hoverEl) {
+          var r = hoverEl.getBoundingClientRect();
+          var grazing = e.clientX >= r.left - 6 && e.clientX <= r.right + 6 && e.clientY >= r.top - 6 && e.clientY <= r.bottom + 6;
+          if (grazing) {
+            morph(hoverEl, e);
+          } else if (!collapseTimer) {
+            collapseTimer = setTimeout(function () {
+              collapseTimer = null;
+              hoverEl = null;
+              morph(null, { clientX: lastX, clientY: lastY });
+            }, 90);
+          }
+        } else {
+          clearCollapse();
+          morph(null, e);
         }
       }
       var lastX = -100;
