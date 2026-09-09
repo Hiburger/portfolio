@@ -583,7 +583,7 @@
         function hop(from, to) {
           var mx = (from.x + to.x) / 2;
           var my = Math.min(from.y, to.y) - (24 + Math.random() * 16);
-          var d = 320 + Math.random() * 160;
+          var d = 190 + Math.random() * 150;
           dot.animate([
             { transform: tx(from), easing: "ease-in" },
             { transform: "translate(" + mx + "px," + my + "px)", offset: 0.5, easing: "ease-out" },
@@ -592,7 +592,7 @@
           return d;
         }
         function wait(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
-        var seq = wait(500 + Math.random() * 400);
+        var seq = wait(280 + Math.random() * 320);
         var from = pts[0];
         for (var i = 1; i < pts.length; i++) {
           (function (base, last) {
@@ -604,7 +604,7 @@
               if (last) dot.style.background = "var(--accent)";
               var d = hop(from, to);
               from = to;
-              return wait(last ? d : d + 900 + Math.random() * 1300);
+              return wait(last ? d : d + 420 + Math.random() * 880);
             });
           })(pts[i], i === pts.length - 1);
         }
