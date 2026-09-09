@@ -723,8 +723,8 @@
       var visible = false;
       var hoverEl = null;
       var collapseTimer = null;
-      var mode = "custom";
-      try { mode = localStorage.getItem("cursor-mode") || "custom"; } catch (e) {}
+      var mode = "system";
+      try { mode = localStorage.getItem("cursor-mode") || "system"; } catch (e) {}
       function store(v) {
         try { localStorage.setItem("cursor-mode", v); } catch (e) {}
       }
