@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=16.87">
+  <link rel="stylesheet" href="../style.css?v=16.88">
   <script>
     (function () {
       try {
@@ -125,7 +125,7 @@
         <figure class="hero-photo">
           <span class="frame">
             <span class="halo" aria-hidden="true"></span>
-            <img src="../favicon.jpg?v=2" alt="Portrait of Gabriel" width="640" height="640">
+            <img src="../favicon.jpg?v=2" alt="Portrait of Gabriel" width="640" height="640" decoding="sync">
             <span class="flash-veil" aria-hidden="true"></span>
             <span class="flash" aria-hidden="true"></span>
           </span>
@@ -247,37 +247,37 @@
         <div class="gallery">
           <figure>
             <a href="../photos/01.jpg" target="_blank" rel="noopener">
-              <img src="../photos/01.jpg" alt="A ginger cat prowling through dewy grass" width="2000" height="1676" loading="lazy">
+              <img src="../photos/01.jpg" alt="A ginger cat prowling through dewy grass" width="2000" height="1676" decoding="sync">
             </a>
             <figcaption>01</figcaption>
           </figure>
           <figure>
             <a href="../photos/02.jpg" target="_blank" rel="noopener">
-              <img src="../photos/02.jpg" alt="A blue speedwell flower in close-up" width="1507" height="2000" loading="lazy">
+              <img src="../photos/02.jpg" alt="A blue speedwell flower in close-up" width="1507" height="2000" decoding="sync">
             </a>
             <figcaption>02</figcaption>
           </figure>
           <figure>
             <a href="../photos/03.jpg" target="_blank" rel="noopener">
-              <img src="../photos/03.jpg" alt="Black and white, hands gently holding a tiny leaf" width="2000" height="1632" loading="lazy">
+              <img src="../photos/03.jpg" alt="Black and white, hands gently holding a tiny leaf" width="2000" height="1632" decoding="sync">
             </a>
             <figcaption>03</figcaption>
           </figure>
           <figure>
             <a href="../photos/04.jpg" target="_blank" rel="noopener">
-              <img src="../photos/04.jpg" alt="The Milky Way over a dark night sky" width="1506" height="2000" loading="lazy">
+              <img src="../photos/04.jpg" alt="The Milky Way over a dark night sky" width="1506" height="2000" decoding="sync">
             </a>
             <figcaption>04</figcaption>
           </figure>
           <figure>
             <a href="../photos/05.jpg" target="_blank" rel="noopener">
-              <img src="../photos/05.jpg" alt="A house sparrow in sharp profile" width="1428" height="2000" loading="lazy">
+              <img src="../photos/05.jpg" alt="A house sparrow in sharp profile" width="1428" height="2000" decoding="sync">
             </a>
             <figcaption>05</figcaption>
           </figure>
           <figure>
             <a href="../photos/06.jpg" target="_blank" rel="noopener">
-              <img src="../photos/06.jpg" alt="Two sparrows perched on a branch" width="1518" height="1107" loading="lazy">
+              <img src="../photos/06.jpg" alt="Two sparrows perched on a branch" width="1518" height="1107" decoding="sync">
             </a>
             <figcaption>06</figcaption>
           </figure>
@@ -309,7 +309,7 @@
             </ul>
           </div>
           <figure class="hero-photo">
-            <img src="../messy_server_rack.jpg" alt="A messy server rack covered in tangled cables" width="1440" height="1920">
+            <img src="../messy_server_rack.jpg" alt="A messy server rack covered in tangled cables" width="1440" height="1920" decoding="sync">
             <figcaption>Be assured, that's just an image i found on the internet; not my actual homelab. But it's pretty close to its state.... Let's move on !
               <span class="photo-credit">photo: Kim Scarborough, Wikimedia Commons (CC BY-SA 2.0)</span>
             </figcaption>
@@ -792,6 +792,10 @@
       document.addEventListener("mousemove", function (e) {
         lastX = e.clientX;
         lastY = e.clientY;
+        try {
+          sessionStorage.setItem("cursor-x", lastX);
+          sessionStorage.setItem("cursor-y", lastY);
+        } catch (err) {}
         place(e);
       });
       var lastScroll = window.scrollY;
@@ -816,7 +820,19 @@
         dot.style.opacity = "1";
         visible = true;
       });
+      var sx = null;
+      var sy = null;
+      try {
+        sx = sessionStorage.getItem("cursor-x");
+        sy = sessionStorage.getItem("cursor-y");
+      } catch (e) {}
+      if (sx !== null && sy !== null) {
+        lastX = parseInt(sx, 10);
+        lastY = parseInt(sy, 10);
+        place({ clientX: lastX, clientY: lastY, target: document.elementFromPoint(lastX, lastY) });
+      }
     })();
+
   </script>
 </body>
 </html>

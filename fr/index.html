@@ -25,7 +25,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=16.87">
+  <link rel="stylesheet" href="../style.css?v=16.88">
   <script>
     (function () {
       try {
@@ -127,7 +127,7 @@
         <figure class="hero-photo">
           <span class="frame">
             <span class="halo" aria-hidden="true"></span>
-            <img src="../favicon.jpg?v=2" alt="Portrait de Gabriel" width="640" height="640">
+            <img src="../favicon.jpg?v=2" alt="Portrait de Gabriel" width="640" height="640" decoding="sync">
             <span class="flash-veil" aria-hidden="true"></span>
             <span class="flash" aria-hidden="true"></span>
           </span>
@@ -249,37 +249,37 @@
         <div class="gallery">
           <figure>
             <a href="../photos/01.jpg" target="_blank" rel="noopener">
-              <img src="../photos/01.jpg" alt="Un chat roux rôdant dans l'herbe mouillée de rosée" width="2000" height="1676" loading="lazy">
+              <img src="../photos/01.jpg" alt="Un chat roux rôdant dans l'herbe mouillée de rosée" width="2000" height="1676" decoding="sync">
             </a>
             <figcaption>01</figcaption>
           </figure>
           <figure>
             <a href="../photos/02.jpg" target="_blank" rel="noopener">
-              <img src="../photos/02.jpg" alt="Une fleur de véronique en macro" width="1507" height="2000" loading="lazy">
+              <img src="../photos/02.jpg" alt="Une fleur de véronique en macro" width="1507" height="2000" decoding="sync">
             </a>
             <figcaption>02</figcaption>
           </figure>
           <figure>
             <a href="../photos/03.jpg" target="_blank" rel="noopener">
-              <img src="../photos/03.jpg" alt="Noir et blanc, des mains tenant délicatement une petite feuille" width="2000" height="1632" loading="lazy">
+              <img src="../photos/03.jpg" alt="Noir et blanc, des mains tenant délicatement une petite feuille" width="2000" height="1632" decoding="sync">
             </a>
             <figcaption>03</figcaption>
           </figure>
           <figure>
             <a href="../photos/04.jpg" target="_blank" rel="noopener">
-              <img src="../photos/04.jpg" alt="La Voie lactée dans un ciel nocturne sombre" width="1506" height="2000" loading="lazy">
+              <img src="../photos/04.jpg" alt="La Voie lactée dans un ciel nocturne sombre" width="1506" height="2000" decoding="sync">
             </a>
             <figcaption>04</figcaption>
           </figure>
           <figure>
             <a href="../photos/05.jpg" target="_blank" rel="noopener">
-              <img src="../photos/05.jpg" alt="Un moineau domestique de profil, bien net" width="1428" height="2000" loading="lazy">
+              <img src="../photos/05.jpg" alt="Un moineau domestique de profil, bien net" width="1428" height="2000" decoding="sync">
             </a>
             <figcaption>05</figcaption>
           </figure>
           <figure>
             <a href="../photos/06.jpg" target="_blank" rel="noopener">
-              <img src="../photos/06.jpg" alt="Deux moineaux perchés sur une branche" width="1518" height="1107" loading="lazy">
+              <img src="../photos/06.jpg" alt="Deux moineaux perchés sur une branche" width="1518" height="1107" decoding="sync">
             </a>
             <figcaption>06</figcaption>
           </figure>
@@ -311,7 +311,7 @@
             </ul>
           </div>
           <figure class="hero-photo">
-            <img src="../messy_server_rack.jpg" alt="Une baie serveur en désordre couverte de câbles emmêlés" width="1440" height="1920">
+            <img src="../messy_server_rack.jpg" alt="Une baie serveur en désordre couverte de câbles emmêlés" width="1440" height="1920" decoding="sync">
             <figcaption>Rassure-toi, c'est juste une image trouvée sur internet ; pas mon vrai homelab. Mais ça y ressemble pas mal.... Bref, passons !
               <span class="photo-credit">photo : Kim Scarborough, Wikimedia Commons (CC BY-SA 2.0)</span>
             </figcaption>
@@ -794,6 +794,10 @@
       document.addEventListener("mousemove", function (e) {
         lastX = e.clientX;
         lastY = e.clientY;
+        try {
+          sessionStorage.setItem("cursor-x", lastX);
+          sessionStorage.setItem("cursor-y", lastY);
+        } catch (err) {}
         place(e);
       });
       var lastScroll = window.scrollY;
@@ -818,7 +822,19 @@
         dot.style.opacity = "1";
         visible = true;
       });
+      var sx = null;
+      var sy = null;
+      try {
+        sx = sessionStorage.getItem("cursor-x");
+        sy = sessionStorage.getItem("cursor-y");
+      } catch (e) {}
+      if (sx !== null && sy !== null) {
+        lastX = parseInt(sx, 10);
+        lastY = parseInt(sy, 10);
+        place({ clientX: lastX, clientY: lastY, target: document.elementFromPoint(lastX, lastY) });
+      }
     })();
+
   </script>
 </body>
 </html>
