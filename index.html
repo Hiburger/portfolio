@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="style.css?v=16.71">
+  <link rel="stylesheet" href="style.css?v=16.72">
   <script>
     (function () {
       try {
@@ -38,11 +38,22 @@
         var od = localStorage.getItem("on-accent-dark");
         if (ol) s.setProperty("--on-accent-user", ol);
         if (od) s.setProperty("--on-accent-user-dark", od);
-        function cursorDot(hex) {
-          return "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><circle cx='10' cy='10' r='7' fill='" + hex.replace("#", "%23") + "'/></svg>\") 10 10, pointer";
+        function cursorDot(hex, kind) {
+          var c = hex.replace("#", "%23");
+          if (kind === "pointer") return "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><circle cx='12' cy='12' r='8' fill='none' stroke='" + c + "' stroke-width='2'/><circle cx='12' cy='12' r='3' fill='" + c + "'/></svg>\") 12 12, default";
+          if (kind === "click") return "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14'><circle cx='7' cy='7' r='5' fill='" + c + "'/></svg>\") 7 7, default";
+          return "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18'><circle cx='9' cy='9' r='6.5' fill='" + c + "'/></svg>\") 9 9, default";
         }
-        if (al) s.setProperty("--cursor-pointer", cursorDot(al));
-        if (ad) s.setProperty("--cursor-pointer-dark", cursorDot(ad));
+        if (al) {
+          s.setProperty("--cursor-default-user", cursorDot(al, "default"));
+          s.setProperty("--cursor-pointer-user", cursorDot(al, "pointer"));
+          s.setProperty("--cursor-click-user", cursorDot(al, "click"));
+        }
+        if (ad) {
+          s.setProperty("--cursor-default-dark", cursorDot(ad, "default"));
+          s.setProperty("--cursor-pointer-dark", cursorDot(ad, "pointer"));
+          s.setProperty("--cursor-click-dark", cursorDot(ad, "click"));
+        }
       } catch (e) {}
     })();
   </script>
@@ -510,8 +521,12 @@
         store("accent-dark", dark);
         store("on-accent-light", inkFor(light));
         store("on-accent-dark", inkFor(dark));
-        root.style.setProperty("--cursor-pointer", cursorDot(light));
-        root.style.setProperty("--cursor-pointer-dark", cursorDot(dark));
+        root.style.setProperty("--cursor-default-user", cursorDot(light, "default"));
+        root.style.setProperty("--cursor-pointer-user", cursorDot(light, "pointer"));
+        root.style.setProperty("--cursor-click-user", cursorDot(light, "click"));
+        root.style.setProperty("--cursor-default-dark", cursorDot(dark, "default"));
+        root.style.setProperty("--cursor-pointer-dark", cursorDot(dark, "pointer"));
+        root.style.setProperty("--cursor-click-dark", cursorDot(dark, "click"));
       }
       dlg.querySelectorAll(".swatch").forEach(function (b) {
         b.addEventListener("click", function (e) {
