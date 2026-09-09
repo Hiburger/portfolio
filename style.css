@@ -1088,14 +1088,11 @@ h1:hover .i-tittle {
 }
 
 .links .tag {
-  min-width: 7rem;
-  flex-shrink: 0;
-}
-
-.links a {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
+  min-width: 7rem;
+  flex-shrink: 0;
 }
 
 .sicon {
@@ -1103,6 +1100,11 @@ h1:hover .i-tittle {
   height: 16px;
   fill: currentColor;
   flex-shrink: 0;
+}
+
+.links .sicon {
+  width: 19px;
+  height: 19px;
 }
 
 .colour-modal {
