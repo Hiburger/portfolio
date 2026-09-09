@@ -25,7 +25,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=16.57">
+  <link rel="stylesheet" href="../style.css?v=16.60">
   <script>
     (function () {
       try {
@@ -563,15 +563,15 @@
           var a = byHref[h];
           if (!a) return null;
           var r = a.getBoundingClientRect();
-          return { x: r.left + r.width / 2, y: r.top - size / 2 };
+          return { x: r.left + r.width / 2, y: r.top + window.scrollY - size / 2 };
         });
-        pts.push({ x: tr.left + tr.width / 2, y: tr.top + tr.height / 2 });
+        pts.push({ x: tr.left + tr.width / 2, y: tr.top + window.scrollY + tr.height / 2 });
         if (pts.indexOf(null) !== -1) return;
         tittle.style.opacity = "0";
         var dot = document.createElement("span");
         dot.setAttribute("aria-hidden", "true");
         dot.style.cssText =
-          "position:fixed;left:0;top:0;width:" + size + "px;height:" + size +
+          "position:absolute;left:0;top:0;width:" + size + "px;height:" + size +
           "px;border-radius:50%;background:var(--ink);transition:background .2s ease;z-index:60;pointer-events:none;opacity:0;transform:translate(" +
           (pts[0].x - size / 2) + "px," + (pts[0].y - size / 2) + "px)";
         document.body.appendChild(dot);
