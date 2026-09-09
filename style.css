@@ -893,12 +893,12 @@ h1:hover .i-tittle {
 
 .tag {
   font-family: var(--mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.05em;
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
   color: var(--muted);
 }
 
-.project p:last-child {
+.project > p:last-child {
   color: var(--muted);
   font-size: 0.95rem;
   line-height: 1.6;
