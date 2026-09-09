@@ -25,7 +25,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=16.82">
+  <link rel="stylesheet" href="../style.css?v=16.83">
   <script>
     (function () {
       try {
@@ -695,7 +695,22 @@
           { duration: 380, easing: "ease-out" }
         );
       }
-      frame.addEventListener("mouseenter", pop);
+      var timer = null;
+      function schedule() {
+        if (timer) return;
+        timer = setTimeout(function () {
+          timer = null;
+          pop();
+        }, 1000);
+      }
+      function cancel() {
+        if (timer) {
+          clearTimeout(timer);
+          timer = null;
+        }
+      }
+      frame.addEventListener("mouseenter", schedule);
+      frame.addEventListener("mouseleave", cancel);
       frame.addEventListener("pointerdown", pop);
     })();
   </script>

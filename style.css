@@ -1381,8 +1381,8 @@ footer {
 
 .hero-photo .flash {
   position: absolute;
-  left: var(--fx, 51%);
-  top: var(--fy, 44.5%);
+  left: calc(var(--fx, 51%) - 1cm);
+  top: calc(var(--fy, 44.5%) + 0.5mm);
   width: 26%;
   aspect-ratio: 1;
   opacity: 0;
