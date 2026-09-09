@@ -26,7 +26,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=16.79">
+  <link rel="stylesheet" href="../style.css?v=16.80">
   <script>
     (function () {
       try {
@@ -715,7 +715,7 @@
           visible = true;
         }
         var el = e.target && e.target.closest ? e.target.closest("a, button, input, label, [role='button']") : null;
-        if (el && (el.closest(".gallery") || el.closest(".contact-btns") || getComputedStyle(el).display === "inline")) el = null;
+        if (el && (el.closest(".gallery") || getComputedStyle(el).display === "inline")) el = null;
         if (el) {
           clearCollapse();
           hoverEl = el;
@@ -751,6 +751,8 @@
           if (visible) {
             place({ clientX: lastX, clientY: lastY, target: document.elementFromPoint(lastX, lastY) });
           }
+        } else if (visible && hoverEl && !collapseTimer) {
+          morph(hoverEl, null);
         }
         window.requestAnimationFrame(watch);
       })();
