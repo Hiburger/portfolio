@@ -1251,6 +1251,10 @@ footer {
   gap: 0.6rem;
 }
 
+.hosted.fork {
+  margin-top: 0.7rem;
+}
+
 .hosted a {
   color: var(--muted);
   text-decoration: underline;
