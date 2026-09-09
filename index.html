@@ -580,8 +580,8 @@
         }
         function hop(from, to) {
           var mx = (from.x + to.x) / 2;
-          var my = Math.min(from.y, to.y) - (24 + Math.random() * 16);
-          var d = 190 + Math.random() * 150;
+          var my = Math.min(from.y, to.y) - (16 + Math.random() * 40);
+          var d = 150 + Math.random() * 260;
           dot.animate([
             { transform: tx(from), easing: "ease-in" },
             { transform: "translate(" + mx + "px," + my + "px)", offset: 0.5, easing: "ease-out" },
@@ -590,19 +590,19 @@
           return d;
         }
         function wait(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
-        var seq = wait(280 + Math.random() * 320);
+        var seq = wait(200 + Math.random() * 600);
         var from = pts[0];
         for (var i = 1; i < pts.length; i++) {
           (function (base, last) {
             seq = seq.then(function () {
               var to = last ? base : {
-                x: base.x + (Math.random() * 2 - 1) * 20,
+                x: base.x + (Math.random() * 2 - 1) * 34,
                 y: base.y + Math.random() * 6
               };
               if (last) dot.style.background = "var(--accent)";
               var d = hop(from, to);
               from = to;
-              return wait(last ? d : d + 420 + Math.random() * 880);
+              return wait(last ? d : d + 250 + Math.random() * 1400);
             });
           })(pts[i], i === pts.length - 1);
         }
