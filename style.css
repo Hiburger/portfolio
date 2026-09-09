@@ -946,6 +946,19 @@ h1:hover .i-tittle {
   margin: 0;
 }
 
+.gallery-note {
+  margin-top: 1.2rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+
+.gallery-note a {
+  color: var(--muted);
+  text-decoration: underline;
+}
+
 .gallery a {
   display: block;
   border-radius: 38px;
