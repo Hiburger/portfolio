@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>Gabriel Paesano 😊</title>
-  <meta name="description" content="Gabriel Paesano, apprendista infrastrutture &amp; operazioni IT presso Infomaniak, contributore open source e fotografo. Ginevra, Svizzera.">
+  <meta name="description" content="Gabriel Paesano, specialista infrastrutture &amp; operazioni presso Infomaniak Network SA, contributore open source e fotografo. Ginevra, Svizzera.">
   <meta property="og:title" content="Gabriel Paesano">
-  <meta property="og:description" content="Apprendista infrastrutture presso Infomaniak, contributore open source, fotografo.">
+  <meta property="og:description" content="Specialista Infrastrutture &amp; Operazioni presso Infomaniak Network SA, contributore open source, fotografo.">
   <meta property="og:url" content="https://gabriel.olynthe.org/it/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="it_IT">
@@ -26,7 +26,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=16.39">
+  <link rel="stylesheet" href="../style.css?v=16.57">
   <script>
     (function () {
       try {
@@ -50,7 +50,7 @@
     "@type": "Person",
     "name": "Gabriel Paesano",
     "url": "https://gabriel.olynthe.org/",
-    "jobTitle": "IT infrastructure &amp; operations apprentice at Infomaniak",
+    "jobTitle": "specialista infrastrutture &amp; operazioni presso Infomaniak Network SA",
     "sameAs": [
       "https://github.com/Hiburger",
       "https://instagram.com/hello_iam_gabriel",
@@ -62,6 +62,34 @@
 <body>
   <a class="skip" href="#main">Vai al contenuto</a>
   <p class="banner">Ciao ! Benvenuto sul mio nuovo portfolio :)</p>
+
+  <button type="button" class="menu-btn" aria-controls="mobile-panel" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="panel-backdrop" aria-hidden="true"></div>
+  <nav id="mobile-panel" class="mobile-panel" aria-label="Menu">
+    <p class="panel-label">~/home/gabrielp/menu/</p>
+    <ul class="panel-links">
+      <li><a href="#about">Chi sono</a></li>
+      <li><a href="#open-source">Open source</a></li>
+      <li><a href="#photography">Foto</a></li>
+      <li><a href="#toolbox">Strumenti</a></li>
+      <li><a href="#contact">Contatto</a></li>
+    </ul>
+    <div class="panel-foot">
+      <p class="panel-label">lingua</p>
+      <div class="panel-langs">
+        <a href="../" hreflang="en">EN</a>
+        <a href="../fr/" hreflang="fr">FR</a>
+        <a href="./" hreflang="it" aria-current="page">IT</a>
+      </div>
+      <div class="theme-switch" role="group" aria-label="Tema colore">
+        <span class="theme-thumb" aria-hidden="true"></span>
+        <button type="button" class="theme-opt" data-theme-choice="light" aria-pressed="false">chiaro</button>
+        <button type="button" class="theme-opt" data-theme-choice="dark" aria-pressed="false">scuro</button>
+      </div>
+    </div>
+  </nav>
 
   <div class="wrap">
     <header class="hero">
@@ -87,13 +115,13 @@
       </nav>
       <div class="hero-row">
         <div>
-          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v16.8</span></h1>
-          <p class="lede">Apprendista ingegnere delle infrastrutture presso <a href="https://www.infomaniak.com">Infomaniak</a> di giorno, fotografo ogni volta che la luce è bella, appassionato di open source per tutto il resto del tempo.</p>
+          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v16.9</span></h1>
+          <p class="lede">Specialista infrastrutture &amp; operazioni presso <a href="https://www.infomaniak.com">Infomaniak Network SA</a> di giorno, fotografo ogni volta che la luce è bella, appassionato di open source per tutto il resto del tempo.</p>
           <p class="coords">Ginevra, Svizzera // 46.20° N ; 6.14° E</p>
           <p class="langs">
-            <svg class="flag" viewBox="0 0 3 2" role="img" aria-label="Français"><rect width="1" height="2" fill="#002395"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ED2939"/></svg>
-            <svg class="flag" viewBox="0 0 3 2" role="img" aria-label="Italiano"><rect width="1" height="2" fill="#009246"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#CE2B37"/></svg>
-            <svg class="flag" viewBox="0 0 20 14" role="img" aria-label="English"><rect width="20" height="14" fill="#fff"/><rect width="20" height="2" fill="#B22234"/><rect y="4" width="20" height="2" fill="#B22234"/><rect y="8" width="20" height="2" fill="#B22234"/><rect y="12" width="20" height="2" fill="#B22234"/><rect width="9" height="8" fill="#3C3B6E"/></svg>
+            <span class="flag-wrap" data-code="FR"><svg class="flag" viewBox="0 0 3 2" role="img" aria-label="Français"><rect width="1" height="2" fill="#002395"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ED2939"/></svg></span>
+            <span class="flag-wrap" data-code="IT"><svg class="flag" viewBox="0 0 3 2" role="img" aria-label="Italiano"><rect width="1" height="2" fill="#009246"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#CE2B37"/></svg></span>
+            <span class="flag-wrap" data-code="EN"><svg class="flag" viewBox="0 0 20 14" role="img" aria-label="English"><rect width="20" height="14" fill="#fff"/><rect width="20" height="2" fill="#B22234"/><rect y="4" width="20" height="2" fill="#B22234"/><rect y="8" width="20" height="2" fill="#B22234"/><rect y="12" width="20" height="2" fill="#B22234"/><rect width="9" height="8" fill="#3C3B6E"/></svg></span>
             <span>le lingue che parlo &amp; capisco</span>
           </p>
         </div>
@@ -144,28 +172,68 @@
 
       <section id="open-source" class="section" aria-label="Open source">
         <h2 class="label">~/home/gabrielp/dev/</h2>
-        <p>Tengo al software che rispetta i suoi utenti. Ecco cosa costruisco e dove aiuto.</p>
+        <p>Tengo al software che rispetta i suoi utenti.<br>Ecco alcune cose che ho costruito o a cui ho contribuito.</p>
         <ul class="projects">
           <li class="project">
-            <h3><a href="https://github.com/Hiburger/JWStreak">JWStreak</a></h3>
-            <p class="tag">dart / gpl-3.0 / <a href="https://jws.olynthe.org">jws.olynthe.org</a></p>
+            <div class="project-head">
+              <img src="../logos/jwstreak.png" alt="" width="42" height="42" loading="lazy">
+              <div>
+                <h3><a href="https://github.com/Hiburger/JWStreak">JWStreak</a></h3>
+                <p class="tag">dart / gpl-3.0 / <a href="https://jws.olynthe.org">jws.olynthe.org</a></p>
+              </div>
+            </div>
             <p>Un'app Flutter simpatica che aiuta a costruire un'abitudine quotidiana di lettura della Bibbia. Tutto sul dispositivo, nulla lascia il tuo telefono.</p>
           </li>
           <li class="project">
-            <h3><a href="https://github.com/BasaltOS-org">BasaltOS</a></h3>
-            <p class="tag">sistema operativo basato su AlmaLinux | work in progress</p>
+            <div class="project-head">
+              <img class="tile-white" src="../logos/basaltos.png" alt="" width="42" height="42" loading="lazy">
+              <div>
+                <h3><a href="https://github.com/BasaltOS-org">BasaltOS</a></h3>
+                <p class="tag">sistema operativo basato su AlmaLinux</p>
+              </div>
+            </div>
             <p>Project leader di un sistema operativo open source indipendente. Primi giorni, grandi sogni.</p>
           </li>
           <li class="project">
-            <h3><a href="https://olynthe.org">La Olynthe Initiative</a></h3>
-            <p class="tag">diritti digitali &amp; software libero</p>
+            <div class="project-head">
+              <img src="../logos/olynthe.png" alt="" width="42" height="42" loading="lazy">
+              <div>
+                <h3><a href="https://olynthe.org">La Olynthe Initiative</a></h3>
+                <p class="tag">diritti digitali &amp; software libero</p>
+              </div>
+            </div>
             <p>Fondata per sostenere i diritti digitali e le iniziative FOSS, e casa di questo stesso dominio</p>
           </li>
-        </ul>
-        <ul class="mini">
-          <li><a href="https://github.com/sky-map-team/">Sky Map</a>, contributore alla app di astronomia open source n°1 per Android</li>
-          <li><a href="https://github.com/google-ai-edge/gallery">Google AI Edge Gallery</a>, app FLOSS con LLM &amp; LAM on-device</li>
-          <li><a href="https://huggingface.co/the-art-of-linux">Hugging Face</a>, dove si può vedere il mio hardware</li>
+          <li class="project">
+            <div class="project-head">
+              <img src="../logos/sky-map.png?v=2" alt="" width="42" height="42" loading="lazy">
+              <div>
+                <h3><a href="https://github.com/sky-map-team/">Sky Map</a></h3>
+                <p class="tag">android / astronomia</p>
+              </div>
+            </div>
+            <p>Il Google Sky Map originale, oggi gestito dalla sua community: punta il telefono verso il cielo e ti dice il nome delle stelle, dei pianeti e delle costellazioni. Ci metto la mano di tanto in tanto.</p>
+          </li>
+          <li class="project">
+            <div class="project-head">
+              <img class="tile-white" src="../logos/ai-edge-gallery.png" alt="" width="42" height="42" loading="lazy">
+              <div>
+                <h3><a href="https://github.com/google-ai-edge/gallery">Google AI Edge Gallery</a></h3>
+                <p class="tag">android / AI on-device</p>
+              </div>
+            </div>
+            <p>Il parco giochi open source di Google per l'AI on-device: chat, comprensione delle immagini e altro, con modelli che girano interamente offline.</p>
+          </li>
+          <li class="project">
+            <div class="project-head">
+              <img class="snowflake" src="../logos/snowflake.svg?v=2" alt="" width="42" height="42" loading="lazy">
+              <div>
+                <h3><a href="https://snowflake.torproject.org/">Tor Snowflakes</a></h3>
+                <p class="tag">tor / anti-censura</p>
+              </div>
+            </div>
+            <p>Gestisco più proxy Snowflake: ponti Tor alimentati da volontari che aiutano chi vive in paesi censurati a raggiungere il web libero. Poco costosi, difficili da bloccare :)</p>
+          </li>
         </ul>
       </section>
     </div>
@@ -228,7 +296,7 @@
               <li><span class="tag">Hardware homelab</span>GMKtec K8 Plus AMD Ryzen™ 7 8845HS, RPi 5 (8 GB), RPi 3 (2 GB)</li>
               <li><span class="tag">DIY</span>Arduino Uno R3 x2, Arduino Nano x2</li>
               <li><span class="tag">Computer</span>Troppi. <br> Principale: MacBookPro 2026 (M5 Pro) / Secondario: XPS 15 7590 &amp; Torre Omen (ho dimenticato il nome)</li>
-              <li><span class="tag">OS</span>Cachy Linux // macOS // Debian Trixie</li>
+              <li><span class="tag">OS</span>GrapheneOS // Cachy Linux // macOS // Debian Trixie</li>
               <li><span class="tag">Mobile</span>Pixel 9 Pro XL, iPad Pro (M2), Quest 3, Pixel Watch 5</li>
             </ul>
             <p class="sub-label">gruppi preferiti (l'ordine conta !)</p>
@@ -279,7 +347,7 @@
   <dialog class="colour-modal" id="colour-modal" aria-labelledby="colour-title">
     <form method="dialog">
       <p class="colour-label">~/home/gabrielp/.config/</p>
-      <h2 id="colour-title">Ehilà ! :) <br> Posso farti una domanda ?</h2>
+      <h2 id="colour-title">Ehilà ! :) <br> <span class="colour-question">Posso farti una domanda ?</span></h2>
       <p>Qual è il tuo colore preferito ? <br> Scegline uno e tutto il sito lo indosserà: link, date, pulsanti, tutto. Così il colore piacerà a tutti !</p>
       <div class="swatches">
         <button type="button" class="swatch" data-colour="#0f8a7d" style="background: #0f8a7d" aria-label="turchese"></button>
@@ -302,14 +370,14 @@
   <script>
     (function () {
       var root = document.documentElement;
-      var sw = document.getElementById("theme-switch");
-      var thumb = sw.querySelector(".theme-thumb");
-      var opts = sw.querySelectorAll(".theme-opt");
+      var switches = document.querySelectorAll(".theme-switch");
       var mq = window.matchMedia("(prefers-color-scheme: dark)");
       function currentIsDark() {
         return root.dataset.theme === "dark" || (!root.dataset.theme && mq.matches);
       }
-      function render() {
+      function renderSwitch(sw) {
+        var thumb = sw.querySelector(".theme-thumb");
+        var opts = sw.querySelectorAll(".theme-opt");
         var dark = currentIsDark();
         opts.forEach(function (b) {
           var active = (b.dataset.themeChoice === "dark") === dark;
@@ -321,18 +389,27 @@
           }
         });
       }
-      opts.forEach(function (b) {
-        b.addEventListener("click", function () {
-          root.dataset.theme = b.dataset.themeChoice;
-          try { localStorage.setItem("theme", b.dataset.themeChoice); } catch (e) {}
-          render();
+      function render() {
+        switches.forEach(renderSwitch);
+      }
+      switches.forEach(function (sw) {
+        sw.querySelectorAll(".theme-opt").forEach(function (b) {
+          b.addEventListener("click", function () {
+            root.dataset.theme = b.dataset.themeChoice;
+            try { localStorage.setItem("theme", b.dataset.themeChoice); } catch (e) {}
+            render();
+          });
         });
       });
       window.addEventListener("resize", render);
-      thumb.style.transition = "none";
+      switches.forEach(function (sw) {
+        sw.querySelector(".theme-thumb").style.transition = "none";
+      });
       render();
-      void thumb.offsetWidth;
-      thumb.style.transition = "";
+      void document.body.offsetWidth;
+      switches.forEach(function (sw) {
+        sw.querySelector(".theme-thumb").style.transition = "";
+      });
     })();
   </script>
 
@@ -475,70 +552,110 @@
       var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       var tittle = document.querySelector("h1 .i-tittle");
       var links = document.querySelectorAll("nav.top a[href^='#']");
-      if (reduce || !tittle || links.length < 5 || !("animate" in Element.prototype)) return;
-      var byHref = {};
-      links.forEach(function (a) { byHref[a.getAttribute("href")] = a; });
-      var path = ["#about", "#open-source", "#toolbox", "#photography", "#open-source"];
-      var tr = tittle.getBoundingClientRect();
-      var size = tr.width * 1.25;
-      var pts = path.map(function (h) {
-        var a = byHref[h];
-        if (!a) return null;
-        var r = a.getBoundingClientRect();
-        return { x: r.left + r.width / 2, y: r.top - size / 2 };
+      var isPhone = window.matchMedia("(pointer: coarse) and (hover: none)").matches;
+      if (reduce || isPhone || !tittle || links.length < 5 || links[0].getBoundingClientRect().width === 0 || !("animate" in Element.prototype)) return;
+      function start() {
+        var byHref = {};
+        links.forEach(function (a) { byHref[a.getAttribute("href")] = a; });
+        var path = ["#about", "#open-source", "#toolbox", "#photography", "#open-source"];
+        var tr = tittle.getBoundingClientRect();
+        var size = tr.width * 1.25;
+        var pts = path.map(function (h) {
+          var a = byHref[h];
+          if (!a) return null;
+          var r = a.getBoundingClientRect();
+          return { x: r.left + r.width / 2, y: r.top - size / 2 };
+        });
+        pts.push({ x: tr.left + tr.width / 2, y: tr.top + tr.height / 2 });
+        if (pts.indexOf(null) !== -1) return;
+        tittle.style.opacity = "0";
+        var dot = document.createElement("span");
+        dot.setAttribute("aria-hidden", "true");
+        dot.style.cssText =
+          "position:fixed;left:0;top:0;width:" + size + "px;height:" + size +
+          "px;border-radius:50%;background:var(--ink);transition:background .2s ease;z-index:60;pointer-events:none;opacity:0;transform:translate(" +
+          (pts[0].x - size / 2) + "px," + (pts[0].y - size / 2) + "px)";
+        document.body.appendChild(dot);
+        dot.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 150, fill: "forwards" });
+        function tx(p) {
+          return "translate(" + (p.x - size / 2) + "px," + (p.y - size / 2) + "px)";
+        }
+        function hop(from, to) {
+          var mx = (from.x + to.x) / 2;
+          var my = Math.min(from.y, to.y) - (24 + Math.random() * 16);
+          var d = 320 + Math.random() * 160;
+          dot.animate([
+            { transform: tx(from), easing: "ease-in" },
+            { transform: "translate(" + mx + "px," + my + "px)", offset: 0.5, easing: "ease-out" },
+            { transform: tx(to) }
+          ], { duration: d, fill: "forwards" });
+          return d;
+        }
+        function wait(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
+        var seq = wait(500 + Math.random() * 400);
+        var from = pts[0];
+        for (var i = 1; i < pts.length; i++) {
+          (function (base, last) {
+            seq = seq.then(function () {
+              var to = last ? base : {
+                x: base.x + (Math.random() * 2 - 1) * 20,
+                y: base.y + Math.random() * 6
+              };
+              if (last) dot.style.background = "var(--accent)";
+              var d = hop(from, to);
+              from = to;
+              return wait(last ? d : d + 900 + Math.random() * 1300);
+            });
+          })(pts[i], i === pts.length - 1);
+        }
+        function restore() {
+          tittle.style.opacity = "1";
+          if (dot.parentNode) dot.remove();
+        }
+        seq.then(function () {
+          dot.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 130, fill: "forwards" });
+          tittle.style.opacity = "1";
+          tittle.style.background = "var(--accent)";
+          setTimeout(function () { dot.remove(); }, 200);
+        }, restore);
+      }
+      var asked = null;
+      try { asked = localStorage.getItem("accent-asked"); } catch (e) {}
+      if (asked) {
+        start();
+        return;
+      }
+      var dlg = document.getElementById("colour-modal");
+      if (dlg && dlg.open) {
+        dlg.addEventListener("close", start, { once: true });
+      } else {
+        start();
+      }
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var btn = document.querySelector(".menu-btn");
+      var panel = document.getElementById("mobile-panel");
+      var backdrop = document.querySelector(".panel-backdrop");
+      if (!btn || !panel || !backdrop) return;
+      function setOpen(open) {
+        panel.classList.toggle("is-open", open);
+        backdrop.classList.toggle("is-open", open);
+        document.body.classList.toggle("panel-open", open);
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      }
+      btn.addEventListener("click", function () {
+        setOpen(!panel.classList.contains("is-open"));
       });
-      pts.push({ x: tr.left + tr.width / 2, y: tr.top + tr.height / 2 });
-      if (pts.indexOf(null) !== -1) return;
-      tittle.style.opacity = "0";
-      var dot = document.createElement("span");
-      dot.setAttribute("aria-hidden", "true");
-      dot.style.cssText =
-        "position:fixed;left:0;top:0;width:" + size + "px;height:" + size +
-        "px;border-radius:50%;background:var(--ink);transition:background .2s ease;z-index:60;pointer-events:none;opacity:0;transform:translate(" +
-        (pts[0].x - size / 2) + "px," + (pts[0].y - size / 2) + "px)";
-      document.body.appendChild(dot);
-      dot.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 150, fill: "forwards" });
-      function tx(p) {
-        return "translate(" + (p.x - size / 2) + "px," + (p.y - size / 2) + "px)";
-      }
-      function hop(from, to) {
-        var mx = (from.x + to.x) / 2;
-        var my = Math.min(from.y, to.y) - (24 + Math.random() * 16);
-        var d = 320 + Math.random() * 160;
-        dot.animate([
-          { transform: tx(from), easing: "ease-in" },
-          { transform: "translate(" + mx + "px," + my + "px)", offset: 0.5, easing: "ease-out" },
-          { transform: tx(to) }
-        ], { duration: d, fill: "forwards" });
-        return d;
-      }
-      function wait(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
-      var seq = wait(500 + Math.random() * 400);
-      var from = pts[0];
-      for (var i = 1; i < pts.length; i++) {
-        (function (base, last) {
-          seq = seq.then(function () {
-            var to = last ? base : {
-              x: base.x + (Math.random() * 2 - 1) * 20,
-              y: base.y + Math.random() * 6
-            };
-            if (last) dot.style.background = "var(--accent)";
-            var d = hop(from, to);
-            from = to;
-            return wait(last ? d : d + 900 + Math.random() * 1300);
-          });
-        })(pts[i], i === pts.length - 1);
-      }
-      function restore() {
-        tittle.style.opacity = "1";
-        if (dot.parentNode) dot.remove();
-      }
-      seq.then(function () {
-        dot.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 130, fill: "forwards" });
-        tittle.style.opacity = "1";
-        tittle.style.background = "var(--accent)";
-        setTimeout(function () { dot.remove(); }, 200);
-      }, restore);
+      backdrop.addEventListener("click", function () { setOpen(false); });
+      panel.querySelectorAll("a[href^='#']").forEach(function (a) {
+        a.addEventListener("click", function () { setOpen(false); });
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") setOpen(false);
+      });
     })();
   </script>
 </body>
