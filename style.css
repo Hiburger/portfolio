@@ -1018,6 +1018,9 @@ h1:hover .i-tittle {
 }
 
 .email.discord {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   background: var(--card);
   color: var(--accent);
   border: 1px solid var(--accent);
@@ -1086,6 +1089,19 @@ h1:hover .i-tittle {
 
 .links .tag {
   min-width: 7rem;
+  flex-shrink: 0;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.sicon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
   flex-shrink: 0;
 }
 
