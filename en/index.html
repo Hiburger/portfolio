@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=16.86">
+  <link rel="stylesheet" href="../style.css?v=16.87">
   <script>
     (function () {
       try {
@@ -718,6 +718,9 @@
       var dot = document.createElement("div");
       dot.className = "cursor-dot";
       dot.setAttribute("aria-hidden", "true");
+      dot.style.left = "-100px";
+      dot.style.top = "-100px";
+      dot.style.opacity = "0";
       document.body.appendChild(dot);
       document.documentElement.classList.add("cursor-on");
       var visible = false;

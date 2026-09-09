@@ -970,6 +970,11 @@ h1:hover .i-tittle {
   border-radius: 16px;
 }
 
+.gallery img,
+.hero-photo img {
+  background: var(--card);
+}
+
 .gallery img {
   display: block;
   width: 100%;
@@ -1487,10 +1492,6 @@ footer {
     z-index: 9998;
     opacity: 0;
     transition: opacity 0.18s ease, left 0.13s cubic-bezier(0.22, 0.61, 0.36, 1), top 0.13s cubic-bezier(0.22, 0.61, 0.36, 1), width 0.16s cubic-bezier(0.22, 0.61, 0.36, 1), height 0.16s cubic-bezier(0.22, 0.61, 0.36, 1), border-radius 0.16s cubic-bezier(0.22, 0.61, 0.36, 1), border-color 0.15s ease, background-color 0.15s ease, transform 0.12s ease;
-  }
-
-  html.cursor-on .cursor-dot {
-    opacity: 1;
   }
 
   .cursor-dot.is-target {
