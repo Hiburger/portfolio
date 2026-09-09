@@ -1085,6 +1085,15 @@ h1:hover .i-tittle {
   padding-bottom: 0.6rem;
 }
 
+.links a {
+  color: inherit;
+  transition: color 0.15s ease;
+}
+
+.links a:hover {
+  color: var(--accent);
+}
+
 .links .tag {
   display: inline-flex;
   align-items: center;
