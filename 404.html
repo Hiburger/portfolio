@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="robots" content="noindex">
+    <title>404 — Gabriel Paesano</title>
+    <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="/favicon.jpg?v=2" type="image/jpeg">
+    <link rel="stylesheet" href="/style.css?v=16.81">
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t === "dark" || t === "light") document.documentElement.dataset.theme = t;
+          var s = document.documentElement.style;
+          var al = localStorage.getItem("accent-light");
+          var ad = localStorage.getItem("accent-dark");
+          if (al) s.setProperty("--accent-user", al);
+          if (ad) s.setProperty("--accent-user-dark", ad);
+          var ol = localStorage.getItem("on-accent-light");
+          var od = localStorage.getItem("on-accent-dark");
+          if (ol) s.setProperty("--on-accent-user", ol);
+          if (od) s.setProperty("--on-accent-user-dark", od);
+        } catch (e) {}
+      })();
+    </script>
+    <style>
+      .nf {
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 4rem 1.5rem;
+        gap: 1rem;
+      }
+      .nf code {
+        font-family: var(--mono);
+        font-size: clamp(4rem, 16vw, 9rem);
+        line-height: 1;
+        font-weight: 700;
+        color: var(--accent);
+        letter-spacing: 0.04em;
+      }
+      .nf h1 {
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+      .nf p {
+        color: var(--muted);
+        max-width: 34rem;
+      }
+      .nf-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.7rem;
+        margin-top: 1.2rem;
+      }
+      .nf-links a {
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 999px;
+        padding: 0.55rem 1.4rem;
+        background: var(--accent);
+        color: var(--on-accent);
+      }
+      .nf-links a.ghost {
+        background: var(--card);
+        color: var(--accent);
+        border: 1px solid var(--line);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="nf">
+      <code>404</code>
+      <h1>This page hopped away</h1>
+      <p>The link is broken or the page never existed. The rest of the site is right where you left it:</p>
+      <div class="nf-links">
+        <a href="/en/">Home (EN)</a>
+        <a class="ghost" href="/fr/">Accueil (FR)</a>
+        <a class="ghost" href="/it/">Home (IT)</a>
+      </div>
+    </main>
+  </body>
+</html>
