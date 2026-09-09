@@ -1289,6 +1289,21 @@ h1:hover .i-tittle {
   filter: brightness(0.9);
 }
 
+.repaint.ghost {
+  color: var(--accent);
+  background: transparent;
+}
+
+.repaint.ghost:hover {
+  background: var(--card);
+}
+
+@media (pointer: coarse) {
+  .repaint.ghost {
+    display: none;
+  }
+}
+
 .hosted {
   display: block;
   margin-top: 3.5rem;

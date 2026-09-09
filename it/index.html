@@ -26,7 +26,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=16.89">
+  <link rel="stylesheet" href="../style.css?v=16.90">
   <script>
     (function () {
       try {
@@ -347,6 +347,7 @@
     <footer>
       <span>Sarò sempre qui per te, ma... e tu ?</span>
       <span>© 2048 Gabriel Paesano</span>
+      <button type="button" class="repaint ghost" id="cursor-mode" data-on-label="cursore di sistema" data-off-label="cursore custom">cursore di sistema</button>
       <button type="button" class="repaint" id="repaint">ridipingere</button>
     </footer>
   </div>
@@ -718,17 +719,49 @@
   <script>
     (function () {
       if (!window.matchMedia("(pointer: fine)").matches) return;
-      var dot = document.createElement("div");
-      dot.className = "cursor-dot";
-      dot.setAttribute("aria-hidden", "true");
-      dot.style.left = "-100px";
-      dot.style.top = "-100px";
-      dot.style.opacity = "0";
-      document.body.appendChild(dot);
-      document.documentElement.classList.add("cursor-on");
+      var dot = null;
       var visible = false;
       var hoverEl = null;
       var collapseTimer = null;
+      var mode = "custom";
+      try { mode = localStorage.getItem("cursor-mode") || "custom"; } catch (e) {}
+      function store(v) {
+        try { localStorage.setItem("cursor-mode", v); } catch (e) {}
+      }
+      function enable() {
+        if (dot) return;
+        dot = document.createElement("div");
+        dot.className = "cursor-dot";
+        dot.setAttribute("aria-hidden", "true");
+        dot.style.left = "-100px";
+        dot.style.top = "-100px";
+        dot.style.opacity = "0";
+        document.body.appendChild(dot);
+        document.documentElement.classList.add("cursor-on");
+        restorePos();
+      }
+      function disable() {
+        if (!dot) return;
+        clearCollapse();
+        dot.remove();
+        dot = null;
+        hoverEl = null;
+        visible = false;
+        document.documentElement.classList.remove("cursor-on");
+      }
+      function restorePos() {
+        var sx = null;
+        var sy = null;
+        try {
+          sx = sessionStorage.getItem("cursor-x");
+          sy = sessionStorage.getItem("cursor-y");
+        } catch (e) {}
+        if (sx !== null && sy !== null) {
+          lastX = parseInt(sx, 10);
+          lastY = parseInt(sy, 10);
+          place({ clientX: lastX, clientY: lastY, target: document.elementFromPoint(lastX, lastY) });
+        }
+      }
       function clearCollapse() {
         if (collapseTimer) {
           clearTimeout(collapseTimer);
@@ -755,6 +788,7 @@
         }
       }
       function place(e) {
+        if (!dot) return;
         var dlg = document.querySelector("dialog[open]");
         if (dlg) {
           clearCollapse();
@@ -803,36 +837,47 @@
       });
       var lastScroll = window.scrollY;
       (function watch() {
-        if (window.scrollY !== lastScroll) {
-          lastScroll = window.scrollY;
-          if (visible) {
-            place({ clientX: lastX, clientY: lastY, target: document.elementFromPoint(lastX, lastY) });
+        if (dot) {
+          if (window.scrollY !== lastScroll) {
+            lastScroll = window.scrollY;
+            if (visible) {
+              place({ clientX: lastX, clientY: lastY, target: document.elementFromPoint(lastX, lastY) });
+            }
+          } else if (visible && hoverEl && !collapseTimer) {
+            morph(hoverEl, null);
           }
-        } else if (visible && hoverEl && !collapseTimer) {
-          morph(hoverEl, null);
         }
         window.requestAnimationFrame(watch);
       })();
-      document.addEventListener("mousedown", function () { dot.classList.add("is-down"); });
-      document.addEventListener("mouseup", function () { dot.classList.remove("is-down"); });
+      document.addEventListener("mousedown", function () { if (dot) dot.classList.add("is-down"); });
+      document.addEventListener("mouseup", function () { if (dot) dot.classList.remove("is-down"); });
       document.documentElement.addEventListener("mouseleave", function () {
+        if (!dot) return;
         dot.style.opacity = "0";
         visible = false;
       });
       document.documentElement.addEventListener("mouseenter", function () {
+        if (!dot) return;
         dot.style.opacity = "1";
         visible = true;
       });
-      var sx = null;
-      var sy = null;
-      try {
-        sx = sessionStorage.getItem("cursor-x");
-        sy = sessionStorage.getItem("cursor-y");
-      } catch (e) {}
-      if (sx !== null && sy !== null) {
-        lastX = parseInt(sx, 10);
-        lastY = parseInt(sy, 10);
-        place({ clientX: lastX, clientY: lastY, target: document.elementFromPoint(lastX, lastY) });
+      if (mode !== "system") enable();
+      var btn = document.getElementById("cursor-mode");
+      function syncLabel() {
+        if (btn) btn.textContent = dot ? btn.dataset.onLabel : btn.dataset.offLabel;
+      }
+      if (btn) {
+        btn.addEventListener("click", function () {
+          if (dot) {
+            store("system");
+            disable();
+          } else {
+            store("custom");
+            enable();
+          }
+          syncLabel();
+        });
+        syncLabel();
       }
     })();
 
