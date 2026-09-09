@@ -25,7 +25,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=16.81">
+  <link rel="stylesheet" href="../style.css?v=16.82">
   <script>
     (function () {
       try {
@@ -128,6 +128,8 @@
           <span class="frame">
             <span class="halo" aria-hidden="true"></span>
             <img src="../favicon.jpg?v=2" alt="Portrait de Gabriel" width="640" height="640">
+            <span class="flash-veil" aria-hidden="true"></span>
+            <span class="flash" aria-hidden="true"></span>
           </span>
           <figcaption>Oui... c'est bien moi, il y a quelques mois. Et oui, la forêt est un fond vert. Quand je sors photographier, je vais généralement seul, donc personne pour me prendre en photo. Et puis je serais trop timide pour demander :(</figcaption>
         </figure>
@@ -664,6 +666,39 @@
     })();
   </script>
 
+  <script>
+    (function () {
+      var frame = document.querySelector(".hero-photo .frame");
+      if (!frame) return;
+      var flash = frame.querySelector(".flash");
+      var veil = frame.querySelector(".flash-veil");
+      var last = 0;
+      function pop() {
+        var now = Date.now();
+        if (now - last < 650) return;
+        last = now;
+        flash.animate(
+          [
+            { opacity: 0, transform: "translate(-50%, -50%) scale(0.2)" },
+            { opacity: 1, transform: "translate(-50%, -50%) scale(1)", offset: 0.18 },
+            { opacity: 0.9, transform: "translate(-50%, -50%) scale(1.08)", offset: 0.4 },
+            { opacity: 0, transform: "translate(-50%, -50%) scale(1.25)" }
+          ],
+          { duration: 520, easing: "cubic-bezier(0.2, 0.8, 0.2, 1)" }
+        );
+        veil.animate(
+          [
+            { opacity: 0 },
+            { opacity: 0.5, offset: 0.15 },
+            { opacity: 0 }
+          ],
+          { duration: 380, easing: "ease-out" }
+        );
+      }
+      frame.addEventListener("mouseenter", pop);
+      frame.addEventListener("pointerdown", pop);
+    })();
+  </script>
   <script>
     (function () {
       if (!window.matchMedia("(pointer: fine)").matches) return;
