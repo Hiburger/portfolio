@@ -26,7 +26,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=16.73">
+  <link rel="stylesheet" href="../style.css?v=16.75">
   <script>
     (function () {
       try {
@@ -705,10 +705,23 @@
           dot.classList.remove("is-target");
         }
       }
-      document.addEventListener("mousemove", place);
-      document.addEventListener("scroll", function () {
-        if (visible && dot.classList.contains("is-target")) dot.style.opacity = "0.0";
-      }, { passive: true });
+      var lastX = -100;
+      var lastY = -100;
+      document.addEventListener("mousemove", function (e) {
+        lastX = e.clientX;
+        lastY = e.clientY;
+        place(e);
+      });
+      var lastScroll = window.scrollY;
+      (function watch() {
+        if (window.scrollY !== lastScroll) {
+          lastScroll = window.scrollY;
+          if (visible) {
+            place({ clientX: lastX, clientY: lastY, target: document.elementFromPoint(lastX, lastY) });
+          }
+        }
+        window.requestAnimationFrame(watch);
+      })();
       document.addEventListener("mousedown", function () { dot.classList.add("is-down"); });
       document.addEventListener("mouseup", function () { dot.classList.remove("is-down"); });
       document.documentElement.addEventListener("mouseleave", function () {
