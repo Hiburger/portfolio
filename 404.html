@@ -54,14 +54,7 @@
         color: var(--muted);
         max-width: 34rem;
       }
-      .nf-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.7rem;
-        margin-top: 1.2rem;
-      }
-      .nf-links a {
+      .nf-home {
         display: inline-block;
         font-size: 1rem;
         font-weight: 500;
@@ -70,11 +63,7 @@
         padding: 0.55rem 1.4rem;
         background: var(--accent);
         color: var(--on-accent);
-      }
-      .nf-links a.ghost {
-        background: var(--card);
-        color: var(--accent);
-        border: 1px solid var(--line);
+        margin-top: 1.2rem;
       }
     </style>
   </head>
@@ -83,11 +72,21 @@
       <code>404</code>
       <h1>This page hopped away</h1>
       <p>The link is broken or the page never existed. The rest of the site is right where you left it:</p>
-      <div class="nf-links">
-        <a href="/en/">Home (EN)</a>
-        <a class="ghost" href="/fr/">Accueil (FR)</a>
-        <a class="ghost" href="/it/">Home (IT)</a>
-      </div>
+      <a class="nf-home" id="nf-home" href="/en/">Take me home</a>
+      <script>
+        (function () {
+          var nav = (navigator.language || "en").slice(0, 2).toLowerCase();
+          var map = {
+            fr: { href: "/fr/", label: "Ramène-moi à l'accueil" },
+            it: { href: "/it/", label: "Portami a casa" },
+            en: { href: "/en/", label: "Take me home" }
+          };
+          var pick = map[nav] || map.en;
+          var a = document.getElementById("nf-home");
+          a.href = pick.href;
+          a.textContent = pick.label;
+        })();
+      </script>
     </main>
   </body>
 </html>
