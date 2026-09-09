@@ -1412,37 +1412,43 @@ footer {
   }
 }
 
-/* --- custom cursors (desktop pointers only) --- */
+/* --- custom cursor (desktop pointers only) --- */
 @media (pointer: fine) {
-  :root {
-    --cursor-default: var(--cursor-default-user, url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18'><circle cx='9' cy='9' r='6.5' fill='%230f8a7d'/></svg>") 9 9, default);
-    --cursor-pointer: var(--cursor-pointer-user, url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><circle cx='12' cy='12' r='8' fill='none' stroke='%230f8a7d' stroke-width='2'/><circle cx='12' cy='12' r='3' fill='%230f8a7d'/></svg>") 12 12, default);
-    --cursor-click: var(--cursor-click-user, url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14'><circle cx='7' cy='7' r='5.5' fill='%230f8a7d'/></svg>") 7 7, default);
+  html.cursor-on,
+  html.cursor-on * {
+    cursor: none !important;
   }
 
-  :root[data-theme="dark"] {
-    --cursor-default: var(--cursor-default-dark, url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18'><circle cx='9' cy='9' r='6.5' fill='%2356d9cf'/></svg>") 9 9, default);
-    --cursor-pointer: var(--cursor-pointer-dark, url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><circle cx='12' cy='12' r='8' fill='none' stroke='%2356d9cf' stroke-width='2'/><circle cx='12' cy='12' r='3' fill='%2356d9cf'/></svg>") 12 12, default);
-    --cursor-click: var(--cursor-click-dark, url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14'><circle cx='7' cy='7' r='5' fill='%2356d9cf'/></svg>") 7 7, default);
+  html.cursor-on dialog,
+  html.cursor-on dialog * {
+    cursor: auto !important;
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --cursor-default: var(--cursor-default-dark, url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18'><circle cx='9' cy='9' r='6.5' fill='%2356d9cf'/></svg>") 9 9, default);
-      --cursor-pointer: var(--cursor-pointer-dark, url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><circle cx='12' cy='12' r='8' fill='none' stroke='%2356d9cf' stroke-width='2'/><circle cx='12' cy='12' r='3' fill='%2356d9cf'/></svg>") 12 12, default);
-      --cursor-click: var(--cursor-click-dark, url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14'><circle cx='7' cy='7' r='5' fill='%2356d9cf'/></svg>") 7 7, default);
-    }
+  .cursor-dot {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background: var(--accent);
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0;
+    transition: opacity 0.18s ease, left 0.16s ease-out, top 0.16s ease-out, width 0.26s var(--spring-soft), height 0.26s var(--spring-soft), border-radius 0.26s var(--spring-soft), border-color 0.2s ease, background-color 0.2s ease, transform 0.12s ease;
   }
 
-  html, body {
-    cursor: var(--cursor-default);
+  html.cursor-on .cursor-dot {
+    opacity: 1;
   }
 
-  a, button, input, label {
-    cursor: var(--cursor-pointer);
+  .cursor-dot.is-target {
+    background: transparent;
+    border-color: var(--accent);
   }
 
-  a:active, button:active, input:active {
-    cursor: var(--cursor-click);
+  .cursor-dot.is-down {
+    transform: scale(0.85);
   }
 }

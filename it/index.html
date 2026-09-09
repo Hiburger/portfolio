@@ -26,7 +26,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=16.72">
+  <link rel="stylesheet" href="../style.css?v=16.73">
   <script>
     (function () {
       try {
@@ -41,22 +41,7 @@
         var od = localStorage.getItem("on-accent-dark");
         if (ol) s.setProperty("--on-accent-user", ol);
         if (od) s.setProperty("--on-accent-user-dark", od);
-        function cursorDot(hex, kind) {
-          var c = hex.replace("#", "%23");
-          if (kind === "pointer") return "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><circle cx='12' cy='12' r='8' fill='none' stroke='" + c + "' stroke-width='2'/><circle cx='12' cy='12' r='3' fill='" + c + "'/></svg>\") 12 12, default";
-          if (kind === "click") return "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14'><circle cx='7' cy='7' r='5' fill='" + c + "'/></svg>\") 7 7, default";
-          return "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18'><circle cx='9' cy='9' r='6.5' fill='" + c + "'/></svg>\") 9 9, default";
-        }
-        if (al) {
-          s.setProperty("--cursor-default-user", cursorDot(al, "default"));
-          s.setProperty("--cursor-pointer-user", cursorDot(al, "pointer"));
-          s.setProperty("--cursor-click-user", cursorDot(al, "click"));
-        }
-        if (ad) {
-          s.setProperty("--cursor-default-dark", cursorDot(ad, "default"));
-          s.setProperty("--cursor-pointer-dark", cursorDot(ad, "pointer"));
-          s.setProperty("--cursor-click-dark", cursorDot(ad, "click"));
-        }
+
       } catch (e) {}
     })();
   </script>
@@ -524,12 +509,7 @@
         store("accent-dark", dark);
         store("on-accent-light", inkFor(light));
         store("on-accent-dark", inkFor(dark));
-        root.style.setProperty("--cursor-default-user", cursorDot(light, "default"));
-        root.style.setProperty("--cursor-pointer-user", cursorDot(light, "pointer"));
-        root.style.setProperty("--cursor-click-user", cursorDot(light, "click"));
-        root.style.setProperty("--cursor-default-dark", cursorDot(dark, "default"));
-        root.style.setProperty("--cursor-pointer-dark", cursorDot(dark, "pointer"));
-        root.style.setProperty("--cursor-click-dark", cursorDot(dark, "click"));
+
       }
       dlg.querySelectorAll(".swatch").forEach(function (b) {
         b.addEventListener("click", function (e) {
@@ -684,6 +664,63 @@
       });
       document.addEventListener("keydown", function (e) {
         if (e.key === "Escape") setOpen(false);
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      if (!window.matchMedia("(pointer: fine)").matches) return;
+      var dot = document.createElement("div");
+      dot.className = "cursor-dot";
+      dot.setAttribute("aria-hidden", "true");
+      document.body.appendChild(dot);
+      document.documentElement.classList.add("cursor-on");
+      var visible = false;
+      function place(e) {
+        var dlg = document.querySelector("dialog[open]");
+        if (dlg) {
+          dot.style.opacity = "0";
+          visible = false;
+          return;
+        }
+        if (!visible) {
+          dot.style.opacity = "1";
+          visible = true;
+        }
+        var el = e.target && e.target.closest ? e.target.closest("a, button, input, label, [role='button']") : null;
+        if (el && el.closest(".gallery")) el = null;
+        if (el && getComputedStyle(el).display !== "inline") {
+          var r = el.getBoundingClientRect();
+          dot.style.left = r.left + "px";
+          dot.style.top = r.top + "px";
+          dot.style.width = r.width + "px";
+          dot.style.height = r.height + "px";
+          var br = getComputedStyle(el).borderTopLeftRadius;
+          dot.style.borderRadius = br === "0px" ? "6px" : br;
+          dot.classList.add("is-target");
+        } else {
+          dot.style.left = (e.clientX - 11) + "px";
+          dot.style.top = (e.clientY - 11) + "px";
+          dot.style.width = "22px";
+          dot.style.height = "22px";
+          dot.style.borderRadius = "50%";
+          dot.classList.remove("is-target");
+        }
+      }
+      document.addEventListener("mousemove", place);
+      document.addEventListener("scroll", function () {
+        if (visible && dot.classList.contains("is-target")) dot.style.opacity = "0.0";
+      }, { passive: true });
+      document.addEventListener("mousedown", function () { dot.classList.add("is-down"); });
+      document.addEventListener("mouseup", function () { dot.classList.remove("is-down"); });
+      document.documentElement.addEventListener("mouseleave", function () {
+        dot.style.opacity = "0";
+        visible = false;
+      });
+      document.documentElement.addEventListener("mouseenter", function () {
+        dot.style.opacity = "1";
+        visible = true;
       });
     })();
   </script>
