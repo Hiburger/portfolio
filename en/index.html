@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=17.08">
+  <link rel="stylesheet" href="../style.css?v=17.09">
   <link rel="alternate" type="text/markdown" href="index.md">
   <script>
     (function () {
@@ -827,7 +827,7 @@
       }
       function close() {
         if (current) {
-          current.hidden = false;
+          current.style.visibility = "";
           current.setAttribute("aria-expanded", "false");
           current = null;
         }
@@ -846,7 +846,7 @@
         var p = document.createElement("p");
         p.textContent = textOf(li);
         panel.appendChild(p);
-        li.hidden = true;
+        li.style.visibility = "hidden";
         panel.hidden = false;
         current = li;
       }
