@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=17.07">
+  <link rel="stylesheet" href="../style.css?v=17.08">
   <link rel="alternate" type="text/markdown" href="index.md">
   <script>
     (function () {
@@ -403,11 +403,14 @@
             <h2 class="label">~/home/gabrielp/opinions/</h2>
             <p>Worthless personal opinions nobody asked for, about a few topics: Science, Technology, Society.</p>
             <p>You will only find placeholders for now. This section will get richer over time as I write down some of my thoughts.</p>
-            <ul class="opinions">
+                        <div class="opinions-grid" data-close-label="Close">
+<ul class="opinions">
               <li><span class="year">?.????</span>Placeholder: a dated opinion about tech, science or society goes here. Short and unfiltered.</li>
               <li><span class="year">?.????</span>Placeholder: another one. Treat this list as a public notebook of how your thinking evolves.</li>
               <li><span class="year">?.????</span>Placeholder: one more. Worthless today, backlog tomorrow.</li>
             </ul>
+              <div class="opinion-panel" role="button" tabindex="0" hidden></div>
+            </div>
           </div>
         </div>
       </section>
@@ -807,23 +810,56 @@
   </script>
 
 
+
   <script>
     (function () {
-      var items = document.querySelectorAll(".opinions li");
-      function setOpen(li, open) {
-        li.classList.toggle("is-open", open);
-        li.setAttribute("aria-expanded", open ? "true" : "false");
+      var grid = document.querySelector(".opinions-grid");
+      if (!grid) return;
+      var panel = grid.querySelector(".opinion-panel");
+      var items = grid.querySelectorAll(".opinions li");
+      var current = null;
+      panel.setAttribute("aria-label", grid.dataset.closeLabel || "Close");
+      function textOf(li) {
+        var clone = li.cloneNode(true);
+        var y = clone.querySelector(".year");
+        if (y) y.remove();
+        return clone.textContent.trim().replace(/\s+/g, " ");
+      }
+      function close() {
+        if (current) {
+          current.hidden = false;
+          current.setAttribute("aria-expanded", "false");
+          current = null;
+        }
+        panel.hidden = true;
+        panel.innerHTML = "";
+      }
+      function open(li) {
+        var year = li.querySelector(".year");
+        panel.innerHTML = "";
+        if (year) {
+          var t = document.createElement("p");
+          t.className = "year";
+          t.textContent = year.textContent.trim();
+          panel.appendChild(t);
+        }
+        var p = document.createElement("p");
+        p.textContent = textOf(li);
+        panel.appendChild(p);
+        li.hidden = true;
+        panel.hidden = false;
+        current = li;
       }
       items.forEach(function (li) {
         li.setAttribute("tabindex", "0");
         li.setAttribute("role", "button");
         li.setAttribute("aria-expanded", "false");
         function toggle() {
-          var open = !li.classList.contains("is-open");
-          items.forEach(function (o) {
-            if (o !== li) setOpen(o, false);
-          });
-          setOpen(li, open);
+          if (current === li) close();
+          else {
+            close();
+            open(li);
+          }
         }
         li.addEventListener("click", toggle);
         li.addEventListener("keydown", function (e) {
@@ -832,6 +868,14 @@
             toggle();
           }
         });
+      });
+      function panelClose() { close(); }
+      panel.addEventListener("click", panelClose);
+      panel.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " " || e.key === "Escape") {
+          e.preventDefault();
+          close();
+        }
       });
     })();
   </script>
