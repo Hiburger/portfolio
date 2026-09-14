@@ -26,7 +26,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=17.10">
+  <link rel="stylesheet" href="../style.css?v=17.11">
   <link rel="alternate" type="text/markdown" href="index.md">
   <script>
     (function () {
@@ -412,13 +412,14 @@
             <h2 class="label">~/home/gabrielp/opinions/</h2>
             <p>Des opinions personnelles sans valeur que personne ne demande, sur quelques sujets : science, technologie, société.</p>
             <p>Pour l'instant tu n'y trouveras que des placeholders. Cette section se remplira au fil du temps, à mesure que j'écris mes pensées.</p>
-                        <div class="opinions-grid" data-close-label="Fermer">
-<ul class="opinions">
+                                  <div class="opinions-grid" data-close-label="Fermer">
+            <ul class="opinions">
               <li><span class="year">?.????</span>Placeholder : une opinion datée sur la tech, la science ou la société. Court et sans filtre.</li>
               <li><span class="year">?.????</span>Placeholder : encore une. Vois cette liste comme un carnet public de l'évolution de ta pensée.</li>
               <li><span class="year">?.????</span>Placeholder : une dernière. Sans valeur aujourd'hui, backlog demain.</li>
             </ul>
-              <div class="opinion-panel" role="button" tabindex="0" hidden></div>
+            <div class="opinion-panel" role="button" tabindex="0" hidden></div>
+          </div>
             </div>
           </div>
         </div>
@@ -841,6 +842,7 @@
           current = null;
         }
         panel.hidden = true;
+        panel.style.marginTop = "";
         panel.innerHTML = "";
       }
       function open(li) {
@@ -856,6 +858,10 @@
         p.textContent = textOf(li);
         panel.appendChild(p);
         li.style.visibility = "hidden";
+        if (window.matchMedia("(min-width: 1100px)").matches) {
+          var list = li.closest("ul");
+          panel.style.marginTop = Math.max(0, li.getBoundingClientRect().top - list.getBoundingClientRect().top) + "px";
+        }
         panel.hidden = false;
         current = li;
       }
