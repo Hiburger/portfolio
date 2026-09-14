@@ -1119,6 +1119,68 @@ h1:hover .i-tittle {
   height: 19px;
 }
 
+.fuq {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 1.8rem;
+  max-width: 40rem;
+}
+
+.fuq details {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0.9rem 1.2rem;
+  transition: border-color 0.2s ease;
+}
+
+.fuq details[open] {
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+}
+
+.fuq summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+
+.fuq summary::-webkit-details-marker {
+  display: none;
+}
+
+.fuq summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.fuq summary::before {
+  content: "+";
+  font-family: var(--mono);
+  font-weight: 400;
+  color: var(--accent);
+  width: 1.1rem;
+  flex-shrink: 0;
+  text-align: center;
+  transition: transform 0.3s var(--spring);
+}
+
+.fuq details[open] summary::before {
+  transform: rotate(45deg);
+}
+
+.fuq details p {
+  margin-top: 0.65rem;
+  padding-left: calc(1.1rem + 0.75rem);
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
 .colour-modal {
   margin: auto;
   background: var(--card);

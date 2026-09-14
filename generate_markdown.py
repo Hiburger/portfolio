@@ -33,8 +33,8 @@ SKIP_TAGS = {"script", "style", "noscript", "template", "svg", "button",
              "dialog", "form", "input", "label", "select", "option",
              "textarea", "nav", "footer", "iframe", "head", "title", "meta", "link"}
 SKIP_CLASSES = {"skip", "theme-switch", "flag-wrap", "panel-backdrop"}
-BLOCK_TAGS = {"p", "h1", "h2", "h3", "h4", "h5", "h6", "ul", "ol", "figcaption", "hr", "li", "blockquote", "pre"}
-CONTAINER_TAGS = {"div", "section", "aside", "main", "article", "header", "figure"}
+BLOCK_TAGS = {"p", "h1", "h2", "h3", "h4", "h5", "h6", "ul", "ol", "figcaption", "hr", "li", "blockquote", "pre", "summary"}
+CONTAINER_TAGS = {"div", "section", "aside", "main", "article", "header", "figure", "details"}
 
 ROOT_HTACCESS = MARKER + """
 AddType 'text/markdown; charset=utf-8' .md
@@ -224,6 +224,8 @@ def block(node, base):
         return []
     if tag == "figcaption":
         return [f"*{text}*"]
+    if tag == "summary":
+        return [f"**{text}**"]
     return [text]
 
 
