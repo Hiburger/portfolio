@@ -183,9 +183,9 @@ I plan ahead. Also, I heard copyright expires.
 
 Do I have any valid reasons to say no? The contact section is just above.
 
-**Are you available to photograph my cat?**
+**Will you be my photographer?**
 
-Yes, and for free, since I don't photograph for money. Who even does photography for money ? But heads-up: I work or I'm at school all week, so we'd have to talk first. And if getting to you involves trains or such, I might ask you to help with the costs. I think that's a fair thing to ask.
+Well i'm not a pro but... Yes, and for free, since I don't photograph for money. Who even does photography for money ? But heads-up: I work or I'm at school all week, so we'd have to talk first. And if getting to you involves trains or such, I might ask you to help with the costs. I think that's a fair thing to ask.
 
 ## ~/home/gabrielp/opinions/
 

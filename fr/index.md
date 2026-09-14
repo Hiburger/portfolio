@@ -183,9 +183,9 @@ Je vois loin. Et puis, j'ai entendu dire que le copyright expire.
 
 J'ai de bonnes raisons de dire non ? La section contact est juste au-dessus.
 
-**Tu es dispo pour photographier mon chat ?**
+**Tu seras mon photographe ?**
 
-Oui, et gratuitement, puisque je ne photographie pas pour l'argent. Qui fait de la photo pour l'argent, d'ailleurs ? Mais attention : je travaille ou je suis à l'école toute la semaine, donc il faudrait d'abord en discuter. Et si pour venir jusqu'à toi il faut prendre le train ou autre, je risque de te demander de participer aux frais. Je trouve que c'est une demande légitime.
+Bon, je ne suis pas un pro, mais... Oui, et gratuitement, puisque je ne photographie pas pour l'argent. Qui fait de la photo pour l'argent, d'ailleurs ? Mais attention : je travaille ou je suis à l'école toute la semaine, donc il faudrait d'abord en discuter. Et si pour venir jusqu'à toi il faut prendre le train ou autre, je risque de te demander de participer aux frais. Je trouve que c'est une demande légitime.
 
 ## ~/home/gabrielp/opinions/
 

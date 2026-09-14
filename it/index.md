@@ -183,9 +183,9 @@ Vedo lontano. E poi ho sentito dire che il copyright scade.
 
 Ho qualche buona ragione per dire di no? La sezione contatti è proprio lì sopra.
 
-**Sei disponibile a fotografare il mio gatto?**
+**Sarai il mio fotografo?**
 
-Sì, e gratis, visto che non fotografo per soldi. Chi fa fotografia per soldi, mai? Ma occhio: o lavoro o sto a scuola tutta la settimana, quindi bisognerebbe parlarne prima. E se per arrivare da te servono treni o cose del genere, potrei chiederti di contribuire alle spese. Mi sembra una richiesta giusta.
+Beh, non sono un pro, ma... Sì, e gratis, visto che non fotografo per soldi. Chi fa fotografia per soldi, mai? Ma occhio: o lavoro o sto a scuola tutta la settimana, quindi bisognerebbe parlarne prima. E se per arrivare da te servono treni o cose del genere, potrei chiederti di contribuire alle spese. Mi sembra una richiesta giusta.
 
 ## ~/home/gabrielp/opinions/
 
