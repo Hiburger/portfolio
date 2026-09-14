@@ -1438,13 +1438,16 @@ h1:hover .i-tittle {
 }
 
 footer {
-  border-top: 1px solid var(--line-strong);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
   margin-top: 1.2rem;
-  padding: 2rem 0 3rem;
+  padding: 1.8rem 2rem;
   font-family: var(--mono);
   font-size: 0.72rem;
   color: var(--muted);
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.6rem;
