@@ -1123,7 +1123,14 @@ h1:hover .i-tittle {
   display: grid;
   gap: 0.7rem;
   margin-top: 1.8rem;
-  max-width: 40rem;
+  margin-inline: auto;
+  max-width: 52rem;
+}
+
+#fuq .label,
+#fuq > p {
+  text-align: center;
+  margin-inline: auto;
 }
 
 .fuq details {
