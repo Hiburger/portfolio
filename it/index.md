@@ -134,7 +134,7 @@ Sono timido, ma non mordo. Vieni a salutarmi ! E menziona gentilmente che vieni 
 
 ## ~/home/gabrielp/fuq/
 
-Nessuno l'ha mai chiesto. Prego.
+Frequently Unasked Questions (FUQ)
 
 **Cosa significa « Olynthe »?**
 

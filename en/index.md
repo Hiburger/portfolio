@@ -134,7 +134,7 @@ I'm shy, but I don't bite. Please come say hi! And kindly mention you came from 
 
 ## ~/home/gabrielp/fuq/
 
-Nobody asked. You're welcome.
+Frequently Unasked Questions (FUQ)
 
 **What does "Olynthe" mean?**
 

@@ -134,13 +134,13 @@ Je suis timide, mais je ne mords pas. Viens me dire bonjour ! Et mentionne genti
 
 ## ~/home/gabrielp/fuq/
 
-Personne n'a rien demandé. De rien.
+Frequently Unasked Questions (FUQ)
 
 **Que signifie « Olynthe » ?**
 
 « Olynthe », c'est le nom français d'Olynthus, une cité de la Grèce antique, un nom généralement compris comme « figue sauvage » ou « fruit de la figue sauvage ». Olynthus fut aussi le point de ralliement de cités indépendantes réunies en une seule ligue. Une jolie métaphore de l'open source : des contributeurs et des projets séparés, une seule communauté, des objectifs communs. Et puis : ça sonnait bien, et c'était joli comme nom de domaine :)
 
-**Ton homelab est-il vraiment aussi bordélique ?**
+**Ton homelab est-il vraiment aussi en désordre ?**
 
 Oui. Côté logiciel et côté matériel. Mais ça fonctionne. C'est tout ce qui compte. Pas d'autres questions sur ce sujet, s'il te plaît.
 
