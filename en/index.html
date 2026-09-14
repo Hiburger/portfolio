@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=17.05">
+  <link rel="stylesheet" href="../style.css?v=17.06">
   <link rel="alternate" type="text/markdown" href="index.md">
   <script>
     (function () {
@@ -805,22 +805,54 @@
       });
     })();
   </script>
+
   <script>
     (function () {
-      document.querySelectorAll(".opinions li").forEach(function (li) {
+      var list = document.querySelector(".opinions");
+      if (!list) return;
+      var reader = document.createElement("div");
+      reader.className = "opinion-reader";
+      reader.hidden = true;
+      list.after(reader);
+      function textOf(li) {
+        var clone = li.cloneNode(true);
+        var y = clone.querySelector(".year");
+        if (y) y.remove();
+        return clone.textContent.trim().replace(/\s+/g, " ");
+      }
+      function close() {
+        if (current) current.setAttribute("aria-expanded", "false");
+        current = null;
+        reader.hidden = true;
+        reader.innerHTML = "";
+      }
+      function open(li) {
+        var year = li.querySelector(".year");
+        reader.innerHTML = "";
+        if (year) {
+          var t = document.createElement("p");
+          t.className = "year";
+          t.textContent = year.textContent.trim();
+          reader.appendChild(t);
+        }
+        var p = document.createElement("p");
+        p.textContent = textOf(li);
+        reader.appendChild(p);
+        reader.hidden = false;
+        li.setAttribute("aria-expanded", "true");
+        current = li;
+      }
+      var current = null;
+      list.querySelectorAll("li").forEach(function (li) {
         li.setAttribute("tabindex", "0");
         li.setAttribute("role", "button");
         li.setAttribute("aria-expanded", "false");
-        function setOpen(open) {
-          li.classList.toggle("is-open", open);
-          li.setAttribute("aria-expanded", open ? "true" : "false");
-        }
         function toggle() {
-          var open = !li.classList.contains("is-open");
-          document.querySelectorAll(".opinions li.is-open").forEach(function (o) {
-            if (o !== li) setOpen(false);
-          });
-          setOpen(open);
+          if (current === li) close();
+          else {
+            if (current) current.setAttribute("aria-expanded", "false");
+            open(li);
+          }
         }
         li.addEventListener("click", toggle);
         li.addEventListener("keydown", function (e) {
