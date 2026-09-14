@@ -138,19 +138,19 @@ Nobody asked. You're welcome.
 
 **What does "Olynthe" mean?**
 
-"Olynthe" is the French name for Olynthus, an ancient Greek city — commonly understood to mean "wild fig" or "wild fig fruit". Olynthus was also where independent cities came together as one league, which makes it a fitting metaphor for open source: separate contributors and projects, one community, shared goals. Also: it sounded cool and looked nice as a domain :)
+"Olynthe" is the French name for Olynthus, an ancient Greek city, commonly understood to mean "wild fig" or "wild fig fruit". Olynthus was also where independent cities came together as one league, which makes it a fitting metaphor for open source: separate contributors and projects, one community, shared goals. Also: it sounded cool and looked nice as a domain :)
 
 **Is your homelab actually that messy?**
 
-Yes. Software-wise and hardware-wise. But it works — that's the whole point. No further questions on this topic, please.
+Yes. Software-wise and hardware-wise. But it works. That's the whole point. No further questions on this topic, please.
 
 **What camera should I buy to shoot like you?**
 
-May I suggest a Nikon Z6III? If you really want that exact same vibe, look for a Nikon DSLR like mine or a bit newer (D7100 / D7200) — though I don't recommend that in 2026, even if it's clearly still usable.
+May I suggest a Nikon Z6III? If you really want that exact same vibe, look for a Nikon DSLR like mine or a bit newer (D7100 / D7200), though I don't recommend that in 2026, even if it's clearly still usable.
 
 **Can I use your photos?**
 
-Of course. All of my photos are licensed under GP1, a license I made myself ([gp1.olynthe.org](https://gp1.olynthe.org/)) — you can use it too if you want.
+Of course. All of my photos are licensed under GP1, a license I made myself ([gp1.olynthe.org](https://gp1.olynthe.org/)), so you can use it too if you want.
 
 **Do you ever sleep?**
 
@@ -166,7 +166,7 @@ I overthink.
 
 **Did an AI write this site?**
 
-No — if you mean the content. Yes — if you mean most of this site's HTML and CSS.
+No, if you mean the content. Yes, if you mean most of this site's HTML and CSS.
 
 **Why does your tab say "come back :(" when I leave?**
 
@@ -182,7 +182,7 @@ Do I have any valid reasons to say no?
 
 **Are you available to photograph my cat?**
 
-Yes — and for free, since I don't photograph for money. Who even does that? But heads-up: I work or I'm at school all week, so we'd have to talk first. And if getting to you involves trains or such, I might ask you to help with the costs.
+Yes, and for free, since I don't photograph for money. Who even does that? But heads-up: I work or I'm at school all week, so we'd have to talk first. And if getting to you involves trains or such, I might ask you to help with the costs.
 
 Did you know? This website & the olynthe domain are hosted by [Infomaniak](https://www.infomaniak.com/en/about): ecologically hosted in Switzerland // B Corp™ // carbon compensated 200%
 

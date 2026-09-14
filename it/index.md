@@ -138,19 +138,19 @@ Nessuno l'ha mai chiesto. Prego.
 
 **Cosa significa « Olynthe »?**
 
-« Olynthe » è il nome francese di Olynthus, un'antica città greca — un nome generalmente inteso come « fico selvatico » o « frutto del fico selvatico ». Olynthus fu anche il punto di incontro di città indipendenti riunite in una sola lega: una bella metafora dell'open source — contributori e progetti separati, un'unica comunità, obiettivi condivisi. E poi: suonava bene ed era un bel nome da dominio :)
+« Olynthe » è il nome francese di Olynthus, un'antica città greca, un nome generalmente inteso come « fico selvatico » o « frutto del fico selvatico ». Olynthus fu anche il punto di incontro di città indipendenti riunite in una sola lega. Una bella metafora dell'open source: contributori e progetti separati, un'unica comunità, obiettivi condivisi. E poi: suonava bene ed era un bel nome da dominio :)
 
 **Il tuo homelab è davvero così incasinato?**
 
-Sì. Software e hardware. Ma funziona — è questo che conta. Nessun'altra domanda sull'argomento, per favore.
+Sì. Software e hardware. Ma funziona. È questo che conta. Nessun'altra domanda sull'argomento, per favore.
 
 **Quale fotocamera dovrei comprare per fotografare come te?**
 
-Posso suggerirti un Nikon Z6III? Se vuoi proprio lo stesso feel, cerca un reflex Nikon come il mio o leggermente più recente (D7100 / D7200) — anche se nel 2026 non lo consiglio, resta chiaramente ancora utilizzabile.
+Posso suggerirti un Nikon Z6III? Se vuoi proprio lo stesso feel, cerca un reflex Nikon come il mio o leggermente più recente (D7100 / D7200), anche se nel 2026 non lo consiglio, resta chiaramente ancora utilizzabile.
 
 **Posso usare le tue foto?**
 
-Certo. Tutte le mie foto sono sotto licenza GP1, una licenza che ho creato io stesso ([gp1.olynthe.org](https://gp1.olynthe.org/)) — puoi usarla anche tu, se vuoi.
+Certo. Tutte le mie foto sono sotto licenza GP1, una licenza che ho creato io stesso ([gp1.olynthe.org](https://gp1.olynthe.org/)), quindi puoi usarla anche tu, se vuoi.
 
 **Dormi, almeno?**
 
@@ -166,7 +166,7 @@ Penso troppo.
 
 **Questo sito l'ha scritto un'IA?**
 
-No — per il contenuto. Sì — per la maggior parte dell'HTML e del CSS del sito.
+No, per il contenuto. Sì, per la maggior parte dell'HTML e del CSS del sito.
 
 **Perché la tab dice « come back :( » quando me ne vado?**
 
@@ -182,7 +182,7 @@ Ho delle ragioni valide per dire di no?
 
 **Sei disponibile a fotografare il mio gatto?**
 
-Sì — e gratis, visto che non fotografo per soldi. Chi lo fa, d'altronde? Ma occhio: o lavoro o sto a scuola tutta la settimana, quindi bisognerebbe parlarne prima. E se per arrivare da te servono treni o simili, potrei chiederti di contribuire alle spese.
+Sì, e gratis, visto che non fotografo per soldi. Chi lo fa, d'altronde? Ma occhio: o lavoro o sto a scuola tutta la settimana, quindi bisognerebbe parlarne prima. E se per arrivare da te servono treni o simili, potrei chiederti di contribuire alle spese.
 
 Lo sapevi ? Questo sito & il dominio olynthe sono ospitati da [Infomaniak](https://www.infomaniak.com/it/about): ospitati ecologicamente in Svizzera // B Corp™ // carbonio compensato al 200%
 
