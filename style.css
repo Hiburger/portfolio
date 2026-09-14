@@ -1157,16 +1157,16 @@ h1:hover .i-tittle {
   margin-top: 1.8rem;
 }
 
+.fuq-col {
+  display: grid;
+  gap: 0.7rem;
+  align-content: start;
+}
+
 @media (min-width: 1100px) {
   .fuq {
-    display: block;
-    columns: 2;
-    column-gap: 1rem;
-  }
-
-  .fuq details {
-    break-inside: avoid;
-    margin-bottom: 0.7rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
   }
 }
 
