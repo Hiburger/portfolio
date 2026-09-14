@@ -191,11 +191,7 @@ Sì, e gratis, visto che non fotografo per soldi. Chi fa fotografia per soldi, m
 
 Opinioni personali senza valore che nessuno ha chiesto, su alcuni temi: scienza, tecnologia, società.
 
-Per ora trovi solo dei placeholder. La sezione si arricchirà col tempo, man mano che metto nero su bianco i miei pensieri.
-
-- **?.????:** Placeholder: un'opinione datata su tech, scienza o società. Breve e senza filtri.
-- **?.????:** Placeholder: un'altra. Vedi questa lista come un quaderno pubblico di come evolve il tuo pensiero.
-- **?.????:** Placeholder: un altro ancora. Senza valore oggi, backlog domani.
+Aggiungere questa sezione si sta rivelando più difficile di quanto pensassi, quindi mi ci vorrà un po' di tempo per costruirla. Arriverà :)
 
 Lo sapevi ? Questo sito & il dominio olynthe sono ospitati da [Infomaniak](https://www.infomaniak.com/it/about): ospitati ecologicamente in Svizzera // B Corp™ // carbonio compensato al 200%
 

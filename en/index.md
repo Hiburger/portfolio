@@ -191,11 +191,7 @@ Yes, and for free, since I don't photograph for money. Who even does photography
 
 Worthless personal opinions nobody asked for, about a few topics: Science, Technology, Society.
 
-You will only find placeholders for now. This section will get richer over time as I write down some of my thoughts.
-
-- **?.????:** Placeholder: a dated opinion about tech, science or society goes here. Short and unfiltered.
-- **?.????:** Placeholder: another one. Treat this list as a public notebook of how your thinking evolves.
-- **?.????:** Placeholder: one more. Worthless today, backlog tomorrow.
+Adding this section turns out to be harder than I thought, so it's gonna take some time to build. Stay tuned :)
 
 Did you know? This website & the olynthe domain are hosted by [Infomaniak](https://www.infomaniak.com/en/about): ecologically hosted in Switzerland // B Corp™ // carbon compensated 200%
 

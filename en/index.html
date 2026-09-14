@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=17.11">
+  <link rel="stylesheet" href="../style.css?v=17.12">
   <link rel="alternate" type="text/markdown" href="index.md">
   <script>
     (function () {
@@ -408,14 +408,8 @@
           <div>
             <h2 class="label">~/home/gabrielp/opinions/</h2>
             <p>Worthless personal opinions nobody asked for, about a few topics: Science, Technology, Society.</p>
-            <p>You will only find placeholders for now. This section will get richer over time as I write down some of my thoughts.</p>
-                                  <div class="opinions-grid" data-close-label="Close">
-            <ul class="opinions">
-              <li><span class="year">?.????</span>Placeholder: a dated opinion about tech, science or society goes here. Short and unfiltered.</li>
-              <li><span class="year">?.????</span>Placeholder: another one. Treat this list as a public notebook of how your thinking evolves.</li>
-              <li><span class="year">?.????</span>Placeholder: one more. Worthless today, backlog tomorrow.</li>
-            </ul>
-            <div class="opinion-panel" role="button" tabindex="0" hidden></div>
+            <p>Adding this section turns out to be harder than I thought, so it's gonna take some time to build. Stay tuned :)</p>
+
           </div>
             </div>
           </div>
@@ -818,78 +812,6 @@
 
 
 
-  <script>
-    (function () {
-      var grid = document.querySelector(".opinions-grid");
-      if (!grid) return;
-      var panel = grid.querySelector(".opinion-panel");
-      var items = grid.querySelectorAll(".opinions li");
-      var current = null;
-      panel.setAttribute("aria-label", grid.dataset.closeLabel || "Close");
-      function textOf(li) {
-        var clone = li.cloneNode(true);
-        var y = clone.querySelector(".year");
-        if (y) y.remove();
-        return clone.textContent.trim().replace(/\s+/g, " ");
-      }
-      function close() {
-        if (current) {
-          current.style.visibility = "";
-          current.setAttribute("aria-expanded", "false");
-          current = null;
-        }
-        panel.hidden = true;
-        panel.style.marginTop = "";
-        panel.innerHTML = "";
-      }
-      function open(li) {
-        var year = li.querySelector(".year");
-        panel.innerHTML = "";
-        if (year) {
-          var t = document.createElement("p");
-          t.className = "year";
-          t.textContent = year.textContent.trim();
-          panel.appendChild(t);
-        }
-        var p = document.createElement("p");
-        p.textContent = textOf(li);
-        panel.appendChild(p);
-        li.style.visibility = "hidden";
-        if (window.matchMedia("(min-width: 1100px)").matches) {
-          var list = li.closest("ul");
-          panel.style.marginTop = Math.max(0, li.getBoundingClientRect().top - list.getBoundingClientRect().top) + "px";
-        }
-        panel.hidden = false;
-        current = li;
-      }
-      items.forEach(function (li) {
-        li.setAttribute("tabindex", "0");
-        li.setAttribute("role", "button");
-        li.setAttribute("aria-expanded", "false");
-        function toggle() {
-          if (current === li) close();
-          else {
-            close();
-            open(li);
-          }
-        }
-        li.addEventListener("click", toggle);
-        li.addEventListener("keydown", function (e) {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            toggle();
-          }
-        });
-      });
-      function panelClose() { close(); }
-      panel.addEventListener("click", panelClose);
-      panel.addEventListener("keydown", function (e) {
-        if (e.key === "Enter" || e.key === " " || e.key === "Escape") {
-          e.preventDefault();
-          close();
-        }
-      });
-    })();
-  </script>
+
 </body>
 </html>

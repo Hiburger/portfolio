@@ -191,11 +191,7 @@ Oui, et gratuitement, puisque je ne photographie pas pour l'argent. Qui fait de 
 
 Des opinions personnelles sans valeur que personne ne demande, sur quelques sujets : science, technologie, société.
 
-Pour l'instant tu n'y trouveras que des placeholders. Cette section se remplira au fil du temps, à mesure que j'écris mes pensées.
-
-- **?.????:** Placeholder : une opinion datée sur la tech, la science ou la société. Court et sans filtre.
-- **?.????:** Placeholder : encore une. Vois cette liste comme un carnet public de l'évolution de ta pensée.
-- **?.????:** Placeholder : une dernière. Sans valeur aujourd'hui, backlog demain.
+Ajouter cette section est plus difficile que je ne le pensais, donc ça va me prendre du temps à la construire. Patiente un peu :)
 
 Le savais-tu ? Ce site & le domaine olynthe sont hébergés par [Infomaniak](https://www.infomaniak.com/fr/a-propos) : hébergés écologiquement en Suisse // B Corp™ // carbone compensé à 200%
 
