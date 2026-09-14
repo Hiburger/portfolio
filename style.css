@@ -707,11 +707,19 @@ h1:hover .i-tittle {
 .roadmap ul::before {
   content: "";
   position: absolute;
-  left: 5px;
+  left: 7px;
   top: 8px;
   bottom: 8px;
-  width: 1px;
+  width: 2px;
   background: var(--line);
+}
+
+.roadmap .lane:not(.lane-past) ul::before {
+  background: repeating-linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--accent) 45%, transparent) 0 5px,
+    transparent 5px 10px
+  );
 }
 
 .roadmap li {
@@ -731,9 +739,9 @@ h1:hover .i-tittle {
   content: "";
   position: absolute;
   left: 0;
-  top: 5px;
-  width: 13px;
-  height: 13px;
+  top: 3.5px;
+  width: 16px;
+  height: 16px;
   border-radius: 999px;
   background: var(--accent);
   transition: transform 0.3s var(--spring);
@@ -744,9 +752,10 @@ h1:hover .i-tittle {
 }
 
 .roadmap li.next::after {
-  width: 11px;
-  height: 11px;
-  top: 7px;
+  width: 13px;
+  height: 13px;
+  top: 6px;
+  left: 1.5px;
   background: var(--bg);
   border: 1.5px solid var(--accent);
 }
@@ -768,12 +777,20 @@ h1:hover .i-tittle {
   }
 
   .roadmap ul::before {
-    left: 6px;
+    left: 7px;
     right: 8px;
     top: 6px;
     bottom: auto;
     width: auto;
-    height: 1px;
+    height: 2px;
+  }
+
+  .roadmap .lane:not(.lane-past) ul::before {
+    background: repeating-linear-gradient(
+      to right,
+      color-mix(in srgb, var(--accent) 45%, transparent) 0 5px,
+      transparent 5px 10px
+    );
   }
 
   .roadmap li {
@@ -783,18 +800,18 @@ h1:hover .i-tittle {
   }
 
   .roadmap li::after {
-    top: 0;
+    top: -1px;
   }
 
   .roadmap li.next::after {
-    top: 1px;
+    top: 0.5px;
   }
 
   .roadmap .lane-fill {
     display: block;
     position: absolute;
-    top: 5px;
-    left: 6px;
+    top: 6px;
+    left: 7px;
     height: 2px;
     background: var(--accent);
     border-radius: 999px;
