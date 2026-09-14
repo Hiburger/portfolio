@@ -1447,6 +1447,7 @@ h1:hover .i-tittle {
 
 .footer-band .hosted {
   margin-top: 0;
+  color: color-mix(in srgb, var(--muted) 50%, var(--ink));
 }
 
 footer {
@@ -1455,7 +1456,7 @@ footer {
   padding: 1.6rem 0 0;
   font-family: var(--mono);
   font-size: 0.72rem;
-  color: var(--muted);
+  color: color-mix(in srgb, var(--muted) 50%, var(--ink));
   display: flex;
   align-items: center;
   justify-content: space-between;
