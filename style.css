@@ -1439,7 +1439,7 @@ h1:hover .i-tittle {
 
 .footer-band {
   margin-top: 3.5rem;
-  background: var(--card);
+  background: color-mix(in srgb, var(--bg) 95%, var(--ink));
   border-top: 1px solid var(--line);
   padding-top: 2.4rem;
   padding-bottom: 2.6rem;
