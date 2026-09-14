@@ -635,9 +635,18 @@ h1:hover .i-tittle {
 }
 
 .section {
+  position: relative;
   padding: 3.5rem 0;
-  border-top: 1px solid var(--line-strong);
   scroll-margin-top: 2rem;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(-1 * clamp(1.5rem, 7vw, 5rem));
+  right: calc(-1 * clamp(1.5rem, 7vw, 5rem));
+  border-top: 1px solid var(--line-strong);
 }
 
 .label {
