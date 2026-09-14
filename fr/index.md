@@ -138,15 +138,15 @@ Frequently Unasked Questions (FUQ)
 
 **Que signifie « Olynthe » ?**
 
-« Olynthe », c'est le nom français d'Olynthus, une cité de la Grèce antique, un nom généralement compris comme « figue sauvage » ou « fruit de la figue sauvage ». Olynthus fut aussi le point de ralliement de cités indépendantes réunies en une seule ligue. Une jolie métaphore de l'open source : des contributeurs et des projets séparés, une seule communauté, des objectifs communs. Et puis : ça sonnait bien, et c'était joli comme nom de domaine :)
+« Olynthe », c'est le nom français d'Olynthus, une cité de la Grèce antique. Un nom qu'on comprend généralement comme « figue sauvage » ou « fruit de la figue sauvage ». Olynthus, c'était aussi le centre d'une ligue de cités indépendantes. Une belle métaphore de l'open source : des contributeurs et des projets séparés, une seule communauté, des objectifs communs. Et puis ça sonnait bien, et c'était joli comme nom de domaine :)
 
-**Ton homelab est-il vraiment aussi en désordre ?**
+**Ton homelab est vraiment aussi en vrac que ça ?**
 
-Oui. Côté logiciel et côté matériel. Mais ça fonctionne. C'est tout ce qui compte. Pas d'autres questions sur ce sujet, s'il te plaît.
+Oui. Côté logiciel et côté matériel. Mais ça fonctionne. C'est tout ce qui compte. Pas d'autres questions sur ce sujet, merci.
 
-**Quel appareil photo devrais-je acheter pour photographier comme toi ?**
+**Je devrais acheter quel appareil photo pour prendre des photos comme toi ?**
 
-Je peux te suggérer un Nikon Z6III ? Si tu veux vraiment exactement le même vibe, cherche un reflex Nikon comme le mien ou un peu plus récent (D7100 / D7200), même si je ne te le recommande pas en 2026, c'est clairement encore utilisable.
+Et si je te suggérais un Nikon Z6III ? Si tu veux vraiment le même vibe, cherche un reflex Nikon comme le mien ou un peu plus récent (D7100 / D7200), même si je ne te le recommande pas en 2026, ça reste clairement utilisable.
 
 **Je peux utiliser tes photos ?**
 
@@ -154,7 +154,7 @@ Bien sûr. Toutes mes photos sont sous licence GP1, une licence que j'ai créée
 
 **Est-ce que tu dors, au moins ?**
 
-Si. C'est juste que le sommeil n'habite plus à côté, ces derniers temps.
+Si. C'est juste que ces derniers temps, le sommeil n'est plus à côté.
 
 **Pourquoi « FUQ » ?**
 
@@ -166,23 +166,23 @@ Je réfléchis trop.
 
 **Ce site, c'est une IA qui l'a écrit ?**
 
-Non, pour le contenu. Oui, pour la plupart du HTML et du CSS du site.
+Non, si tu parles du contenu. Oui, si tu parles de la plupart du HTML et du CSS du site.
 
-**Pourquoi ton onglet dit « come back :( » quand je le quitte ?**
+**Pourquoi ton onglet dit « reviens :( » quand je m'en vais ?**
 
-Parce que je suis content que tu sois là, et que j'ai envie que tu restes avec moi.
+Parce que je suis content que tu sois là, et j'ai envie que tu restes avec moi.
 
-**Pourquoi le pied de page dit © 2048 ?**
+**Pourquoi le pied de page affiche © 2048 ?**
 
 Je vois loin. Et puis, j'ai entendu dire que le copyright expire.
 
 **On peut être amis ?**
 
-Est-ce que j'ai des raisons valables de dire non ?
+J'ai de bonnes raisons de dire non ?
 
 **Tu es dispo pour photographier mon chat ?**
 
-Oui, et gratuitement, puisque je ne photographie pas pour l'argent. Qui le fait, d'ailleurs ? Mais attention : je travaille ou je suis à l'école toute la semaine, donc il faudrait d'abord en discuter. Et si pour venir jusqu'à toi il faut prendre le train ou autre, je pourrais te demander de participer aux frais.
+Oui, et gratuitement, puisque je ne photographie pas pour l'argent. Qui fait ça, d'ailleurs ? Mais attention : je travaille ou je suis à l'école toute la semaine, donc il faudrait d'abord en discuter. Et si pour venir jusqu'à toi il faut prendre le train ou autre, je risque de te demander de participer aux frais.
 
 Le savais-tu ? Ce site & le domaine olynthe sont hébergés par [Infomaniak](https://www.infomaniak.com/fr/a-propos) : hébergés écologiquement en Suisse // B Corp™ // carbone compensé à 200%
 
