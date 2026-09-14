@@ -504,6 +504,10 @@ h1:hover .i-tittle {
   margin-top: 2.4rem;
 }
 
+.coords + .coords {
+  margin-top: 0.3rem;
+}
+
 .langs {
   display: inline-flex;
   align-items: center;
