@@ -1124,7 +1124,20 @@ h1:hover .i-tittle {
   gap: 0.7rem;
   margin-top: 1.8rem;
   margin-inline: auto;
-  max-width: 52rem;
+  max-width: 64rem;
+}
+
+.fuq-col {
+  display: grid;
+  gap: 0.7rem;
+  align-content: start;
+}
+
+@media (min-width: 900px) {
+  .fuq {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
 }
 
 #fuq .label,
