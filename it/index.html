@@ -26,7 +26,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=17.04">
+  <link rel="stylesheet" href="../style.css?v=17.05">
   <link rel="alternate" type="text/markdown" href="index.md">
   <script>
     (function () {
@@ -804,6 +804,30 @@
           if (e.target.closest("a")) return;
           if (String(window.getSelection())) return;
           d.open = !d.open;
+        });
+  <script>
+    (function () {
+      document.querySelectorAll(".opinions li").forEach(function (li) {
+        li.setAttribute("tabindex", "0");
+        li.setAttribute("role", "button");
+        li.setAttribute("aria-expanded", "false");
+        function setOpen(open) {
+          li.classList.toggle("is-open", open);
+          li.setAttribute("aria-expanded", open ? "true" : "false");
+        }
+        function toggle() {
+          var open = !li.classList.contains("is-open");
+          document.querySelectorAll(".opinions li.is-open").forEach(function (o) {
+            if (o !== li) setOpen(false);
+          });
+          setOpen(open);
+        }
+        li.addEventListener("click", toggle);
+        li.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            toggle();
+          }
         });
       });
     })();

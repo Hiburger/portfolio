@@ -1191,6 +1191,12 @@ h1:hover .i-tittle {
   max-width: min(100%, 21rem);
   line-height: 1.55;
   transition: color 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.opinions li:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .opinions li:nth-child(even) {
@@ -1202,6 +1208,18 @@ h1:hover .i-tittle {
 .opinions li:hover {
   color: var(--ink);
   border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+}
+
+.opinions li.is-open {
+  width: 100%;
+  max-width: 100%;
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+}
+
+.opinions li.is-open .year {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
 }
 
 .opinions .year {
