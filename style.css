@@ -1119,31 +1119,56 @@ h1:hover .i-tittle {
   height: 19px;
 }
 
+.fuq-split {
+  display: grid;
+  gap: 3.5rem;
+}
+
+@media (min-width: 1100px) {
+  .fuq-split {
+    grid-template-columns: minmax(0, 38rem) minmax(0, 30rem);
+    justify-content: space-between;
+    align-items: start;
+    gap: 4rem;
+  }
+}
+
 .fuq {
   display: grid;
   gap: 0.7rem;
   margin-top: 1.8rem;
-  margin-inline: auto;
-  max-width: 64rem;
+  max-width: 38rem;
 }
 
-.fuq-col {
+.opinions {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.8rem;
   display: grid;
-  gap: 0.7rem;
-  align-content: start;
+  gap: 1.1rem;
+  max-width: 30rem;
+  font-size: 0.95rem;
+  color: var(--muted);
 }
 
-@media (min-width: 900px) {
-  .fuq {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: start;
-  }
+.opinions li {
+  border-bottom: 1px dashed var(--line);
+  padding-bottom: 0.9rem;
+  line-height: 1.6;
+  transition: color 0.2s ease;
 }
 
-#fuq .label,
-#fuq > p {
-  text-align: center;
-  margin-inline: auto;
+.opinions li:hover {
+  color: var(--ink);
+}
+
+.opinions .year {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 0.15rem;
 }
 
 .fuq details {

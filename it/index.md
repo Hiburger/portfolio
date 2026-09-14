@@ -184,6 +184,14 @@ Ho qualche buona ragione per dire di no?
 
 Sì, e gratis, visto che non fotografo per soldi. Chi lo fa mai? Ma occhio: o lavoro o sto a scuola tutta la settimana, quindi bisognerebbe parlarne prima. E se per arrivare da te servono treni o cose del genere, potrei chiederti di contribuire alle spese.
 
+## ~/home/gabrielp/opinions/
+
+Opinioni senza valore che nessuno ha chiesto. Le tengo qui come backlog, e per farti capire come penso :)
+
+- **?.????:** Placeholder: un'opinione datata su tech, scienza o società. Breve e senza filtri.
+- **?.????:** Placeholder: un'altra. Vedi questa lista come un quaderno pubblico di come evolve il tuo pensiero.
+- **?.????:** Placeholder: un altro ancora. Senza valore oggi, backlog domani.
+
 Lo sapevi ? Questo sito & il dominio olynthe sono ospitati da [Infomaniak](https://www.infomaniak.com/it/about): ospitati ecologicamente in Svizzera // B Corp™ // carbonio compensato al 200%
 
 Fun fact: questa interfaccia è ispirata a [Material Design](https://m3.material.io). Se questo portfolio ti piace, fai un fork di [github.com/Hiburger/portfolio](https://github.com/Hiburger/portfolio) e rendilo tuo : stesso design, le tue info :)

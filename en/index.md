@@ -184,6 +184,14 @@ Do I have any valid reasons to say no?
 
 Yes, and for free, since I don't photograph for money. Who even does that? But heads-up: I work or I'm at school all week, so we'd have to talk first. And if getting to you involves trains or such, I might ask you to help with the costs.
 
+## ~/home/gabrielp/opinions/
+
+Worthless opinions nobody asked for. Kept as a backlog, and so you can understand how I think :)
+
+- **?.????:** Placeholder: a dated opinion about tech, science or society goes here. Short and unfiltered.
+- **?.????:** Placeholder: another one. Treat this list as a public notebook of how your thinking evolves.
+- **?.????:** Placeholder: one more. Worthless today, backlog tomorrow.
+
 Did you know? This website & the olynthe domain are hosted by [Infomaniak](https://www.infomaniak.com/en/about): ecologically hosted in Switzerland // B Corp™ // carbon compensated 200%
 
 Fun fact: this UI takes its cues from [Material Design](https://m3.material.io). If you like this portfolio, fork [github.com/Hiburger/portfolio](https://github.com/Hiburger/portfolio) and make it yours: same design, your info :)
