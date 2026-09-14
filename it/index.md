@@ -8,9 +8,11 @@ Ciao ! Benvenuto sul mio nuovo portfolio :)
 
 # Gabriel
 
-Apprendista specialista infrastrutture & operazioni presso [Infomaniak Network SA](https://www.infomaniak.com/it/about) di giorno, fotografo ogni volta che la luce è bella, appassionato di open source per tutto il resto del tempo.
+Apprendista specialista infrastrutture & operazioni presso [Infomaniak Network SA](https://www.infomaniak.com/it/about) di giorno, fotografo ogni volta che la luce è bella, appassionato di open source 24/7.
 
 Ginevra, Svizzera // 46.20° N ; 6.14° E
+
+*Coordinate non proprio esatte
 
 ![Ritratto di Gabriel](https://gabriel.olynthe.org/favicon.jpg?v=2)
 
@@ -20,15 +22,15 @@ Ginevra, Svizzera // 46.20° N ; 6.14° E
 
 Ciao ! Sono Gabriel, apprendista Specialista Infrastrutture & Operazioni IT presso [Infomaniak Network SA](https://www.infomaniak.com/it/about), il simpatico ed etico provider cloud con sede a Ginevra, in Svizzera. Una buona parte della mia settimana è dedicata a imparare il networking e lo sviluppo, a giudicare i big tech e ad aiutare gli altri a usare e apprezzare la tecnologia, e mi diverto davvero a farlo.
 
-Il resto va nella fotografia... soprattutto fauna selvatica e cielo notturno. Sostengo inoltre con convinzione il software libero e open source, e faccio girare un homelab completo con Proxmox VE, Snowflakes, Immich, Docker e più servizi self-hosted di quanto sia strettamente necessario
+Il resto va nella fotografia... soprattutto fauna selvatica e cielo notturno, anche se sono scarso in entrambi. Sostengo inoltre con convinzione il software libero, etico e open source. Faccio anche girare un homelab completo con Proxmox VE, Snowflakes, Immich, AdGuard, Docker e più servizi self-hosted di cui avevo dimenticato l'esistenza. In più, ho creato la licenza GP1 ([gp1.olynthe.org](https://gp1.olynthe.org/)), che sta per General Photography v1 o Gabriel Paesano, decidi tu :)
 
-Sono anche studente al [CFPT](https://edu.ge.ch/secondaire2/centre-de-formation-professionnelle-technique/le-cfpt), al momento sto esplorando il machine learning, e sono il fondatore di [The Olynthe Initiative](https://olynthe.org), un piccolo progetto per sostenere i diritti digitali e il FOSS.
+Sono anche studente al [CFPT](https://edu.ge.ch/secondaire2/centre-de-formation-professionnelle-technique/le-cfpt). È una scuola grande e disorientante che non amo più di tanto, ma vabbè. Sono inoltre il fondatore di [The Olynthe Initiative](https://olynthe.org), un piccolo progetto per sostenere i diritti digitali e il FOSS.
 
 ### percorso
 
 finora
 
-- **12.2009:** Sono venuto al mondo. ..beh, tecnicamente ero già una cosa da circa 9 mesi
+- **xy.2009:** Sono venuto al mondo. ..beh, tecnicamente ero già una cosa da circa 9 mesi
 - **05.2016:** Ho iniziato a fare foto e mi è piaciuto
 - **12.2021:** Fondazione di The Olynthe Initiative (precedentemente Q-BIT Technology)
 - **08.2025:** Entrato in Infomaniak Network come apprendista
@@ -39,16 +41,16 @@ a venire
 
 - **presto:** Migliorare nella fotografia e comprare nuovo materiale
 - **presto:** Finire l'apprendistato (ancora 2,5 anni)
-- **presto:** Avere più di 200 CPU nella mia collezione di CPU
-- **un giorno:** Smettere di lavorare per aziende a scopo di lucro, e lavorare per le persone
+- **presto:** Avere più di 200 CPU nella mia collezione di CPU (ora: circa 120)
+- **un giorno:** Smettere di lavorare per gruppi a scopo di lucro, ma per enti non profit
 
 ## ~/home/gabrielp/dev/
 
-Tengo al software che rispetta i suoi utenti. Ecco alcune cose che ho costruito o a cui ho contribuito.
+Tengo al software che rispetta i suoi utenti. Per restare in tema, ecco alcune cose che ho costruito o a cui ho contribuito.
 
 - **[JWStreak](https://github.com/Hiburger/JWStreak)**
-  dart / gpl-3.0 / [jws.olynthe.org](https://jws.olynthe.org)
-  Un'app Flutter simpatica che aiuta a costruire un'abitudine quotidiana di lettura della Bibbia. Tutto sul dispositivo, nulla lascia il tuo telefono.
+  dart / GPLv3 / [jws.olynthe.org](https://jws.olynthe.org)
+  Un'app Flutter simpatica che aiuta a costruire un'abitudine quotidiana di lettura della Bibbia. Open source e privacy-friendly.
 - **[BasaltOS](https://github.com/BasaltOS-org)**
   sistema operativo basato su AlmaLinux
   Project leader di un sistema operativo open source indipendente. Primi giorni, grandi sogni.
@@ -57,13 +59,13 @@ Tengo al software che rispetta i suoi utenti. Ecco alcune cose che ho costruito 
   Fondata per sostenere i diritti digitali e le iniziative FOSS, e casa di questo stesso dominio
 - **[Sky Map](https://github.com/sky-map-team/)**
   android / astronomia
-  Il Google Sky Map originale, oggi gestito dalla sua community: punta il telefono verso il cielo e ti dice il nome delle stelle, dei pianeti e delle costellazioni. Ci metto la mano di tanto in tanto.
+  Il Google Sky Map originale, oggi guidato dalla community e open source dal 2012: punta il telefono verso il cielo e ti dice il nome delle stelle, dei pianeti e delle costellazioni. Ci metto la mano di tanto in tanto.
 - **[Google AI Edge Gallery](https://github.com/google-ai-edge/gallery)**
-  android / AI on-device
-  Il parco giochi open source di Google per l'AI on-device: chat, comprensione delle immagini e altro, con modelli che girano interamente offline.
+  android / AI on-device / Gemma
+  Il parco giochi open source di Google per l'AI on-device: chat, comprensione delle immagini e altro, con modelli locali che girano interamente offline.
 - **[Tor Snowflakes](https://snowflake.torproject.org/)**
   tor / anti-censura
-  Gestisco più proxy Snowflake: ponti Tor alimentati da volontari che aiutano chi vive in paesi censurati a raggiungere il web libero. Poco costosi, difficili da bloccare :)
+  Gestisco più proxy Snowflake: ponti Tor alimentati da volontari che aiutano chi vive in paesi censurati a raggiungere il web libero. Poco costosi, difficili da bloccare ! :)
 
 ## ~/home/gabrielp/pictures/
 
@@ -79,7 +81,7 @@ Ecco qualche scatto che mi piace ! Spero davvero che ti piaccino anche :)
 
 *02*
 
-[![Bianco e nero, delle mani che tengono delicatamente una piccola foglia](https://gabriel.olynthe.org/photos/03.jpg)](https://gabriel.olynthe.org/photos/03.jpg)
+[![Bianco e nero, delle mani che tengono un piccolo quadrifoglio](https://gabriel.olynthe.org/photos/03.jpg)](https://gabriel.olynthe.org/photos/03.jpg)
 
 *03*
 
@@ -91,21 +93,22 @@ Ecco qualche scatto che mi piace ! Spero davvero che ti piaccino anche :)
 
 *05*
 
-[![Due passeri appollaiati su un ramo](https://gabriel.olynthe.org/photos/06.jpg)](https://gabriel.olynthe.org/photos/06.jpg)
+[![Un passero appollaiato su un ramo](https://gabriel.olynthe.org/photos/06.jpg)](https://gabriel.olynthe.org/photos/06.jpg)
 
 *06*
 
-Tutte queste foto sono scattate da me con l'attrezzatura menzionata qui sopra. Altre mie foto si trovano su [Instagram](https://instagram.com/hello_iam_gabriel) :)
+Tutte le mie foto sono sotto la mia licenza, che si trova qui ([gp1.olynthe.org](https://gp1.olynthe.org/)). Tutte queste foto sono scattate da me con l'attrezzatura menzionata qui sopra. Altre mie foto si trovano su [Instagram](https://instagram.com/hello_iam_gabriel) :)
 
 ## ~/home/gabrielp/tools/
 
-Cosa uso ogni giorno al lavoro, nell'homelab, e in tutto il resto.
+Le mie tecnologie
 
 - **Hardware homelab:** GMKtec K8 Plus AMD Ryzen™ 7 8845HS, RPi 5 (8 GB), RPi 3 (2 GB)
 - **DIY:** Arduino Uno R3 x2, Arduino Nano x2
-- **Computer:** Troppi. Principale: MacBookPro 2026 (M5 Pro) / Secondario: XPS 15 7590 & Torre Omen (ho dimenticato il nome)
+- **Computer:** Troppi (10+). Principale: MacBookPro 2026 (M5 Pro) / Secondario: XPS 15 7590 & Torre Omen HP (ho dimenticato il nome)
 - **OS:** GrapheneOS // Cachy Linux // macOS // Debian Trixie
 - **Mobile:** Pixel 9 Pro XL, iPad Pro (M2), Quest 3, Pixel Watch 5
+- **Foto:** D7000 + 2 zoom Nikkor (portata max 450mm)
 
 gruppi preferiti (l'ordine conta !)
 
@@ -121,9 +124,9 @@ gruppi preferiti (l'ordine conta !)
 
 ## ~/home/gabrielp/contacts/
 
-Sono timido, ma non mordo. Vieni a salutarmi ! E menziona gentilmente che vieni da questo sito, o potrei prenderti per uno scammer (purtroppo mi ci sto abituando) :(
+Sono timido, ma non mordo. Vieni a salutarmi !
 
-[gabriel.paesano@olynthe.org](mailto:gabriel.paesano@olynthe.org) [discord](https://discord.com/users/1085984192644530257)
+[Scrivimi !](mailto:gabriel.paesano@olynthe.org) [Sono su Discord](https://discord.com/users/1085984192644530257)
 
 - **GutHib:** [@Hiburger](https://github.com/Hiburger)
 - **Instagram:** [@hello_iam_gabriel](https://instagram.com/hello_iam_gabriel)
@@ -142,11 +145,11 @@ Frequently Unasked Questions (FUQ)
 
 **Il tuo homelab è davvero così incasinato?**
 
-Sì. Software e hardware. Ma funziona. È questo che conta. Nessun'altra domanda sull'argomento, grazie.
+Beh sì. Software e hardware. Ma funziona. È questo che conta. Nessun'altra domanda sull'argomento, grazie.
 
 **Che fotocamera dovrei comprare per fare foto come le tue?**
 
-Posso consigliarti un Nikon Z6III? Se vuoi proprio lo stesso vibe, cerca un reflex Nikon come il mio o un po' più recente (D7100 / D7200), anche se nel 2026 non lo consiglio, resta chiaramente utilizzabile.
+Non proverei a fotografare come qualcun altro. Detto questo, posso consigliarti il Nikon Z6III? Se vuoi proprio lo stesso vibe, cerca un reflex Nikon come il mio o più recente (D7200 / D750 / D850), anche se nel 2026 non lo consiglio, resta chiaramente utilizzabile.
 
 **Posso usare le tue foto?**
 
@@ -158,11 +161,11 @@ Sì. Solo che ultimamente il sonno non passa più da queste parti.
 
 **Perché « FUQ »?**
 
-Sta per Frequently Unasked Questions. Non c'è nessun significato più profondo.
+Sta per Frequently Unasked Questions. Non c'è nessun significato più profondo né riferimenti nascosti.
 
 **Qual è il tuo più grande difetto?**
 
-Penso troppo.
+Penso troppo le cose. A volte mi rende lento o mi fa sembrare strano.
 
 **Questo sito l'ha scritto un'IA?**
 
@@ -170,7 +173,7 @@ No, se parli del contenuto. Sì, se parli della maggior parte dell'HTML e del CS
 
 **Perché la tab dice « torna :( » quando me ne vado?**
 
-Perché sono felice che tu sia qui e voglio che tu resti con me.
+Mi piace che tu sia qui. Mi chiedo persino «perché questa persona è qui». Però non ho modo di chiedertelo.
 
 **Perché il footer dice © 2048?**
 
@@ -178,15 +181,17 @@ Vedo lontano. E poi ho sentito dire che il copyright scade.
 
 **Possiamo essere amici?**
 
-Ho qualche buona ragione per dire di no?
+Ho qualche buona ragione per dire di no? La sezione contatti è proprio lì sopra.
 
 **Sei disponibile a fotografare il mio gatto?**
 
-Sì, e gratis, visto che non fotografo per soldi. Chi lo fa mai? Ma occhio: o lavoro o sto a scuola tutta la settimana, quindi bisognerebbe parlarne prima. E se per arrivare da te servono treni o cose del genere, potrei chiederti di contribuire alle spese.
+Sì, e gratis, visto che non fotografo per soldi. Chi fa fotografia per soldi, mai? Ma occhio: o lavoro o sto a scuola tutta la settimana, quindi bisognerebbe parlarne prima. E se per arrivare da te servono treni o cose del genere, potrei chiederti di contribuire alle spese. Mi sembra una richiesta giusta.
 
 ## ~/home/gabrielp/opinions/
 
-Opinioni senza valore che nessuno ha chiesto. Le tengo qui come backlog, e per farti capire come penso :)
+Opinioni personali senza valore che nessuno ha chiesto, su alcuni temi: scienza, tecnologia, società.
+
+Per ora trovi solo dei placeholder. La sezione si arricchirà col tempo, man mano che metto nero su bianco i miei pensieri.
 
 - **?.????:** Placeholder: un'opinione datata su tech, scienza o società. Breve e senza filtri.
 - **?.????:** Placeholder: un'altra. Vedi questa lista come un quaderno pubblico di come evolve il tuo pensiero.

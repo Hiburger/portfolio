@@ -8,9 +8,11 @@ Hi there ! Welcome to my new portfolio :)
 
 # Gabriel
 
-Apprentice Infrastructure & Operations Specialist at [Infomaniak Network SA](https://www.infomaniak.com/en/about) by day, photographer whenever the light is good, open source person the rest of the time.
+Apprentice Infrastructure & Operations Specialist at [Infomaniak Network SA](https://www.infomaniak.com/en/about) by day, photographer whenever the light is good, open source person the 24/7.
 
 Geneva, Switzerland // 46.20° N ; 6.14° E
+
+*Coords are not accurate
 
 ![Portrait of Gabriel](https://gabriel.olynthe.org/favicon.jpg?v=2)
 
@@ -18,17 +20,17 @@ Geneva, Switzerland // 46.20° N ; 6.14° E
 
 ## ~/home/gabrielp/quick-facts/
 
-Hi ! I'm Gabriel, an apprentice IT Infrastructure & Operations Specialist at [Infomaniak Network SA](https://www.infomaniak.com/en/about), the friendly ethical cloud provider based in Geneva, Switzerland. A good part of my week goes into learning networking, development, judging big tech, and helping others use and enjoy technology, and I genuinely have fun doing so.
+Hi ! I'm Gabriel, an apprentice IT Infrastructure & Operations Specialist at [Infomaniak Network SA](https://www.infomaniak.com/en/about), the friendly ethical cloud provider based in Geneva, Switzerland. A good part of my week goes into learning networking, development, judging big tech, and helping others use and enjoy technology, and I genuinely enjoy doing so.
 
-The rest goes into photography... mostly wildlife and the night sky. I'm also strongly advocating for free and open source software, and have a full homelab running Proxmox VE, Snowflakes, Immich, Docker and more self-hosted services than strictly necessary
+The rest goes into photography... mostly wildlife and the night sky even if i am bad at both. I'm also strongly advocating for free, ethical and open source software. I also have a full homelab running Proxmox VE, Snowflakes, Immich, AdGuard, Docker and more self-hosted services i forgot i had. Additionally, I made the GP1 license ([gp1.olynthe.org](https://gp1.olynthe.org/)), which stands for General Photography v1 or Gabriel Paesano, you decide.
 
-I'm also a student at the [CFPT](https://edu.ge.ch/secondaire2/centre-de-formation-professionnelle-technique/le-cfpt), currently exploring machine learning, and the founder of the [Olynthe Initiative](https://olynthe.org), a small effort to support digital rights and FOSS.
+I'm also a student at the [CFPT](https://edu.ge.ch/secondaire2/centre-de-formation-professionnelle-technique/le-cfpt). It's a big and confusing school i'm not a fan of, but alright. I am also the founder of [The Olynthe Initiative](https://olynthe.org), a small effort to support digital rights and FOSS.
 
 ### roadmap
 
 so far
 
-- **12.2009:** I came to life. ..well technically i was already a thing since around 9 months
+- **xy.2009:** I came to life. ..well technically i was already a thing since around 9 months
 - **05.2016:** I started taking pictures and enjoyed doing so
 - **12.2021:** Founded The Olynthe Initiative (previously Q-BIT Technology)
 - **08.2025:** Joined Infomaniak Network as an apprentice
@@ -39,16 +41,16 @@ up next
 
 - **next:** Get better at photography and get new gear
 - **next:** Finish my apprenticeship (2.5 years to go)
-- **next:** Have more than 200 CPUs in my collection of CPUs
-- **someday:** Stop working at for-profits, but for humans
+- **next:** Have more than 200 CPUs in my collection of CPUs (rn: approx. 120)
+- **someday:** Stop working at for-profit groups, but for non-profits
 
 ## ~/home/gabrielp/dev/
 
-I care about software that respects its users. Here are a few things I built or contributed to.
+I care about software that respects users. On a similar note, here are a few things I built or contributed to.
 
 - **[JWStreak](https://github.com/Hiburger/JWStreak)**
-  dart / gpl-3.0 / [jws.olynthe.org](https://jws.olynthe.org)
-  A friendly Flutter app that helps people build a daily Bible-reading habit. Everything on-device, nothing leaves your phone.
+  dart / GPLv3 / [jws.olynthe.org](https://jws.olynthe.org)
+  A friendly Flutter app that helps people build a daily Bible-reading habit. Open source and privacy-friendly.
 - **[BasaltOS](https://github.com/BasaltOS-org)**
   AlmaLinux-based operating system
   Project leader on an independent open source operating system. Early days, big dreams.
@@ -57,17 +59,17 @@ I care about software that respects its users. Here are a few things I built or 
   Founded to support digital rights and FOSS initiatives, and home of this very domain
 - **[Sky Map](https://github.com/sky-map-team/)**
   android / astronomy
-  The original Google Sky Map, now run by its community: point your phone at the sky and it names the stars, planets and constellations. I chip in here and there.
+  The original Google Sky Map, now community-led and OSS since 2012: point your phone at the sky and it names the stars, planets and constellations. I chip in here and there.
 - **[Google AI Edge Gallery](https://github.com/google-ai-edge/gallery)**
-  android / on-device AI
-  Google's open-source playground for on-device AI: chat, image understanding and more, with models that run fully offline.
+  android / on-device AI / Gemma
+  Google's open-source playground for on-device AI: chat, image understanding and more, with local models that run fully offline.
 - **[Tor Snowflakes](https://snowflake.torproject.org/)**
   tor / anti-censorship
-  I run multiple Snowflake proxies: volunteer-powered Tor bridges that help people in censored countries reach the open web. Cheap to run, hard to block :)
+  I run multiple Snowflake proxies: volunteer-powered Tor bridges that help people in censored countries reach the open web. Cheap to run, hard to block ! :)
 
 ## ~/home/gabrielp/pictures/
 
-The Gear: Nikon D7000 | GoPro hero 12 | Pixel 9 Pro XL
+Gear: Nikon D7000 | GoPro hero 12 | Pixel 9 Pro XL
 
 Here are a few frames I like ! I deeply hope you'll like them too :)
 
@@ -79,7 +81,7 @@ Here are a few frames I like ! I deeply hope you'll like them too :)
 
 *02*
 
-[![Black and white, hands gently holding a tiny leaf](https://gabriel.olynthe.org/photos/03.jpg)](https://gabriel.olynthe.org/photos/03.jpg)
+[![Black and white, hands holding a tiny four-leaf clover](https://gabriel.olynthe.org/photos/03.jpg)](https://gabriel.olynthe.org/photos/03.jpg)
 
 *03*
 
@@ -91,21 +93,22 @@ Here are a few frames I like ! I deeply hope you'll like them too :)
 
 *05*
 
-[![Two sparrows perched on a branch](https://gabriel.olynthe.org/photos/06.jpg)](https://gabriel.olynthe.org/photos/06.jpg)
+[![A sparrow perched on a branch](https://gabriel.olynthe.org/photos/06.jpg)](https://gabriel.olynthe.org/photos/06.jpg)
 
 *06*
 
-All of these were shot by me with one of the gear mentionned above. More of my photos can be found on [Instagram](https://instagram.com/hello_iam_gabriel) :)
+All of my photos are licensed under my own license, which can be found here ([gp1.olynthe.org](https://gp1.olynthe.org/)). All of these were shot by me with one of the gear mentioned above. More of my photos can be found on [Instagram](https://instagram.com/hello_iam_gabriel) :)
 
 ## ~/home/gabrielp/tools/
 
-What I reach for every day at work, in the homelab, and everywhere in between.
+My technologies
 
 - **Home Lab Hardware:** GMKtec K8 Plus AMD Ryzen™ 7 8845HS, RPi 5 (8 Go), RPi 3 (2 Go)
 - **DIY:** Arduino Uno R3 x2, Arduino Nano x2
-- **Computers:** Too many. Primary: MacBookPro 2026 (M5 Pro) / Secondary: XPS 15 7590 & Omen Tower (forgot the name)
+- **Computers:** Too many (10+). Primary: MacBookPro 2026 (M5 Pro) / Secondary: XPS 15 7590 & HP Omen Tower (forgot the name)
 - **OS:** GrapheneOS // Cachy Linux // macOS // Debian Trixie
 - **Mobile:** Pixel 9 Pro XL, iPad Pro (M2), Quest 3, Pixel Watch 5
+- **Photography:** D7000 + 2 Nikkor zoom lenses (450mm max reach)
 
 favorite groups (order matters!)
 
@@ -121,9 +124,9 @@ favorite groups (order matters!)
 
 ## ~/home/gabrielp/contacts/
 
-I'm shy, but I don't bite. Please come say hi! And kindly mention you came from this site, or I might assume you're a scammer (I started getting used to it sadly) :(
+I'm shy, but I don't bite. Please come say hi!
 
-[gabriel.paesano@olynthe.org](mailto:gabriel.paesano@olynthe.org) [discord](https://discord.com/users/1085984192644530257)
+[Email me!](mailto:gabriel.paesano@olynthe.org) [I'm on Discord](https://discord.com/users/1085984192644530257)
 
 - **GutHib:** [@Hiburger](https://github.com/Hiburger)
 - **Instagram:** [@hello_iam_gabriel](https://instagram.com/hello_iam_gabriel)
@@ -142,11 +145,11 @@ Frequently Unasked Questions (FUQ)
 
 **Is your homelab actually that messy?**
 
-Yes. Software-wise and hardware-wise. But it works. That's the whole point. No further questions on this topic, please.
+Well yes. Software-wise and hardware-wise. But it works. That's the whole point. No further questions on this topic, please.
 
 **What camera should I buy to shoot like you?**
 
-May I suggest a Nikon Z6III? If you really want that exact same vibe, look for a Nikon DSLR like mine or a bit newer (D7100 / D7200), though I don't recommend that in 2026, even if it's clearly still usable.
+I wouldn't try to shoot like someone else. Still, may I suggest the Nikon Z6III? If you really want that exact same vibe though, look for a Nikon DSLR like mine or a newer model (i.e. D7200 / D750 / D850), though I don't recommend that in 2026, even if it's clearly still usable.
 
 **Can I use your photos?**
 
@@ -158,11 +161,11 @@ I do. Sleep just hasn't been next door lately.
 
 **Why "FUQ"?**
 
-It stands for Frequently Unasked Questions. There's no deeper meaning.
+It stands for Frequently Unasked Questions. There's no deeper meaning or hidden reference.
 
 **What's your greatest weakness?**
 
-I overthink.
+I overthink things. This makes me slow or look weird sometimes.
 
 **Did an AI write this site?**
 
@@ -170,7 +173,7 @@ No, if you mean the content. Yes, if you mean most of this site's HTML and CSS.
 
 **Why does your tab say "come back :(" when I leave?**
 
-Because I'm happy you're here, and I want you to stay with me.
+I like that you are here. I'm even asking myself "why is this person here". But I have no way to ask.
 
 **Why does the footer say © 2048?**
 
@@ -178,15 +181,17 @@ I plan ahead. Also, I heard copyright expires.
 
 **Can we be friends?**
 
-Do I have any valid reasons to say no?
+Do I have any valid reasons to say no? The contact section is just above.
 
 **Are you available to photograph my cat?**
 
-Yes, and for free, since I don't photograph for money. Who even does that? But heads-up: I work or I'm at school all week, so we'd have to talk first. And if getting to you involves trains or such, I might ask you to help with the costs.
+Yes, and for free, since I don't photograph for money. Who even does photography for money ? But heads-up: I work or I'm at school all week, so we'd have to talk first. And if getting to you involves trains or such, I might ask you to help with the costs. I think that's a fair thing to ask.
 
 ## ~/home/gabrielp/opinions/
 
-Worthless opinions nobody asked for. Kept as a backlog, and so you can understand how I think :)
+Worthless personal opinions nobody asked for, about a few topics: Science, Technology, Society.
+
+You will only find placeholders for now. This section will get richer over time as I write down some of my thoughts.
 
 - **?.????:** Placeholder: a dated opinion about tech, science or society goes here. Short and unfiltered.
 - **?.????:** Placeholder: another one. Treat this list as a public notebook of how your thinking evolves.
