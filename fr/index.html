@@ -26,7 +26,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=16.96">
+  <link rel="stylesheet" href="../style.css?v=16.97">
   <link rel="alternate" type="text/markdown" href="index.md">
   <script>
     (function () {
@@ -423,7 +423,6 @@
     <footer>
       <span>Je serai toujours là pour toi, mais toi ?</span>
       <span>© 2048 Gabriel Paesano</span>
-      <button type="button" class="repaint ghost" id="cursor-mode" data-on-label="curseur système" data-off-label="curseur maison">curseur système</button>
       <button type="button" class="repaint" id="repaint">repeindre</button>
     </footer>
   </div>
@@ -793,172 +792,8 @@
       frame.addEventListener("pointerdown", pop);
     })();
   </script>
-  <script>
-    (function () {
-      if (!window.matchMedia("(pointer: fine)").matches) return;
-      var dot = null;
-      var visible = false;
-      var hoverEl = null;
-      var collapseTimer = null;
-      var mode = "system";
-      try { mode = localStorage.getItem("cursor-mode") || "system"; } catch (e) {}
-      function store(v) {
-        try { localStorage.setItem("cursor-mode", v); } catch (e) {}
-      }
-      function enable() {
-        if (dot) return;
-        dot = document.createElement("div");
-        dot.className = "cursor-dot";
-        dot.setAttribute("aria-hidden", "true");
-        dot.style.left = "-100px";
-        dot.style.top = "-100px";
-        dot.style.opacity = "0";
-        document.body.appendChild(dot);
-        document.documentElement.classList.add("cursor-on");
-        restorePos();
-      }
-      function disable() {
-        if (!dot) return;
-        clearCollapse();
-        dot.remove();
-        dot = null;
-        hoverEl = null;
-        visible = false;
-        document.documentElement.classList.remove("cursor-on");
-      }
-      function restorePos() {
-        var sx = null;
-        var sy = null;
-        try {
-          sx = sessionStorage.getItem("cursor-x");
-          sy = sessionStorage.getItem("cursor-y");
-        } catch (e) {}
-        if (sx !== null && sy !== null) {
-          lastX = parseInt(sx, 10);
-          lastY = parseInt(sy, 10);
-          place({ clientX: lastX, clientY: lastY, target: document.elementFromPoint(lastX, lastY) });
-        }
-      }
-      function clearCollapse() {
-        if (collapseTimer) {
-          clearTimeout(collapseTimer);
-          collapseTimer = null;
-        }
-      }
-      function morph(el, e) {
-        if (el) {
-          var r = el.getBoundingClientRect();
-          dot.style.left = r.left + "px";
-          dot.style.top = r.top + "px";
-          dot.style.width = r.width + "px";
-          dot.style.height = r.height + "px";
-          var br = getComputedStyle(el).borderTopLeftRadius;
-          dot.style.borderRadius = br === "0px" ? "6px" : br;
-          dot.classList.add("is-target");
-        } else {
-          dot.style.left = (e.clientX - 11) + "px";
-          dot.style.top = (e.clientY - 11) + "px";
-          dot.style.width = "22px";
-          dot.style.height = "22px";
-          dot.style.borderRadius = "50%";
-          dot.classList.remove("is-target");
-        }
-      }
-      function place(e) {
-        if (!dot) return;
-        var dlg = document.querySelector("dialog[open]");
-        if (dlg) {
-          clearCollapse();
-          dot.style.opacity = "0";
-          visible = false;
-          hoverEl = null;
-          return;
-        }
-        if (!visible) {
-          dot.style.opacity = "1";
-          visible = true;
-        }
-        var el = e.target && e.target.closest ? e.target.closest("a, button, input, label, details, [role='button']") : null;
-        if (el && (el.closest(".gallery") || el.closest(".links") || getComputedStyle(el).display === "inline")) el = null;
-        if (el) {
-          clearCollapse();
-          hoverEl = el;
-          morph(el, e);
-        } else if (hoverEl) {
-          var r = hoverEl.getBoundingClientRect();
-          var grazing = e.clientX >= r.left - 6 && e.clientX <= r.right + 6 && e.clientY >= r.top - 6 && e.clientY <= r.bottom + 6;
-          if (grazing) {
-            morph(hoverEl, e);
-          } else if (!collapseTimer) {
-            collapseTimer = setTimeout(function () {
-              collapseTimer = null;
-              hoverEl = null;
-              morph(null, { clientX: lastX, clientY: lastY });
-            }, 90);
-          }
-        } else {
-          clearCollapse();
-          morph(null, e);
-        }
-      }
-      var lastX = -100;
-      var lastY = -100;
-      document.addEventListener("mousemove", function (e) {
-        lastX = e.clientX;
-        lastY = e.clientY;
-        try {
-          sessionStorage.setItem("cursor-x", lastX);
-          sessionStorage.setItem("cursor-y", lastY);
-        } catch (err) {}
-        place(e);
-      });
-      var lastScroll = window.scrollY;
-      (function watch() {
-        if (dot) {
-          if (window.scrollY !== lastScroll) {
-            lastScroll = window.scrollY;
-            if (visible) {
-              place({ clientX: lastX, clientY: lastY, target: document.elementFromPoint(lastX, lastY) });
-            }
-          } else if (visible && hoverEl && !collapseTimer) {
-            morph(hoverEl, null);
-          }
-        }
-        window.requestAnimationFrame(watch);
-      })();
-      document.addEventListener("mousedown", function () { if (dot) dot.classList.add("is-down"); });
-      document.addEventListener("mouseup", function () { if (dot) dot.classList.remove("is-down"); });
-      document.documentElement.addEventListener("mouseleave", function () {
-        if (!dot) return;
-        dot.style.opacity = "0";
-        visible = false;
-      });
-      document.documentElement.addEventListener("mouseenter", function () {
-        if (!dot) return;
-        dot.style.opacity = "1";
-        visible = true;
-      });
-      if (mode !== "system") enable();
-      var btn = document.getElementById("cursor-mode");
-      function syncLabel() {
-        if (btn) btn.textContent = dot ? btn.dataset.onLabel : btn.dataset.offLabel;
-      }
-      if (btn) {
-        btn.addEventListener("click", function () {
-          if (dot) {
-            store("system");
-            disable();
-          } else {
-            store("custom");
-            enable();
-          }
-          syncLabel();
-        });
-        syncLabel();
-      }
-    })();
 
-  </script>
+
   <script>
     (function () {
       document.querySelectorAll(".fuq details").forEach(function (d) {
