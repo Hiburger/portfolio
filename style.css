@@ -603,13 +603,13 @@ h1:hover .i-tittle {
   z-index: 5;
   width: max-content;
   max-width: 15rem;
-  background: #2b2d31;
+  background: #46484d;
   color: #dbdee1;
   font-size: 0.92rem;
-  line-height: 1.5;
-  padding: 0.6rem 0.85rem;
-  border-radius: 8px;
-  box-shadow: 0 10px 28px rgba(23, 21, 17, 0.3);
+  line-height: 1.45;
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.18);
   opacity: 0;
   transform: translateY(8px) scale(0.9);
   transform-origin: top right;
@@ -620,12 +620,12 @@ h1:hover .i-tittle {
 .status-bubble::after {
   content: "";
   position: absolute;
-  top: 1.05rem;
-  right: -4px;
-  width: 9px;
-  height: 9px;
-  background: #2b2d31;
-  border-radius: 1px;
+  top: 1rem;
+  right: -5px;
+  width: 11px;
+  height: 11px;
+  background: #46484d;
+  border-radius: 2.5px;
   transform: rotate(45deg);
 }
 
