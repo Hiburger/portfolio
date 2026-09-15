@@ -665,22 +665,30 @@ h1:hover .i-tittle {
 }
 
 @keyframes bubble-float-a {
-  0%, 100% {
-    translate: 0.05rem calc(-50% - 2px);
+  0%, 50%, 100% {
+    translate: 0 -50%;
   }
 
-  50% {
-    translate: -0.1rem calc(-50% + 2px);
+  25% {
+    translate: 0.12rem calc(-50% - 3px);
+  }
+
+  75% {
+    translate: -0.12rem calc(-50% + 3px);
   }
 }
 
 @keyframes bubble-float-b {
-  0%, 100% {
-    translate: -0.05rem calc(-50% + 2px);
+  0%, 50%, 100% {
+    translate: 0 -50%;
   }
 
-  50% {
-    translate: 0.1rem calc(-50% - 2px);
+  25% {
+    translate: -0.12rem calc(-50% + 3px);
+  }
+
+  75% {
+    translate: 0.12rem calc(-50% - 3px);
   }
 }
 
