@@ -598,7 +598,7 @@ h1:hover .i-tittle {
 
 .status-bubble {
   position: absolute;
-  right: calc(100% + 2.6rem);
+  right: calc(100% + 3.3rem);
   top: 2.4rem;
   z-index: 5;
   width: max-content;
@@ -638,6 +638,25 @@ h1:hover .i-tittle {
 }
 
 .status-bubble.is-in::before {
+  transform: translateY(-50%) scale(1);
+}
+
+.status-bubble::after {
+  content: "";
+  position: absolute;
+  left: calc(100% + 2.05rem);
+  top: 50%;
+  width: 0.7rem;
+  height: 0.55rem;
+  background: #46484d;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22);
+  transform: translateY(-50%) scale(0.4);
+  transform-origin: right center;
+  transition: transform 0.45s var(--spring-soft) 0.28s;
+}
+
+.status-bubble.is-in::after {
   transform: translateY(-50%) scale(1);
 }
 
