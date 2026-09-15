@@ -14,6 +14,8 @@ Geneva, Switzerland // 46.20° N ; 6.14° E
 
 *Coords are not accurate
 
+hey! this is a placeholder status :)
+
 ![Portrait of Gabriel](https://gabriel.olynthe.org/favicon.jpg?v=2)
 
 *Yes... that's me from a few months back. And yes, the forest is a green screen. When I go out to shoot I usually go alone, so there's no one to take a picture of me. I'd be too shy to ask anyway :(*

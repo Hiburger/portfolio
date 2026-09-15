@@ -14,6 +14,8 @@ Genève, Suisse // 46.20° N ; 6.14° E
 
 *Coordonnées pas très exactes
 
+hey ! ceci est un statut provisoire :)
+
 ![Portrait de Gabriel](https://gabriel.olynthe.org/favicon.jpg?v=2)
 
 *Oui... c'est bien moi, il y a quelques mois. Et oui, la forêt est un fond vert. Quand je sors photographier, je vais généralement seul, donc personne pour me prendre en photo. Et puis je serais trop timide pour demander :(*

@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=17.29">
+  <link rel="stylesheet" href="../style.css?v=17.32">
   <link rel="alternate" type="text/markdown" href="index.md">
   <script>
     (function () {
@@ -116,7 +116,7 @@
       </nav>
       <div class="hero-row">
         <div>
-          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.31</span></h1>
+          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.32</span></h1>
           <p class="lede">Apprentice Infrastructure &amp; Operations Specialist at <a href="https://www.infomaniak.com/en/about">Infomaniak Network SA</a> by day, photographer whenever the light is good, open source person the 24/7.</p>
           <p class="coords">Geneva, Switzerland // 46.20° N ; 6.14° E</p>
           <p class="coords">*Coords are not accurate</p>
@@ -127,6 +127,7 @@
           </p>
         </div>
         <figure class="hero-photo">
+          <p class="status-bubble">hey! this is a placeholder status :)</p>
           <span class="frame">
             <span class="halo" aria-hidden="true"></span>
             <img src="../favicon.jpg?v=2" alt="Portrait of Gabriel" width="640" height="640" decoding="sync">
@@ -843,6 +844,22 @@
         });
       }, { rootMargin: "0px 0px -22% 0px", threshold: 0.25 });
       io.observe(el);
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var bubble = document.querySelector(".status-bubble");
+      if (!bubble) return;
+      function show() { bubble.classList.add("is-in"); }
+      var asked = null;
+      try { asked = localStorage.getItem("accent-asked"); } catch (e) {}
+      var dlg = document.getElementById("colour-modal");
+      if (dlg && dlg.showModal && !asked) {
+        dlg.addEventListener("close", function () { setTimeout(show, 600); }, { once: true });
+      } else {
+        setTimeout(show, 1400);
+      }
     })();
   </script>
 

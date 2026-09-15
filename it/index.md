@@ -14,6 +14,8 @@ Ginevra, Svizzera // 46.20° N ; 6.14° E
 
 *Coordinate non proprio esatte
 
+hey! questo è uno stato provvisorio :)
+
 ![Ritratto di Gabriel](https://gabriel.olynthe.org/favicon.jpg?v=2)
 
 *Sì... sono io, di qualche mese fa. E sì, la foresta è un green screen. Quando esco a fotografare di solito vado da solo, quindi non c'è nessuno che mi scatti. E comunque sarei troppo timido per chiedere :(*
