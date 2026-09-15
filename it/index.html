@@ -119,7 +119,7 @@
       </nav>
       <div class="hero-row">
         <div>
-          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.29</span></h1>
+          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.30</span></h1>
           <p class="lede">Apprendista specialista infrastrutture &amp; operazioni presso <a href="https://www.infomaniak.com/it/about">Infomaniak Network SA</a> di giorno, fotografo ogni volta che la luce è bella, appassionato di open source 24/7.</p>
           <p class="coords">Ginevra, Svizzera // 46.20° N ; 6.14° E</p>
           <p class="coords">*Coordinate non proprio esatte</p>
@@ -615,6 +615,15 @@
         picker.addEventListener("change", function () { dlg.close(); });
       }
       dlg.addEventListener("close", function () { store("accent-asked", "1"); });
+      var skip = dlg.querySelector(".colour-skip");
+      if (skip) skip.addEventListener("click", function () {
+        ["--accent-user", "--accent-user-dark", "--on-accent-user", "--on-accent-user-dark"].forEach(function (p) {
+          root.style.removeProperty(p);
+        });
+        ["accent-light", "accent-dark", "on-accent-light", "on-accent-dark"].forEach(function (k) {
+          try { localStorage.removeItem(k); } catch (e) {}
+        });
+      });
       if (!read("accent-asked")) dlg.showModal();
       var rp = document.getElementById("repaint");
       if (rp) rp.addEventListener("click", function () { dlg.showModal(); });
