@@ -569,7 +569,7 @@ h1:hover .i-tittle {
   width: fit-content;
   max-width: min(100%, 32rem);
   margin-top: 1rem;
-  padding: 0.65rem 0.75rem;
+  padding: 0.55rem 0.6rem;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -577,14 +577,6 @@ h1:hover .i-tittle {
 
 .ghchart[hidden] {
   display: none;
-}
-
-.ghchart-label {
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  color: var(--muted);
-  letter-spacing: 0.08em;
-  margin-bottom: 0.5rem;
 }
 
 .ghchart a {

@@ -26,7 +26,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=17.47">
+  <link rel="stylesheet" href="../style.css?v=17.48">
   <link rel="alternate" type="text/markdown" href="index.md">
   <script>
     (function () {
@@ -119,7 +119,7 @@
       </nav>
       <div class="hero-row">
         <div>
-          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.47</span></h1>
+          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.48</span></h1>
           <p class="lede">Apprendista specialista infrastrutture &amp; operazioni presso <a href="https://www.infomaniak.com/it/about">Infomaniak Network SA</a> di giorno, fotografo ogni volta che la luce è bella, appassionato di open source 24/7.</p>
           <p class="coords">Ginevra, Svizzera // 46.20° N ; 6.14° E</p>
           <p class="coords">*Coordinate non proprio esatte</p>
@@ -129,7 +129,6 @@
             <span class="flag-wrap" data-code="EN"><svg class="flag" viewBox="0 0 20 14" role="img" aria-label="English"><rect width="20" height="14" fill="#fff"/><rect width="20" height="2" fill="#B22234"/><rect y="4" width="20" height="2" fill="#B22234"/><rect y="8" width="20" height="2" fill="#B22234"/><rect y="12" width="20" height="2" fill="#B22234"/><rect width="9" height="8" fill="#3C3B6E"/></svg></span>
           </p>
           <div class="ghchart" hidden>
-            <p class="ghchart-label">~/home/gabrielp/commits/<span id="gh-total"></span></p>
             <a href="https://github.com/Hiburger" target="_blank" rel="noopener">
               <div class="ghgrid" role="img" aria-label="Grafico dei miei contributi GitHub dell'ultimo anno"></div>
             </a>
@@ -900,8 +899,6 @@
           frag.appendChild(col);
         });
         grid.appendChild(frag);
-        var total = document.getElementById("gh-total");
-        if (total) total.textContent = " · " + d.total;
         card.removeAttribute("hidden");
       }).catch(function () {
         card.remove();
