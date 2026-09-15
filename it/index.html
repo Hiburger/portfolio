@@ -119,7 +119,7 @@
       </nav>
       <div class="hero-row">
         <div>
-          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.30</span></h1>
+          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.31</span></h1>
           <p class="lede">Apprendista specialista infrastrutture &amp; operazioni presso <a href="https://www.infomaniak.com/it/about">Infomaniak Network SA</a> di giorno, fotografo ogni volta che la luce è bella, appassionato di open source 24/7.</p>
           <p class="coords">Ginevra, Svizzera // 46.20° N ; 6.14° E</p>
           <p class="coords">*Coordinate non proprio esatte</p>
@@ -544,9 +544,8 @@
             io.disconnect();
           }
         });
-      }, { threshold: 0.4 });
+      }, { rootMargin: "0px 0px -22% 0px", threshold: 0.25 });
       io.observe(lane);
-      setTimeout(draw, 2500);
     })();
   </script>
 
