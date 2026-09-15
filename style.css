@@ -1173,7 +1173,7 @@ h1:hover .i-tittle {
   justify-content: center;
   margin-top: 2.6rem;
   color: var(--accent);
-  transition: opacity 0.65s var(--spring-soft), transform 0.65s var(--spring-soft);
+  transition: opacity 1.1s var(--spring-soft), transform 1.1s var(--spring-soft);
 }
 
 .opinions-wip.is-pre {
