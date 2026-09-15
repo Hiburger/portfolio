@@ -565,6 +565,53 @@ h1:hover .i-tittle {
   transform: translateX(-50%) translateY(0);
 }
 
+.ghchart {
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem 0.9rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.ghchart-label {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.55rem;
+}
+
+.ghchart a {
+  display: block;
+  line-height: 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.ghchart img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 663px;
+  transition: opacity 0.16s ease;
+}
+
+.ghchart a:hover img {
+  opacity: 0.82;
+}
+
+:root[data-theme="dark"] .ghchart img {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .ghchart img {
+    filter: invert(1) hue-rotate(180deg);
+  }
+}
+
 .hero-row {
   display: flex;
   align-items: center;

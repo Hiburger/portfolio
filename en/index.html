@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=17.44">
+  <link rel="stylesheet" href="../style.css?v=17.45">
   <link rel="alternate" type="text/markdown" href="index.md">
   <script>
     (function () {
@@ -116,7 +116,7 @@
       </nav>
       <div class="hero-row">
         <div>
-          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.44</span></h1>
+          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.45</span></h1>
           <p class="lede">Apprentice Infrastructure &amp; Operations Specialist at <a href="https://www.infomaniak.com/en/about">Infomaniak Network SA</a> by day, photographer whenever the light is good, open source person 24/7.</p>
           <p class="coords">Geneva, Switzerland // 46.20° N ; 6.14° E</p>
           <p class="coords">*Coords are not accurate</p>
@@ -125,6 +125,12 @@
             <span class="flag-wrap" data-code="IT"><svg class="flag" viewBox="0 0 3 2" role="img" aria-label="Italiano"><rect width="1" height="2" fill="#009246"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#CE2B37"/></svg></span>
             <span class="flag-wrap" data-code="EN"><svg class="flag" viewBox="0 0 20 14" role="img" aria-label="English"><rect width="20" height="14" fill="#fff"/><rect width="20" height="2" fill="#B22234"/><rect y="4" width="20" height="2" fill="#B22234"/><rect y="8" width="20" height="2" fill="#B22234"/><rect y="12" width="20" height="2" fill="#B22234"/><rect width="9" height="8" fill="#3C3B6E"/></svg></span>
           </p>
+          <div class="ghchart">
+            <p class="ghchart-label">~/home/gabrielp/commits/</p>
+            <a href="https://github.com/Hiburger" target="_blank" rel="noopener">
+              <img class="ghchart-img" src="https://ghchart.rshah.org/0f8a7d/Hiburger" alt="Contribution graph of my last year of commits on GitHub" width="663" height="104" referrerpolicy="no-referrer" decoding="async">
+            </a>
+          </div>
         </div>
         <figure class="hero-photo">
           <p class="status-bubble">We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology.</p>
@@ -597,6 +603,8 @@
         store("accent-dark", dark);
         store("on-accent-light", inkFor(light));
         store("on-accent-dark", inkFor(dark));
+        var chart = document.querySelector(".ghchart-img");
+        if (chart) chart.src = "https://ghchart.rshah.org/" + light.slice(1) + "/Hiburger";
 
       }
       dlg.querySelectorAll(".swatch").forEach(function (b) {
@@ -621,6 +629,15 @@
           try { localStorage.removeItem(k); } catch (e) {}
         });
       });
+      var chart = document.querySelector(".ghchart-img");
+      if (chart) {
+        var savedAccent = read("accent-light");
+        if (savedAccent) chart.src = "https://ghchart.rshah.org/" + savedAccent.slice(1) + "/Hiburger";
+        chart.addEventListener("error", function () {
+          var box = document.querySelector(".ghchart");
+          if (box) box.remove();
+        });
+      }
       if (!read("accent-asked")) dlg.showModal();
       var rp = document.getElementById("repaint");
       if (rp) rp.addEventListener("click", function () { dlg.showModal(); });

@@ -14,6 +14,10 @@ Ginevra, Svizzera // 46.20° N ; 6.14° E
 
 *Coordinate non proprio esatte
 
+~/home/gabrielp/commits/
+
+[![Grafico dei miei contributi GitHub dell'ultimo anno](https://ghchart.rshah.org/0f8a7d/Hiburger)](https://github.com/Hiburger)
+
 Viviamo in una società estremamente dipendente dalla scienza e dalla tecnologia, in cui quasi nessuno se ne intende di scienza né di tecnologia.
 
 ![Ritratto di Gabriel](https://gabriel.olynthe.org/favicon.jpg?v=2)

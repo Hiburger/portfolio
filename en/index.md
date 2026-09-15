@@ -8,11 +8,15 @@ Hi there ! Welcome to my new portfolio :)
 
 # Gabriel
 
-Apprentice Infrastructure & Operations Specialist at [Infomaniak Network SA](https://www.infomaniak.com/en/about) by day, photographer whenever the light is good, open source person the 24/7.
+Apprentice Infrastructure & Operations Specialist at [Infomaniak Network SA](https://www.infomaniak.com/en/about) by day, photographer whenever the light is good, open source person 24/7.
 
 Geneva, Switzerland // 46.20° N ; 6.14° E
 
 *Coords are not accurate
+
+~/home/gabrielp/commits/
+
+[![Contribution graph of my last year of commits on GitHub](https://ghchart.rshah.org/0f8a7d/Hiburger)](https://github.com/Hiburger)
 
 We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology.
 
