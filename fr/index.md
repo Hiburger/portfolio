@@ -4,7 +4,7 @@ description: Gabriel Paesano, apprenti spécialiste infrastructure & opérations
 image: https://gabriel.olynthe.org/favicon.jpg
 ---
 
-Salut ! Bienvenue sur mon nouveau portfolio :)
+Salut ! Bienvenue sur mon nouveau portfolio :) Cette page est traduite automatiquement, car le site est écrit à l'origine en anglais.
 
 # Gabriel
 

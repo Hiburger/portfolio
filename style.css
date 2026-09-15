@@ -473,6 +473,13 @@ h1:hover .i-tittle {
   padding: 0.5rem 1rem;
 }
 
+.banner-note {
+  display: block;
+  margin-top: 0.2em;
+  letter-spacing: 0.08em;
+  opacity: 0.8;
+}
+
 .version {
   display: inline-block;
   font-family: var(--mono);

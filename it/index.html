@@ -26,7 +26,7 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=17.43">
+  <link rel="stylesheet" href="../style.css?v=17.44">
   <link rel="alternate" type="text/markdown" href="index.md">
   <script>
     (function () {
@@ -63,7 +63,7 @@
 </head>
 <body>
   <a class="skip" href="#main">Vai al contenuto</a>
-  <p class="banner">Ciao ! Benvenuto sul mio nuovo portfolio :)</p>
+  <p class="banner"><span class="banner-msg">Ciao ! Benvenuto sul mio nuovo portfolio :)</span> <span class="banner-note">Questa pagina è tradotta automaticamente, perché il sito è scritto in origine in inglese.</span></p>
 
   <button type="button" class="menu-btn" aria-controls="mobile-panel" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -119,7 +119,7 @@
       </nav>
       <div class="hero-row">
         <div>
-          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.43</span></h1>
+          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.44</span></h1>
           <p class="lede">Apprendista specialista infrastrutture &amp; operazioni presso <a href="https://www.infomaniak.com/it/about">Infomaniak Network SA</a> di giorno, fotografo ogni volta che la luce è bella, appassionato di open source 24/7.</p>
           <p class="coords">Ginevra, Svizzera // 46.20° N ; 6.14° E</p>
           <p class="coords">*Coordinate non proprio esatte</p>
@@ -633,9 +633,10 @@
   <script>
     (function () {
       var b = document.querySelector(".banner");
+      var msg = b && b.querySelector(".banner-msg");
       var h = new Date().getHours();
-      if (b && h >= 1 && h < 5) {
-        b.textContent = "sono le " + h + " del mattino, non dovresti dormire ?";
+      if (msg && h >= 1 && h < 5) {
+        msg.textContent = "sono le " + h + " del mattino, non dovresti dormire ?";
       }
       var base = document.title;
       document.addEventListener("visibilitychange", function () {
