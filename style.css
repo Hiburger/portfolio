@@ -1120,6 +1120,10 @@ h1:hover .i-tittle {
   padding-bottom: 0.6rem;
 }
 
+#contact .links li {
+  align-items: center;
+}
+
 .links a {
   color: inherit;
   transition: color 0.15s ease;
