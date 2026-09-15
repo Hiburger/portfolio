@@ -107,7 +107,7 @@ My technologies
 - **DIY:** Arduino Uno R3 x2, Arduino Nano x2
 - **Computers:** Too many (10+). Primary: MacBookPro 2026 (M5 Pro) / Secondary: XPS 15 7590 & HP Omen Tower (forgot the name)
 - **OS:** GrapheneOS // Cachy Linux // macOS // Debian Trixie
-- **Mobile:** Pixel 9 Pro XL, iPad Pro (M2), Quest 3, Pixel Watch 5
+- **Mobile:** Pixel 9 Pro XL, iPad Pro (M2), Quest 3, Pixel Watch 5, Sony WH-1000XM6
 - **Photography:** D7000 + 2 Nikkor zoom lenses (450mm max reach)
 
 favorite groups (order matters!)
