@@ -640,7 +640,9 @@ h1:hover .i-tittle {
 
 .status-bubble.is-in::before {
   transform: scale(1);
-  animation: bubble-float-a 3.4s ease-in-out 0.6s infinite;
+  animation:
+    bubble-bob-a 2.7s ease-in-out 1s infinite alternate,
+    bubble-drift-a 4.1s ease-in-out 0.4s infinite alternate;
 }
 
 .status-bubble::after {
@@ -661,34 +663,48 @@ h1:hover .i-tittle {
 
 .status-bubble.is-in::after {
   transform: scale(1);
-  animation: bubble-float-b 4.3s ease-in-out 0.9s infinite;
+  animation:
+    bubble-bob-b 3.5s ease-in-out 1.6s infinite alternate,
+    bubble-drift-b 5.3s ease-in-out 0.4s infinite alternate;
 }
 
-@keyframes bubble-float-a {
-  0%, 50%, 100% {
+@keyframes bubble-bob-a {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes bubble-bob-b {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes bubble-drift-a {
+  from {
     translate: 0 -50%;
   }
 
-  25% {
-    translate: 0.12rem calc(-50% - 3px);
-  }
-
-  75% {
-    translate: -0.12rem calc(-50% + 3px);
+  to {
+    translate: 2px -50%;
   }
 }
 
-@keyframes bubble-float-b {
-  0%, 50%, 100% {
+@keyframes bubble-drift-b {
+  from {
     translate: 0 -50%;
   }
 
-  25% {
-    translate: -0.12rem calc(-50% + 3px);
-  }
-
-  75% {
-    translate: 0.12rem calc(-50% - 3px);
+  to {
+    translate: -2px -50%;
   }
 }
 
