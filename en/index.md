@@ -14,7 +14,7 @@ Geneva, Switzerland // 46.20° N ; 6.14° E
 
 *Coords are not accurate
 
-hey! this is a placeholder status :)
+We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology.
 
 ![Portrait of Gabriel](https://gabriel.olynthe.org/favicon.jpg?v=2)
 

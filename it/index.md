@@ -14,7 +14,7 @@ Ginevra, Svizzera // 46.20° N ; 6.14° E
 
 *Coordinate non proprio esatte
 
-hey! questo è uno stato provvisorio :)
+Viviamo in una società estremamente dipendente dalla scienza e dalla tecnologia, in cui quasi nessuno se ne intende di scienza né di tecnologia.
 
 ![Ritratto di Gabriel](https://gabriel.olynthe.org/favicon.jpg?v=2)
 

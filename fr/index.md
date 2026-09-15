@@ -14,7 +14,7 @@ Genève, Suisse // 46.20° N ; 6.14° E
 
 *Coordonnées pas très exactes
 
-hey ! ceci est un statut provisoire :)
+Nous vivons dans une société extrêmement dépendante de la science et de la technologie, dans laquelle presque personne ne s'y connaît en science ni en technologie.
 
 ![Portrait de Gabriel](https://gabriel.olynthe.org/favicon.jpg?v=2)
 
