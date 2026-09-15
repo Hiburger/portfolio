@@ -598,8 +598,8 @@ h1:hover .i-tittle {
 
 .status-bubble {
   position: absolute;
-  right: calc(100% + 3.1rem);
-  top: 2.4rem;
+  right: calc(100% + 4.1rem);
+  top: -1.75rem;
   z-index: 5;
   width: max-content;
   max-width: 15rem;
@@ -628,22 +628,11 @@ h1:hover .i-tittle {
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22);
   translate: 0 -50%;
-  transform: scale(0.4);
-  transform-origin: right center;
-  will-change: transform, translate;
 }
 
 .status-bubble.is-in {
   opacity: 1;
   transform: none;
-}
-
-.status-bubble.is-in::before {
-  transform: scale(1);
-  animation:
-    bubble-pop-a 0.5s var(--spring-soft) 0.15s backwards,
-    bubble-bob-a 2.7s ease-in-out 0.65s infinite alternate,
-    bubble-drift-a 4.1s ease-in-out 0.4s infinite alternate;
 }
 
 .status-bubble::after {
@@ -657,77 +646,6 @@ h1:hover .i-tittle {
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22);
   translate: 0 -50%;
-  transform: scale(0.4);
-  transform-origin: right center;
-  will-change: transform, translate;
-}
-
-.status-bubble.is-in::after {
-  transform: scale(1);
-  animation:
-    bubble-pop-b 0.5s var(--spring-soft) 0.28s backwards,
-    bubble-bob-b 3.5s ease-in-out 0.78s infinite alternate,
-    bubble-drift-b 5.3s ease-in-out 0.4s infinite alternate;
-}
-
-@keyframes bubble-pop-a {
-  from {
-    transform: scale(0.4);
-  }
-
-  to {
-    transform: scale(1);
-  }
-}
-
-@keyframes bubble-pop-b {
-  from {
-    transform: scale(0.4);
-  }
-
-  to {
-    transform: scale(1);
-  }
-}
-
-@keyframes bubble-bob-a {
-  from {
-    transform: translateY(0);
-  }
-
-  to {
-    transform: translateY(-4px);
-  }
-}
-
-@keyframes bubble-bob-b {
-  from {
-    transform: translateY(0);
-  }
-
-  to {
-    transform: translateY(-3px);
-  }
-}
-
-@keyframes bubble-drift-a {
-  from {
-    translate: 0 -50%;
-  }
-
-  to {
-    translate: 2px -50%;
-  }
-}
-
-@keyframes bubble-drift-b {
-  from {
-    translate: 0 -50%;
-  }
-
-  to {
-    translate: -2px -50%;
-  }
 }
 
 @media (max-width: 700px) {
@@ -1680,11 +1598,6 @@ footer {
 
   .hero-photo .halo,
   .hero-photo .halo::before {
-    animation: none !important;
-  }
-
-  .status-bubble::before,
-  .status-bubble::after {
     animation: none !important;
   }
 }
