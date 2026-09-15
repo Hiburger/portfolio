@@ -567,7 +567,7 @@ h1:hover .i-tittle {
 
 .ghchart {
   width: 100%;
-  max-width: 40rem;
+  max-width: 48rem;
   margin-top: 1rem;
   padding: 0.55rem 0.6rem;
   background: var(--card);
@@ -628,6 +628,10 @@ h1:hover .i-tittle {
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
+}
+
+.hero-row > div {
+  flex: 1 1 auto;
 }
 
 .hero-photo {
