@@ -14,10 +14,6 @@ Geneva, Switzerland // 46.20° N ; 6.14° E
 
 *Coords are not accurate
 
-~/home/gabrielp/commits/
-
-[![Contribution graph of my last year of commits on GitHub](https://ghchart.rshah.org/0f8a7d/Hiburger)](https://github.com/Hiburger)
-
 We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology.
 
 ![Portrait of Gabriel](https://gabriel.olynthe.org/favicon.jpg?v=2)

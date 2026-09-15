@@ -567,7 +567,7 @@ h1:hover .i-tittle {
 
 .ghchart {
   width: fit-content;
-  max-width: min(100%, 28.5rem);
+  max-width: min(100%, 32rem);
   margin-top: 1rem;
   padding: 0.65rem 0.75rem;
   background: var(--card);
@@ -575,41 +575,61 @@ h1:hover .i-tittle {
   border-radius: 12px;
 }
 
+.ghchart[hidden] {
+  display: none;
+}
+
 .ghchart-label {
   font-family: var(--mono);
   font-size: 0.72rem;
   color: var(--muted);
   letter-spacing: 0.08em;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .ghchart a {
   display: block;
   line-height: 0;
-  border-radius: 6px;
-  overflow: hidden;
 }
 
-.ghchart img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: 663px;
-  transition: opacity 0.16s ease;
+.ghgrid {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  padding-bottom: 2px;
 }
 
-.ghchart a:hover img {
-  opacity: 0.82;
+.ghcol {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
-:root[data-theme="dark"] .ghchart img {
-  filter: invert(1) hue-rotate(180deg);
+.ghcell {
+  width: 7px;
+  height: 7px;
+  border-radius: 1.5px;
+  background: color-mix(in srgb, var(--accent) 9%, var(--card));
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .ghchart img {
-    filter: invert(1) hue-rotate(180deg);
-  }
+.ghcell[data-l="1"] {
+  background: color-mix(in srgb, var(--accent) 34%, var(--card));
+}
+
+.ghcell[data-l="2"] {
+  background: color-mix(in srgb, var(--accent) 58%, var(--card));
+}
+
+.ghcell[data-l="3"] {
+  background: color-mix(in srgb, var(--accent) 80%, var(--card));
+}
+
+.ghcell[data-l="4"] {
+  background: var(--accent);
+}
+
+.ghcell:hover {
+  outline: 1px solid var(--ink);
 }
 
 .hero-row {
