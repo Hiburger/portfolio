@@ -119,7 +119,7 @@
       </nav>
       <div class="hero-row">
         <div>
-          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.51</span></h1>
+          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.52</span></h1>
           <p class="lede">Apprendista specialista infrastrutture &amp; operazioni presso <a href="https://www.infomaniak.com/it/about">Infomaniak Network SA</a> di giorno, fotografo ogni volta che la luce è bella, appassionato di open source 24/7.</p>
           <p class="coords">Ginevra, Svizzera // 46.20° N ; 6.14° E</p>
           <p class="coords">*Coordinate non proprio esatte</p>
@@ -882,8 +882,10 @@
       }).then(function (d) {
         var weeks = d && d.weeks;
         if (!weeks || !weeks.length) throw new Error("empty");
+        var skip = Math.max(0, weeks.length - 48);
+        weeks = weeks.slice(skip);
         var frag = document.createDocumentFragment();
-        var base = d.from ? new Date(d.from + "T00:00:00").getTime() : null;
+        var base = d.from ? new Date(d.from + "T00:00:00").getTime() + skip * 7 * 86400000 : null;
         weeks.forEach(function (w, wi) {
           var col = document.createElement("div");
           col.className = "ghcol";
