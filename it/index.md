@@ -97,7 +97,7 @@ Ecco qualche scatto che mi piace ! Spero davvero che ti piaccino anche :)
 
 *06*
 
-Tutte le mie foto sono sotto la mia licenza, che si trova qui ([gp1.olynthe.org](https://gp1.olynthe.org/)). Tutte queste foto sono scattate da me con l'attrezzatura menzionata qui sopra. Altre mie foto si trovano su [Instagram](https://instagram.com/hello_iam_gabriel) :)
+Tutte le mie foto sono sotto la mia licenza, che si trova [qui](https://gp1.olynthe.org/). Tutte queste foto sono scattate da me con l'attrezzatura menzionata qui sopra. Altre mie foto si trovano su [Instagram](https://instagram.com/hello_iam_gabriel) :)
 
 ## ~/home/gabrielp/tools/
 

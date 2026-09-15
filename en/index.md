@@ -97,7 +97,7 @@ Here are a few frames I like ! I deeply hope you'll like them too :)
 
 *06*
 
-All of my photos are licensed under my own license, which can be found here ([gp1.olynthe.org](https://gp1.olynthe.org/)). All of these were shot by me with one of the gear mentioned above. More of my photos can be found on [Instagram](https://instagram.com/hello_iam_gabriel) :)
+All of my photos are licensed under my own license, which can be found [here](https://gp1.olynthe.org/). All of these were shot by me with one of the gear mentioned above. More of my photos can be found on [Instagram](https://instagram.com/hello_iam_gabriel) :)
 
 ## ~/home/gabrielp/tools/
 

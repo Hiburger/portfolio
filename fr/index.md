@@ -97,7 +97,7 @@ Voici quelques clichés que j'aime ! J'espère sincèrement qu'ils te plairont a
 
 *06*
 
-Toutes mes photos sont sous ma propre licence, trouvable ici ([gp1.olynthe.org](https://gp1.olynthe.org/)). Toutes ces photos ont été prises par moi avec l'un des appareils mentionnés ci-dessus. Tu trouveras d'autres photos sur [Instagram](https://instagram.com/hello_iam_gabriel) :)
+Toutes mes photos sont sous ma propre licence, trouvable [ici](https://gp1.olynthe.org/). Toutes ces photos ont été prises par moi avec l'un des appareils mentionnés ci-dessus. Tu trouveras d'autres photos sur [Instagram](https://instagram.com/hello_iam_gabriel) :)
 
 ## ~/home/gabrielp/tools/
 
