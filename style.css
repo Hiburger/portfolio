@@ -1172,8 +1172,7 @@ h1:hover .i-tittle {
   display: flex;
   justify-content: center;
   margin-top: 2.6rem;
-  color: var(--muted);
-  opacity: 0.5;
+  color: var(--accent);
 }
 
 .opinions-wip svg {
