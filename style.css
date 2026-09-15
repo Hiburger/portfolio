@@ -1168,6 +1168,19 @@ h1:hover .i-tittle {
   }
 }
 
+.opinions-wip {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.6rem;
+  color: var(--muted);
+  opacity: 0.5;
+}
+
+.opinions-wip svg {
+  width: 8.5rem;
+  height: auto;
+}
+
 .fuq {
   display: grid;
   gap: 0.7rem;
