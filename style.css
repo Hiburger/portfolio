@@ -566,8 +566,8 @@ h1:hover .i-tittle {
 }
 
 .ghchart {
-  width: fit-content;
-  max-width: min(100%, 32rem);
+  width: 100%;
+  max-width: 40rem;
   margin-top: 1rem;
   padding: 0.55rem 0.6rem;
   background: var(--card);
@@ -587,20 +587,19 @@ h1:hover .i-tittle {
 .ghgrid {
   display: flex;
   gap: 2px;
-  overflow-x: auto;
-  padding-bottom: 2px;
 }
 
 .ghcol {
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
 .ghcell {
-  width: 7px;
-  height: 7px;
-  border-radius: 1.5px;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 2px;
   background: color-mix(in srgb, var(--accent) 9%, var(--card));
 }
 
