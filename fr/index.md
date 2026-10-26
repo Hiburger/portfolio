@@ -14,6 +14,8 @@ Genève, Suisse // 46.20° N ; 6.14° E
 
 *Coordonnées pas très exactes
 
+langues parlées FR IT EN
+
 Nous vivons dans une société extrêmement dépendante de la science et de la technologie, dans laquelle presque personne ne s'y connaît en science ni en technologie.
 
 ![Portrait de Gabriel](https://gabriel.olynthe.org/favicon.jpg?v=2)
@@ -119,6 +121,7 @@ groupes favoris (l'ordre compte !)
 - **Appareils photo:** Nikon, Lumix, Fujifilm
 - **Cartes DIY:** Raspberry Pi, Arduino, Flipper Zero
 - **IDE:** Zed (Preview)
+- **Gaming:** Nintendo, Steam, Capcom
 
 ![Une baie serveur en désordre couverte de câbles emmêlés](https://gabriel.olynthe.org/messy_server_rack.jpg)
 
@@ -140,6 +143,8 @@ Je suis timide, mais je ne mords pas. Viens me dire bonjour !
 ## ~/home/gabrielp/fuq/
 
 Frequently Unasked Questions (FUQ)
+
+Ces réponses ne sont plus à jour, et les traductions FR / IT sont mauvaises. Je les mettrai à jour quand j'aurai le temps. Ne t'y fie pas trop, même si elles sont pour la plupart (voire entièrement) correctes. Désolé du dérangement ! Si tu as des questions, tu peux me joindre de plusieurs façons, voir ci-dessus.
 
 **Que signifie « Olynthe » ?**
 
@@ -189,11 +194,24 @@ J'ai de bonnes raisons de dire non ? La section contact est juste au-dessus.
 
 Bon, je ne suis pas un pro, mais... Oui, et gratuitement, puisque je ne photographie pas pour l'argent. Qui fait de la photo pour l'argent, d'ailleurs ? Mais attention : je travaille ou je suis à l'école toute la semaine, donc il faudrait d'abord en discuter. Et si pour venir jusqu'à toi il faut prendre le train ou autre, je risque de te demander de participer aux frais. Je trouve que c'est une demande légitime.
 
-## ~/home/gabrielp/opinions/
+## ~/home/gabrielp/values/
 
-Des opinions personnelles sans valeur que personne ne demande, sur quelques sujets : science, technologie, société.
+Les valeurs auxquelles je tiens, sans ordre particulier
 
-Ajouter cette section est plus difficile que je ne le pensais, donc ça va me prendre du temps à la construire. Patiente un peu :)
+Je sais, les mots ne sont que des mots. Malheureusement, rien de tout ça ne peut être prouvé ici et maintenant, mais je suis plutôt sûr (et j'espère) que tu t'en rendras compte à passer du temps avec moi. Et si tu me vois manquer à l'une d'elles, dis-le-moi et je me corrigerai immédiatement !
+
+- ### Transparence & honnêteté
+  Je m'engage à être honnête et sincère sur tout, toujours, même quand ça pourrait se retourner contre moi. À mes propres yeux, manquer à ça serait une vraie honte.
+- ### Sécurité & anonymat
+  Tout le monde y a droit, toujours. Pas sur demande, par défaut. Je m'engage à maintenir une confidentialité stricte et à protéger la sécurité numérique de quiconque utilise mes trucs. Ça vaut aussi pour ce qu'on me raconte, directement ou indirectement.
+- ### Pas de NSFW
+  Je suis farouchement, du plus profond de mon cœur, opposé à ce type de contenu et je ne le tolère pas. Mineur ou majeur, je ne le considère pas comme sain, mais comme dangereux. Je n'en produirai jamais et n'en consommerai jamais volontairement.
+- ### Anti-vulgarité
+  Je m'engage à éviter les gros mots et les expressions inappropriées, haineuses ou impolies, autant que je le peux. Il m'arrive encore d'en laisser échapper de temps en temps, alors je travaille à m'améliorer sur ce point.
+- ### La nature & les humains
+  Je suis profondément attaché au respect de l'environnement et de tous ceux qui l'habitent. Je ne polluerai jamais, ni volontairement ni par paresse, et je considère l'écologie et toutes les formes de vie avec le respect qui leur est dû.
+- ### Respect
+  Qui que tu sois, quoi que tu fasses, où que tu sois, je te respecterai et t'apprécierai toujours. Je m'engage à traiter tout le monde sur un pied d'égalité, sans exception.
 
 Le savais-tu ? Ce site & le domaine olynthe sont hébergés par [Infomaniak](https://www.infomaniak.com/fr/a-propos) : hébergés écologiquement en Suisse // B Corp™ // carbone compensé à 200%
 

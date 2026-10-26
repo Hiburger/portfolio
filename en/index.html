@@ -23,13 +23,13 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=17.53">
+  <link rel="stylesheet" href="../style.css?v=17.55">
   <link rel="alternate" type="text/markdown" href="index.md">
   <script>
     (function () {
       try {
         var t = localStorage.getItem("theme");
-        if (t === "dark" || t === "light") document.documentElement.dataset.theme = t;
+        if (t === "dark" || t === "light" || t === "astro") document.documentElement.dataset.theme = t;
         var s = document.documentElement.style;
         var al = localStorage.getItem("accent-light");
         var ad = localStorage.getItem("accent-dark");
@@ -74,7 +74,7 @@
       <li><a href="#photography">Photography</a></li>
       <li><a href="#toolbox">Toolbox</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#fuq">FUQ & Opinions</a></li>
+      <li><a href="#fuq">FUQ & Values</a></li>
     </ul>
     <div class="panel-foot">
       <p class="panel-label">language</p>
@@ -87,6 +87,7 @@
         <span class="theme-thumb" aria-hidden="true"></span>
         <button type="button" class="theme-opt" data-theme-choice="light" aria-pressed="false">light</button>
         <button type="button" class="theme-opt" data-theme-choice="dark" aria-pressed="false">dark</button>
+        <button type="button" class="theme-opt" data-theme-choice="astro" aria-pressed="false">astro</button>
       </div>
     </div>
   </nav>
@@ -99,7 +100,7 @@
         <a href="#photography">Photography</a>
         <a href="#toolbox">Toolbox</a>
         <a href="#contact">Contact</a>
-        <a href="#fuq">FUQ & Opinions</a>
+        <a href="#fuq">FUQ & Values</a>
         <div class="lang-switch">
           <button type="button" class="lang-btn" aria-haspopup="true">EN</button>
           <ul class="lang-menu">
@@ -112,19 +113,21 @@
           <span class="theme-thumb" aria-hidden="true"></span>
           <button type="button" class="theme-opt" data-theme-choice="light" aria-pressed="false">light</button>
           <button type="button" class="theme-opt" data-theme-choice="dark" aria-pressed="false">dark</button>
+          <button type="button" class="theme-opt" data-theme-choice="astro" aria-pressed="false">astro</button>
         </div>
       </nav>
       <div class="hero-row">
         <div>
-          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.54</span></h1>
+          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.55</span></h1>
           <p class="lede">Apprentice Infrastructure &amp; Operations Specialist at <a href="https://www.infomaniak.com/en/about">Infomaniak Network SA</a> by day, photographer whenever the light is good, open source person 24/7.</p>
           <p class="coords">Geneva, Switzerland // 46.20° N ; 6.14° E</p>
           <p class="coords">*Coords are not accurate</p>
-          <p class="langs">
-            <span class="flag-wrap" data-code="FR"><svg class="flag" viewBox="0 0 3 2" role="img" aria-label="Français"><rect width="1" height="2" fill="#002395"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ED2939"/></svg></span>
-            <span class="flag-wrap" data-code="IT"><svg class="flag" viewBox="0 0 3 2" role="img" aria-label="Italiano"><rect width="1" height="2" fill="#009246"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#CE2B37"/></svg></span>
-            <span class="flag-wrap" data-code="EN"><svg class="flag" viewBox="0 0 20 14" role="img" aria-label="English"><rect width="20" height="14" fill="#fff"/><rect width="20" height="2" fill="#B22234"/><rect y="4" width="20" height="2" fill="#B22234"/><rect y="8" width="20" height="2" fill="#B22234"/><rect y="12" width="20" height="2" fill="#B22234"/><rect width="9" height="8" fill="#3C3B6E"/></svg></span>
-          </p>
+          <div class="langs">
+            <span class="langs-label">fluent in</span>
+            <span class="lang-code" title="Français">FR</span>
+            <span class="lang-code" title="Italiano">IT</span>
+            <span class="lang-code" title="English">EN</span>
+          </div>
           <div class="ghchart" hidden>
             <a href="https://github.com/Hiburger" target="_blank" rel="noopener">
               <div class="ghgrid" role="img" aria-label="Contribution graph of my last year of commits on GitHub"></div>
@@ -317,6 +320,7 @@
               <li><span class="tag">Cameras</span>Nikon, Lumix, Fujifilm</li>
               <li><span class="tag">DIY boards</span>Raspberry Pi, Arduino, Flipper Zero</li>
               <li><span class="tag">IDE</span>Zed (Preview)</li>
+              <li><span class="tag">Gaming</span>Nintendo, Steam, Capcom</li>
             </ul>
           </div>
           <figure class="hero-photo">
@@ -349,11 +353,12 @@
     </div>
 
     <div class="wrap">
-      <section id="fuq" class="section" aria-label="FUQ & Opinions">
+      <section id="fuq" class="section" aria-label="FUQ & Values">
         <div class="fuq-split">
           <div>
             <h2 class="label">~/home/gabrielp/fuq/</h2>
             <p>Frequently Unasked Questions (FUQ)</p>
+            <p class="fuq-note">These answers are outdated, and the FR / IT translations are bad. I'll update them when I get the time. Don't rely on them too much, even if they're mostly (if not entirely) correct. Sorry for the inconvenience! If you have any questions, you can reach me in multiple ways, see above.</p>
             <div class="fuq">
               <div class="fuq-col">
                 <details>
@@ -410,23 +415,35 @@
             </div>
           </div>
           <div>
-            <h2 class="label">~/home/gabrielp/opinions/</h2>
-            <p>Worthless personal opinions nobody asked for, about a few topics: Science, Technology, Society.</p>
-            <p>Adding this section turns out to be harder than I thought, so it's gonna take some time to build. Stay tuned :)</p>
-            <div class="opinions-wip" aria-hidden="true">
-              <svg viewBox="0 0 120 120" focusable="false">
-                <g transform="translate(-14 11)">
-                  <g transform="translate(-6 -13) scale(5.5)" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-                    <line x1="12" y1="17" x2="12.01" y2="17"/>
-                  </g>
-                  <g transform="translate(62 -3) scale(3)" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-                    <line x1="12" y1="17" x2="12.01" y2="17"/>
-                  </g>
-                </g>
-              </svg>
-            </div>
+            <h2 class="label">~/home/gabrielp/values/</h2>
+            <p class="values-intro"><svg class="sicon" aria-hidden="true"><use href="../logos/icons.svg?v=5#mood"/></svg>The values I hold myself to, in no particular order</p>
+            <p class="values-sub">I know, words are words. Sadly, none of these can be proven right now, right here, but I'm pretty sure (and hope) that you'll realise it if you spend time near me. And if you see me failing on any of these, tell me and I'll correct myself right away!</p>
+            <ul class="values">
+              <li class="value">
+                <h3>Transparency &amp; honesty</h3>
+                <p>I'm committed to being honest and sincere about everything, always, even when it could turn against me. From my own point of view, failing at this would be a real shame.</p>
+              </li>
+              <li class="value">
+                <h3>Security &amp; anonymity</h3>
+                <p>Everyone deserves them, always. Not on request, by default. I'm committed to maintaining strict privacy and protecting the digital security of whoever uses my stuff. This also applies to what people tell me, directly or indirectly.</p>
+              </li>
+              <li class="value">
+                <h3>No NSFW</h3>
+                <p>I'm strictly, from the deepest of my heart, against such material and I don't tolerate it. Minor or not, I don't consider it healthy but dangerous. I will never produce or consume such content on purpose.</p>
+              </li>
+              <li class="value">
+                <h3>Anti-vulgarity</h3>
+                <p>I'm committed to avoiding bad words and inappropriate, hateful or rude expressions as much as I can. Things may still slip out once in a while, so I keep working on making fewer mistakes here.</p>
+              </li>
+              <li class="value">
+                <h3>Nature &amp; humans</h3>
+                <p>I'm deeply committed to respecting the environment and its inhabitants. I will never pollute on purpose or out of laziness, and I treat ecology and every form of life with proper respect.</p>
+              </li>
+              <li class="value">
+                <h3>Respect</h3>
+                <p>Whoever you are, whatever you do, wherever you are, I'll always respect and appreciate you. I'm committed to treating everyone equally, constantly.</p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -434,13 +451,14 @@
   </main>
 
   <div class="footer-band">
+    <img class="tux" src="../logos/tux.png?v=1" alt="">
     <div class="wrap">
-      <p class="hosted">Did you know? This website &amp; the olynthe domain are hosted by <a href="https://www.infomaniak.com/en/about">Infomaniak</a>: ecologically hosted in Switzerland // B Corp™ // carbon compensated 200%</p>
-      <p class="hosted fork">Fun fact: this UI takes its cues from <a href="https://m3.material.io">Material Design</a>. If you like this portfolio, fork <a href="https://github.com/Hiburger/portfolio">github.com/Hiburger/portfolio</a> and make it yours: same design, your info :)</p>
+      <p class="hosted"><svg class="sicon" aria-hidden="true"><use href="../logos/icons.svg?v=5#eco"/></svg> Did you know? This website &amp; the olynthe domain are hosted by <a href="https://www.infomaniak.com/en/about">Infomaniak</a>: ecologically hosted in Switzerland // B Corp™ // carbon compensated 200%</p>
+      <p class="hosted fork"><svg class="sicon" aria-hidden="true"><use href="../logos/icons.svg?v=5#waving_hand"/></svg> Fun fact: this UI takes its cues from <a href="https://m3.material.io">Material Design</a>. If you like this portfolio, fork <a href="https://github.com/Hiburger/portfolio">github.com/Hiburger/portfolio</a> and make it yours: same design, your info :)</p>
       <footer>
         <span>I’ll always be there for you, but will you ?</span>
         <span>© 2048 Gabriel Paesano</span>
-        <button type="button" class="repaint" id="repaint">repaint</button>
+        <button type="button" class="repaint" id="repaint"><svg class="sicon" aria-hidden="true"><use href="../logos/icons.svg?v=5#format_paint"/></svg> repaint</button>
       </footer>
     </div>
   </div>
@@ -449,7 +467,8 @@
     <form method="dialog">
       <p class="colour-label">~/home/gabrielp/.config/</p>
       <h2 id="colour-title">Hey! :) <br> <span class="colour-question">May I ask you a question ?</span></h2>
-      <p>What's your favourite colour? <br> Pick one and the whole site wears it: links, dates, buttons, everything. So everyone likes the colour !</p>
+      <p class="colour-ask">What's your favourite colour? <br> Pick one and the whole site wears it: links, dates, buttons, everything. So everyone likes the colour !</p>
+      <p class="colour-astro" hidden>Astro mode is on, so the palette is off: red wins. Everything stays red to keep your eyes dark-adapted. Switch back to light or dark to repaint :)</p>
       <div class="swatches">
         <button type="button" class="swatch" data-colour="#0f8a7d" style="background: #0f8a7d" aria-label="turquoise"></button>
         <button type="button" class="swatch" data-colour="#a44a1f" style="background: #a44a1f" aria-label="terracotta"></button>
@@ -464,7 +483,7 @@
       </div>
       <div class="colour-actions">
         <span class="colour-note">Cookies ? Nope, just colours.</span>
-        <button class="colour-skip" value="cancel">keep Gabriel's favorite</button>
+        <button class="colour-skip" value="cancel"><span class="skip-base">keep Gabriel's favorite</span><span class="skip-astro">Switch to dark mode</span></button>
       </div>
     </form>
   </dialog>
@@ -474,15 +493,17 @@
       var root = document.documentElement;
       var switches = document.querySelectorAll(".theme-switch");
       var mq = window.matchMedia("(prefers-color-scheme: dark)");
-      function currentIsDark() {
-        return root.dataset.theme === "dark" || (!root.dataset.theme && mq.matches);
+      function currentTheme() {
+        var t = root.dataset.theme;
+        if (t === "dark" || t === "astro" || t === "light") return t;
+        return mq.matches ? "dark" : "light";
       }
       function renderSwitch(sw) {
         var thumb = sw.querySelector(".theme-thumb");
         var opts = sw.querySelectorAll(".theme-opt");
-        var dark = currentIsDark();
+        var cur = currentTheme();
         opts.forEach(function (b) {
-          var active = (b.dataset.themeChoice === "dark") === dark;
+          var active = b.dataset.themeChoice === cur;
           b.classList.toggle("is-active", active);
           b.setAttribute("aria-pressed", active ? "true" : "false");
           if (active) {
@@ -615,9 +636,14 @@
         picker.addEventListener("input", function () { choose(picker.value); });
         picker.addEventListener("change", function () { dlg.close(); });
       }
-      dlg.addEventListener("close", function () { store("accent-asked", "1"); });
+      dlg.addEventListener("close", function () { if (root.dataset.theme !== "astro") store("accent-asked", "1"); });
       var skip = dlg.querySelector(".colour-skip");
       if (skip) skip.addEventListener("click", function () {
+        if (root.dataset.theme === "astro") {
+          var dark = document.querySelector('.theme-opt[data-theme-choice="dark"]');
+          if (dark) dark.click();
+          return;
+        }
         ["--accent-user", "--accent-user-dark", "--on-accent-user", "--on-accent-user-dark"].forEach(function (p) {
           root.style.removeProperty(p);
         });
@@ -625,7 +651,7 @@
           try { localStorage.removeItem(k); } catch (e) {}
         });
       });
-      if (!read("accent-asked")) dlg.showModal();
+      if (!read("accent-asked") && root.dataset.theme !== "astro") dlg.showModal();
       var rp = document.getElementById("repaint");
       if (rp) rp.addEventListener("click", function () { dlg.showModal(); });
     })();
@@ -727,6 +753,10 @@
           tittle.style.opacity = "1";
           tittle.style.background = "var(--accent)";
           setTimeout(function () { dot.remove(); }, 200);
+          setTimeout(function () {
+            var frame = document.querySelector(".hero-photo .frame");
+            if (frame) frame.dispatchEvent(new CustomEvent("capture"));
+          }, 350);
         }, restore);
       }
       var asked = null;
@@ -815,6 +845,7 @@
       frame.addEventListener("mouseenter", schedule);
       frame.addEventListener("mouseleave", cancel);
       frame.addEventListener("pointerdown", pop);
+      frame.addEventListener("capture", pop);
     })();
   </script>
 
@@ -834,36 +865,70 @@
 
   <script>
     (function () {
-      var el = document.querySelector(".opinions-wip");
-      if (!el || !("IntersectionObserver" in window)) return;
-      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-      el.classList.add("is-pre");
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) {
-            el.classList.add("is-in");
-            el.classList.remove("is-pre");
-            io.disconnect();
-          }
-        });
-      }, { rootMargin: "0px 0px -22% 0px", threshold: 0.25 });
-      io.observe(el);
-    })();
-  </script>
-
-  <script>
-    (function () {
       var bubble = document.querySelector(".status-bubble");
       if (!bubble) return;
+      var SWAP_MS = 10000;
+      var lines = [
+        "We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology.",
+        "Il me semble que ce qui se ressemble s'assemble",
+        "There is more happiness in giving than there is in receiving",
+        "hi.",
+        "great to see you",
+        "When the Last Tree Is Cut Down, the Last Fish Eaten, and the Last Stream Poisoned, You Will Realize That You Cannot Eat Money",
+        "Hellooo :)",
+        "I use arch btw",
+        "there's no place like 127.0.0.1",
+        "I shoot in M btw",
+        "i'm 56 years old they say",
+        "I try to live by the strongest values and morals",
+        "I like pasta",
+        "I use GrapheneOS btw",
+        "They want you to think everything's alright, that's not true.",
+        "There are numerous traps in our lives, we won't spot them all",
+        "I'm on my way",
+        "Il y a qqn???",
+        "I like round cats",
+        "J'aime les gros chats",
+        "Did you know this bubble updates itself?",
+        "You can trust me, always.",
+        "Tu peux me faire confiance",
+        "I'll always be there for you, but will you?",
+        "Please don't go.",
+        "Je suis là, moi.",
+        "i'm shy. sorry.",
+        "Burning tokens",
+        "Eating pasta",
+        "Greatest Technician That Ever Lived",
+        "Greatest Technician That Ever Lived (again)",
+        "I like animals!"
+        /* mixed languages on purpose — bubble lines are never translated */
+      ];
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var idx = Math.floor(Math.random() * lines.length);
+      bubble.textContent = lines[idx];
+      function apply(text) {
+        if (reduce) { bubble.textContent = text; return; }
+        bubble.classList.remove("is-in");
+        setTimeout(function () {
+          bubble.textContent = text;
+          bubble.classList.add("is-in");
+        }, 420);
+      }
+      function next() {
+        if (document.hidden || lines.length < 2) return;
+        idx = (idx + 1 + Math.floor(Math.random() * (lines.length - 1))) % lines.length;
+        apply(lines[idx]);
+      }
       function show() { bubble.classList.add("is-in"); }
       var asked = null;
       try { asked = localStorage.getItem("accent-asked"); } catch (e) {}
       var dlg = document.getElementById("colour-modal");
-      if (dlg && dlg.showModal && !asked) {
+      if (dlg && dlg.showModal && !asked && document.documentElement.dataset.theme !== "astro") {
         dlg.addEventListener("close", function () { setTimeout(show, 600); }, { once: true });
       } else {
         setTimeout(show, 1400);
       }
+      setInterval(next, SWAP_MS);
     })();
   </script>
 

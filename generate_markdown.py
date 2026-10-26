@@ -32,7 +32,7 @@ VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input",
 SKIP_TAGS = {"script", "style", "noscript", "template", "svg", "button",
              "dialog", "form", "input", "label", "select", "option",
              "textarea", "nav", "footer", "iframe", "head", "title", "meta", "link"}
-SKIP_CLASSES = {"skip", "theme-switch", "flag-wrap", "panel-backdrop"}
+SKIP_CLASSES = {"skip", "theme-switch", "panel-backdrop"}
 BLOCK_TAGS = {"p", "h1", "h2", "h3", "h4", "h5", "h6", "ul", "ol", "figcaption", "hr", "li", "blockquote", "pre", "summary"}
 CONTAINER_TAGS = {"div", "section", "aside", "main", "article", "header", "figure", "details"}
 

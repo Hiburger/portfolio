@@ -26,13 +26,13 @@
   <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="../style.css?v=17.53">
+  <link rel="stylesheet" href="../style.css?v=17.55">
   <link rel="alternate" type="text/markdown" href="index.md">
   <script>
     (function () {
       try {
         var t = localStorage.getItem("theme");
-        if (t === "dark" || t === "light") document.documentElement.dataset.theme = t;
+        if (t === "dark" || t === "light" || t === "astro") document.documentElement.dataset.theme = t;
         var s = document.documentElement.style;
         var al = localStorage.getItem("accent-light");
         var ad = localStorage.getItem("accent-dark");
@@ -77,7 +77,7 @@
       <li><a href="#photography">Photo</a></li>
       <li><a href="#toolbox">Outils</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#fuq">FUQ & Opinions</a></li>
+      <li><a href="#fuq">FUQ & Valeurs</a></li>
     </ul>
     <div class="panel-foot">
       <p class="panel-label">langue</p>
@@ -90,6 +90,7 @@
         <span class="theme-thumb" aria-hidden="true"></span>
         <button type="button" class="theme-opt" data-theme-choice="light" aria-pressed="false">clair</button>
         <button type="button" class="theme-opt" data-theme-choice="dark" aria-pressed="false">sombre</button>
+        <button type="button" class="theme-opt" data-theme-choice="astro" aria-pressed="false">astro</button>
       </div>
     </div>
   </nav>
@@ -102,7 +103,7 @@
         <a href="#photography">Photo</a>
         <a href="#toolbox">Outils</a>
         <a href="#contact">Contact</a>
-        <a href="#fuq">FUQ & Opinions</a>
+        <a href="#fuq">FUQ & Valeurs</a>
         <div class="lang-switch">
           <button type="button" class="lang-btn" aria-haspopup="true">FR</button>
           <ul class="lang-menu">
@@ -115,19 +116,21 @@
           <span class="theme-thumb" aria-hidden="true"></span>
           <button type="button" class="theme-opt" data-theme-choice="light" aria-pressed="false">clair</button>
           <button type="button" class="theme-opt" data-theme-choice="dark" aria-pressed="false">sombre</button>
+          <button type="button" class="theme-opt" data-theme-choice="astro" aria-pressed="false">astro</button>
         </div>
       </nav>
       <div class="hero-row">
         <div>
-          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.54</span></h1>
+          <h1 aria-label="Gabriel">Gabr<span class="i-wrap">ı<span class="i-tittle" aria-hidden="true"></span></span>el<span class="version">v17.55</span></h1>
           <p class="lede">Apprenti spécialiste infrastructure &amp; opérations chez <a href="https://www.infomaniak.com/fr/a-propos">Infomaniak Network SA</a> le jour, photographe dès que la lumière est belle, passionné d'open source 24/7.</p>
           <p class="coords">Genève, Suisse // 46.20° N ; 6.14° E</p>
           <p class="coords">*Coordonnées pas très exactes</p>
-          <p class="langs">
-            <span class="flag-wrap" data-code="FR"><svg class="flag" viewBox="0 0 3 2" role="img" aria-label="Français"><rect width="1" height="2" fill="#002395"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ED2939"/></svg></span>
-            <span class="flag-wrap" data-code="IT"><svg class="flag" viewBox="0 0 3 2" role="img" aria-label="Italiano"><rect width="1" height="2" fill="#009246"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#CE2B37"/></svg></span>
-            <span class="flag-wrap" data-code="EN"><svg class="flag" viewBox="0 0 20 14" role="img" aria-label="English"><rect width="20" height="14" fill="#fff"/><rect width="20" height="2" fill="#B22234"/><rect y="4" width="20" height="2" fill="#B22234"/><rect y="8" width="20" height="2" fill="#B22234"/><rect y="12" width="20" height="2" fill="#B22234"/><rect width="9" height="8" fill="#3C3B6E"/></svg></span>
-          </p>
+          <div class="langs">
+            <span class="langs-label">langues parlées</span>
+            <span class="lang-code" title="Français">FR</span>
+            <span class="lang-code" title="Italiano">IT</span>
+            <span class="lang-code" title="English">EN</span>
+          </div>
           <div class="ghchart" hidden>
             <a href="https://github.com/Hiburger" target="_blank" rel="noopener">
               <div class="ghgrid" role="img" aria-label="Graphe de mes contributions GitHub sur l'année écoulée"></div>
@@ -320,6 +323,7 @@
               <li><span class="tag">Appareils photo</span>Nikon, Lumix, Fujifilm</li>
               <li><span class="tag">Cartes DIY</span>Raspberry Pi, Arduino, Flipper Zero</li>
               <li><span class="tag">IDE</span>Zed (Preview)</li>
+              <li><span class="tag">Gaming</span>Nintendo, Steam, Capcom</li>
             </ul>
           </div>
           <figure class="hero-photo">
@@ -352,11 +356,12 @@
     </div>
 
     <div class="wrap">
-      <section id="fuq" class="section" aria-label="FUQ & Opinions">
+      <section id="fuq" class="section" aria-label="FUQ & Valeurs">
         <div class="fuq-split">
           <div>
             <h2 class="label">~/home/gabrielp/fuq/</h2>
             <p>Frequently Unasked Questions (FUQ)</p>
+            <p class="fuq-note">Ces réponses ne sont plus à jour, et les traductions FR / IT sont mauvaises. Je les mettrai à jour quand j'aurai le temps. Ne t'y fie pas trop, même si elles sont pour la plupart (voire entièrement) correctes. Désolé du dérangement ! Si tu as des questions, tu peux me joindre de plusieurs façons, voir ci-dessus.</p>
             <div class="fuq">
               <div class="fuq-col">
                 <details>
@@ -413,23 +418,35 @@
             </div>
           </div>
           <div>
-            <h2 class="label">~/home/gabrielp/opinions/</h2>
-            <p>Des opinions personnelles sans valeur que personne ne demande, sur quelques sujets : science, technologie, société.</p>
-            <p>Ajouter cette section est plus difficile que je ne le pensais, donc ça va me prendre du temps à la construire. Patiente un peu :)</p>
-            <div class="opinions-wip" aria-hidden="true">
-              <svg viewBox="0 0 120 120" focusable="false">
-                <g transform="translate(-14 11)">
-                  <g transform="translate(-6 -13) scale(5.5)" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-                    <line x1="12" y1="17" x2="12.01" y2="17"/>
-                  </g>
-                  <g transform="translate(62 -3) scale(3)" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-                    <line x1="12" y1="17" x2="12.01" y2="17"/>
-                  </g>
-                </g>
-              </svg>
-            </div>
+            <h2 class="label">~/home/gabrielp/values/</h2>
+            <p class="values-intro"><svg class="sicon" aria-hidden="true"><use href="../logos/icons.svg?v=5#mood"/></svg>Les valeurs auxquelles je tiens, sans ordre particulier</p>
+            <p class="values-sub">Je sais, les mots ne sont que des mots. Malheureusement, rien de tout ça ne peut être prouvé ici et maintenant, mais je suis plutôt sûr (et j'espère) que tu t'en rendras compte à passer du temps avec moi. Et si tu me vois manquer à l'une d'elles, dis-le-moi et je me corrigerai immédiatement !</p>
+            <ul class="values">
+              <li class="value">
+                <h3>Transparence &amp; honnêteté</h3>
+                <p>Je m'engage à être honnête et sincère sur tout, toujours, même quand ça pourrait se retourner contre moi. À mes propres yeux, manquer à ça serait une vraie honte.</p>
+              </li>
+              <li class="value">
+                <h3>Sécurité &amp; anonymat</h3>
+                <p>Tout le monde y a droit, toujours. Pas sur demande, par défaut. Je m'engage à maintenir une confidentialité stricte et à protéger la sécurité numérique de quiconque utilise mes trucs. Ça vaut aussi pour ce qu'on me raconte, directement ou indirectement.</p>
+              </li>
+              <li class="value">
+                <h3>Pas de NSFW</h3>
+                <p>Je suis farouchement, du plus profond de mon cœur, opposé à ce type de contenu et je ne le tolère pas. Mineur ou majeur, je ne le considère pas comme sain, mais comme dangereux. Je n'en produirai jamais et n'en consommerai jamais volontairement.</p>
+              </li>
+              <li class="value">
+                <h3>Anti-vulgarité</h3>
+                <p>Je m'engage à éviter les gros mots et les expressions inappropriées, haineuses ou impolies, autant que je le peux. Il m'arrive encore d'en laisser échapper de temps en temps, alors je travaille à m'améliorer sur ce point.</p>
+              </li>
+              <li class="value">
+                <h3>La nature &amp; les humains</h3>
+                <p>Je suis profondément attaché au respect de l'environnement et de tous ceux qui l'habitent. Je ne polluerai jamais, ni volontairement ni par paresse, et je considère l'écologie et toutes les formes de vie avec le respect qui leur est dû.</p>
+              </li>
+              <li class="value">
+                <h3>Respect</h3>
+                <p>Qui que tu sois, quoi que tu fasses, où que tu sois, je te respecterai et t'apprécierai toujours. Je m'engage à traiter tout le monde sur un pied d'égalité, sans exception.</p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -437,13 +454,14 @@
   </main>
 
   <div class="footer-band">
+    <img class="tux" src="../logos/tux.png?v=1" alt="">
     <div class="wrap">
-      <p class="hosted">Le savais-tu ? Ce site &amp; le domaine olynthe sont hébergés par <a href="https://www.infomaniak.com/fr/a-propos">Infomaniak</a> : hébergés écologiquement en Suisse // B Corp™ // carbone compensé à 200%</p>
-      <p class="hosted fork">Fun fact : cette interface s'inspire de <a href="https://m3.material.io">Material Design</a>. Si ce portfolio te plaît, forke <a href="https://github.com/Hiburger/portfolio">github.com/Hiburger/portfolio</a> et approprie-le-toi : même design, tes infos :)</p>
+      <p class="hosted"><svg class="sicon" aria-hidden="true"><use href="../logos/icons.svg?v=5#eco"/></svg> Le savais-tu ? Ce site &amp; le domaine olynthe sont hébergés par <a href="https://www.infomaniak.com/fr/a-propos">Infomaniak</a> : hébergés écologiquement en Suisse // B Corp™ // carbone compensé à 200%</p>
+      <p class="hosted fork"><svg class="sicon" aria-hidden="true"><use href="../logos/icons.svg?v=5#waving_hand"/></svg> Fun fact : cette interface s'inspire de <a href="https://m3.material.io">Material Design</a>. Si ce portfolio te plaît, forke <a href="https://github.com/Hiburger/portfolio">github.com/Hiburger/portfolio</a> et approprie-le-toi : même design, tes infos :)</p>
       <footer>
         <span>Je serai toujours là pour toi, mais toi ?</span>
         <span>© 2048 Gabriel Paesano</span>
-        <button type="button" class="repaint" id="repaint">repeindre</button>
+        <button type="button" class="repaint" id="repaint"><svg class="sicon" aria-hidden="true"><use href="../logos/icons.svg?v=5#format_paint"/></svg> repeindre</button>
       </footer>
     </div>
   </div>
@@ -452,7 +470,8 @@
     <form method="dialog">
       <p class="colour-label">~/home/gabrielp/.config/</p>
       <h2 id="colour-title">Hé ! :) <br> <span class="colour-question">Je peux te poser une question ?</span></h2>
-      <p>Quelle est ta couleur préférée ? <br> Choisis-en une et le site entier la porte : liens, dates, boutons, tout. Comme ça, tout le monde l'aime !</p>
+      <p class="colour-ask">Quelle est ta couleur préférée ? <br> Choisis-en une et le site entier la porte : liens, dates, boutons, tout. Comme ça, tout le monde l'aime !</p>
+      <p class="colour-astro" hidden>Le mode astro est activé, donc la palette est désactivée : le rouge gagne. Tout reste rouge pour préserver ta vision nocturne. Repasse en clair ou en sombre si tu veux repeindre :)</p>
       <div class="swatches">
         <button type="button" class="swatch" data-colour="#0f8a7d" style="background: #0f8a7d" aria-label="turquoise"></button>
         <button type="button" class="swatch" data-colour="#a44a1f" style="background: #a44a1f" aria-label="terracotta"></button>
@@ -467,7 +486,7 @@
       </div>
       <div class="colour-actions">
         <span class="colour-note">Des cookies ? Non, juste des couleurs.</span>
-        <button class="colour-skip" value="cancel">garder la préférée de Gabriel</button>
+        <button class="colour-skip" value="cancel"><span class="skip-base">garder la préférée de Gabriel</span><span class="skip-astro">Passer en mode sombre</span></button>
       </div>
     </form>
   </dialog>
@@ -477,15 +496,17 @@
       var root = document.documentElement;
       var switches = document.querySelectorAll(".theme-switch");
       var mq = window.matchMedia("(prefers-color-scheme: dark)");
-      function currentIsDark() {
-        return root.dataset.theme === "dark" || (!root.dataset.theme && mq.matches);
+      function currentTheme() {
+        var t = root.dataset.theme;
+        if (t === "dark" || t === "astro" || t === "light") return t;
+        return mq.matches ? "dark" : "light";
       }
       function renderSwitch(sw) {
         var thumb = sw.querySelector(".theme-thumb");
         var opts = sw.querySelectorAll(".theme-opt");
-        var dark = currentIsDark();
+        var cur = currentTheme();
         opts.forEach(function (b) {
-          var active = (b.dataset.themeChoice === "dark") === dark;
+          var active = b.dataset.themeChoice === cur;
           b.classList.toggle("is-active", active);
           b.setAttribute("aria-pressed", active ? "true" : "false");
           if (active) {
@@ -618,9 +639,14 @@
         picker.addEventListener("input", function () { choose(picker.value); });
         picker.addEventListener("change", function () { dlg.close(); });
       }
-      dlg.addEventListener("close", function () { store("accent-asked", "1"); });
+      dlg.addEventListener("close", function () { if (root.dataset.theme !== "astro") store("accent-asked", "1"); });
       var skip = dlg.querySelector(".colour-skip");
       if (skip) skip.addEventListener("click", function () {
+        if (root.dataset.theme === "astro") {
+          var dark = document.querySelector('.theme-opt[data-theme-choice="dark"]');
+          if (dark) dark.click();
+          return;
+        }
         ["--accent-user", "--accent-user-dark", "--on-accent-user", "--on-accent-user-dark"].forEach(function (p) {
           root.style.removeProperty(p);
         });
@@ -628,7 +654,7 @@
           try { localStorage.removeItem(k); } catch (e) {}
         });
       });
-      if (!read("accent-asked")) dlg.showModal();
+      if (!read("accent-asked") && root.dataset.theme !== "astro") dlg.showModal();
       var rp = document.getElementById("repaint");
       if (rp) rp.addEventListener("click", function () { dlg.showModal(); });
     })();
@@ -731,6 +757,10 @@
           tittle.style.opacity = "1";
           tittle.style.background = "var(--accent)";
           setTimeout(function () { dot.remove(); }, 200);
+          setTimeout(function () {
+            var frame = document.querySelector(".hero-photo .frame");
+            if (frame) frame.dispatchEvent(new CustomEvent("capture"));
+          }, 350);
         }, restore);
       }
       var asked = null;
@@ -819,6 +849,7 @@
       frame.addEventListener("mouseenter", schedule);
       frame.addEventListener("mouseleave", cancel);
       frame.addEventListener("pointerdown", pop);
+      frame.addEventListener("capture", pop);
     })();
   </script>
 
@@ -838,36 +869,70 @@
 
   <script>
     (function () {
-      var el = document.querySelector(".opinions-wip");
-      if (!el || !("IntersectionObserver" in window)) return;
-      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-      el.classList.add("is-pre");
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) {
-            el.classList.add("is-in");
-            el.classList.remove("is-pre");
-            io.disconnect();
-          }
-        });
-      }, { rootMargin: "0px 0px -22% 0px", threshold: 0.25 });
-      io.observe(el);
-    })();
-  </script>
-
-  <script>
-    (function () {
       var bubble = document.querySelector(".status-bubble");
       if (!bubble) return;
+      var SWAP_MS = 10000;
+      var lines = [
+        "We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology.",
+        "Il me semble que ce qui se ressemble s'assemble",
+        "There is more happiness in giving than there is in receiving",
+        "hi.",
+        "great to see you",
+        "When the Last Tree Is Cut Down, the Last Fish Eaten, and the Last Stream Poisoned, You Will Realize That You Cannot Eat Money",
+        "Hellooo :)",
+        "I use arch btw",
+        "there's no place like 127.0.0.1",
+        "I shoot in M btw",
+        "i'm 56 years old they say",
+        "I try to live by the strongest values and morals",
+        "I like pasta",
+        "I use GrapheneOS btw",
+        "They want you to think everything's alright, that's not true.",
+        "There are numerous traps in our lives, we won't spot them all",
+        "I'm on my way",
+        "Il y a qqn???",
+        "I like round cats",
+        "J'aime les gros chats",
+        "Did you know this bubble updates itself?",
+        "You can trust me, always.",
+        "Tu peux me faire confiance",
+        "I'll always be there for you, but will you?",
+        "Please don't go.",
+        "Je suis là, moi.",
+        "i'm shy. sorry.",
+        "Burning tokens",
+        "Eating pasta",
+        "Greatest Technician That Ever Lived",
+        "Greatest Technician That Ever Lived (again)",
+        "I like animals!"
+        /* mixed languages on purpose — bubble lines are never translated */
+      ];
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var idx = Math.floor(Math.random() * lines.length);
+      bubble.textContent = lines[idx];
+      function apply(text) {
+        if (reduce) { bubble.textContent = text; return; }
+        bubble.classList.remove("is-in");
+        setTimeout(function () {
+          bubble.textContent = text;
+          bubble.classList.add("is-in");
+        }, 420);
+      }
+      function next() {
+        if (document.hidden || lines.length < 2) return;
+        idx = (idx + 1 + Math.floor(Math.random() * (lines.length - 1))) % lines.length;
+        apply(lines[idx]);
+      }
       function show() { bubble.classList.add("is-in"); }
       var asked = null;
       try { asked = localStorage.getItem("accent-asked"); } catch (e) {}
       var dlg = document.getElementById("colour-modal");
-      if (dlg && dlg.showModal && !asked) {
+      if (dlg && dlg.showModal && !asked && document.documentElement.dataset.theme !== "astro") {
         dlg.addEventListener("close", function () { setTimeout(show, 600); }, { once: true });
       } else {
         setTimeout(show, 1400);
       }
+      setInterval(next, SWAP_MS);
     })();
   </script>
 

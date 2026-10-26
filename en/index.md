@@ -14,6 +14,8 @@ Geneva, Switzerland // 46.20° N ; 6.14° E
 
 *Coords are not accurate
 
+fluent in FR IT EN
+
 We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology.
 
 ![Portrait of Gabriel](https://gabriel.olynthe.org/favicon.jpg?v=2)
@@ -119,6 +121,7 @@ favorite groups (order matters!)
 - **Cameras:** Nikon, Lumix, Fujifilm
 - **DIY boards:** Raspberry Pi, Arduino, Flipper Zero
 - **IDE:** Zed (Preview)
+- **Gaming:** Nintendo, Steam, Capcom
 
 ![A messy server rack covered in tangled cables](https://gabriel.olynthe.org/messy_server_rack.jpg)
 
@@ -140,6 +143,8 @@ I'm shy, but I don't bite. Please come say hi!
 ## ~/home/gabrielp/fuq/
 
 Frequently Unasked Questions (FUQ)
+
+These answers are outdated, and the FR / IT translations are bad. I'll update them when I get the time. Don't rely on them too much, even if they're mostly (if not entirely) correct. Sorry for the inconvenience! If you have any questions, you can reach me in multiple ways, see above.
 
 **What does "Olynthe" mean?**
 
@@ -189,11 +194,24 @@ Do I have any valid reasons to say no? The contact section is just above.
 
 Well i'm not a pro but... Yes, and for free, since I don't photograph for money. Who even does photography for money ? But heads-up: I work or I'm at school all week, so we'd have to talk first. And if getting to you involves trains or such, I might ask you to help with the costs. I think that's a fair thing to ask.
 
-## ~/home/gabrielp/opinions/
+## ~/home/gabrielp/values/
 
-Worthless personal opinions nobody asked for, about a few topics: Science, Technology, Society.
+The values I hold myself to, in no particular order
 
-Adding this section turns out to be harder than I thought, so it's gonna take some time to build. Stay tuned :)
+I know, words are words. Sadly, none of these can be proven right now, right here, but I'm pretty sure (and hope) that you'll realise it if you spend time near me. And if you see me failing on any of these, tell me and I'll correct myself right away!
+
+- ### Transparency & honesty
+  I'm committed to being honest and sincere about everything, always, even when it could turn against me. From my own point of view, failing at this would be a real shame.
+- ### Security & anonymity
+  Everyone deserves them, always. Not on request, by default. I'm committed to maintaining strict privacy and protecting the digital security of whoever uses my stuff. This also applies to what people tell me, directly or indirectly.
+- ### No NSFW
+  I'm strictly, from the deepest of my heart, against such material and I don't tolerate it. Minor or not, I don't consider it healthy but dangerous. I will never produce or consume such content on purpose.
+- ### Anti-vulgarity
+  I'm committed to avoiding bad words and inappropriate, hateful or rude expressions as much as I can. Things may still slip out once in a while, so I keep working on making fewer mistakes here.
+- ### Nature & humans
+  I'm deeply committed to respecting the environment and its inhabitants. I will never pollute on purpose or out of laziness, and I treat ecology and every form of life with proper respect.
+- ### Respect
+  Whoever you are, whatever you do, wherever you are, I'll always respect and appreciate you. I'm committed to treating everyone equally, constantly.
 
 Did you know? This website & the olynthe domain are hosted by [Infomaniak](https://www.infomaniak.com/en/about): ecologically hosted in Switzerland // B Corp™ // carbon compensated 200%
 

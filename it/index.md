@@ -14,6 +14,8 @@ Ginevra, Svizzera // 46.20° N ; 6.14° E
 
 *Coordinate non proprio esatte
 
+lingue parlate FR IT EN
+
 Viviamo in una società estremamente dipendente dalla scienza e dalla tecnologia, in cui quasi nessuno se ne intende di scienza né di tecnologia.
 
 ![Ritratto di Gabriel](https://gabriel.olynthe.org/favicon.jpg?v=2)
@@ -119,6 +121,7 @@ gruppi preferiti (l'ordine conta !)
 - **Fotocamere:** Nikon, Lumix, Fujifilm
 - **Schede DIY:** Raspberry Pi, Arduino, Flipper Zero
 - **IDE:** Zed (Preview)
+- **Gaming:** Nintendo, Steam, Capcom
 
 ![Un rack server in disordine coperto di cavi ingarbugliati](https://gabriel.olynthe.org/messy_server_rack.jpg)
 
@@ -140,6 +143,8 @@ Sono timido, ma non mordo. Vieni a salutarmi !
 ## ~/home/gabrielp/fuq/
 
 Frequently Unasked Questions (FUQ)
+
+Queste risposte non sono aggiornate e le traduzioni FR / IT sono fatte male. Le aggiornerò quando avrò tempo. Non fidartene troppo, anche se sono per lo più (se non del tutto) corrette. Scusa per il disturbo! Se hai domande, puoi contattarmi in tanti modi, vedi sopra.
 
 **Cosa significa « Olynthe »?**
 
@@ -189,11 +194,24 @@ Ho qualche buona ragione per dire di no? La sezione contatti è proprio lì sopr
 
 Beh, non sono un pro, ma... Sì, e gratis, visto che non fotografo per soldi. Chi fa fotografia per soldi, mai? Ma occhio: o lavoro o sto a scuola tutta la settimana, quindi bisognerebbe parlarne prima. E se per arrivare da te servono treni o cose del genere, potrei chiederti di contribuire alle spese. Mi sembra una richiesta giusta.
 
-## ~/home/gabrielp/opinions/
+## ~/home/gabrielp/values/
 
-Opinioni personali senza valore che nessuno ha chiesto, su alcuni temi: scienza, tecnologia, società.
+I valori a cui tengo, in nessun ordine particolare
 
-Aggiungere questa sezione si sta rivelando più difficile di quanto pensassi, quindi mi ci vorrà un po' di tempo per costruirla. Arriverà :)
+Lo so, le parole sono solo parole. Purtroppo niente di tutto questo può essere provato qui e ora, ma sono abbastanza sicuro (e spero) che te ne renderai conto se passerai del tempo con me. E se mi vedi venire meno su uno di questi valori, dimmelo e mi correggerò subito!
+
+- ### Trasparenza & onestà
+  Mi impegno a essere onesto e sincero su tutto, sempre, anche quando potrebbe ritorcersi contro di me. Ai miei occhi, venire meno a questo sarebbe una vera vergogna.
+- ### Sicurezza & anonimato
+  Tutti ci hanno diritto, sempre. Non su richiesta, ma di default. Mi impegno a mantenere una privacy rigorosa e a proteggere la sicurezza digitale di chiunque usi le mie cose. Vale anche per ciò che le persone mi dicono, direttamente o indirettamente.
+- ### Niente NSFW
+  Sono rigidamente, dal più profondo del cuore, contrario a questo tipo di materiale e non lo tollero. Minore o maggiorenne, non lo considero sano, ma pericoloso. Non lo produrrò mai e non lo consumerò mai volontariamente.
+- ### Anti-volgarietà
+  Mi impegno a evitare, per quanto possibile, parolacci ed espressioni inappropriate, odiose o scortesi. Può ancora scappare qualcosa ogni tanto, quindi continuo a lavorare per ridurre gli errori su questo fronte.
+- ### La natura & gli esseri umani
+  Sono profondamente impegnato a rispettare l'ambiente e i suoi abitanti. Non inquinerò mai volontariamente, né per pigrizia, e considero l'ecologia e ogni forma di vita con il dovuto rispetto.
+- ### Rispetto
+  Chiunque tu sia, qualunque cosa tu faccia, ovunque tu sia, ti rispetterò e ti apprezzerò sempre. Mi impegno a trattare tutti alla pari, in ogni momento.
 
 Lo sapevi ? Questo sito & il dominio olynthe sono ospitati da [Infomaniak](https://www.infomaniak.com/it/about): ospitati ecologicamente in Svizzera // B Corp™ // carbonio compensato al 200%
 

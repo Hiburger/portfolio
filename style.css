@@ -39,6 +39,19 @@
   --card: #201d18;
 }
 
+/* Astro mode: red-shifted to preserve dark adaptation. Fixed red accent —
+   the user accent would defeat the purpose, so --accent-user is ignored. */
+:root[data-theme="astro"] {
+  --bg: #0a0100;
+  --ink: #c84230;
+  --muted: #a34433;
+  --accent: #ff4b33;
+  --on-accent: #140404;
+  --line: #331110;
+  --line-strong: #522018;
+  --card: #150404;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -521,48 +534,30 @@ h1:hover .i-tittle {
   gap: 0.55rem;
   width: fit-content;
   margin-top: 0.8rem;
-  padding: 0.6rem 0.8rem;
+  padding: 0.5rem 0.7rem;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 12px;
 }
 
-.langs .flag {
-  display: block;
-  width: 28px;
-  height: 19px;
-  border-radius: 4px;
-  box-shadow: 0 0 0 1px var(--line);
-}
-
-.flag-wrap {
-  position: relative;
-  display: inline-flex;
-}
-
-.flag-wrap::after {
-  content: attr(data-code);
-  position: absolute;
-  left: 50%;
-  bottom: calc(100% + 5px);
-  transform: translateX(-50%) translateY(3px);
-  padding: 0.12rem 0.38rem;
-  border-radius: 6px;
-  background: var(--accent);
-  color: var(--on-accent);
+.langs-label {
   font-family: var(--mono);
-  font-size: 0.62rem;
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-right: 0.3rem;
+}
+
+.lang-code {
+  font-family: var(--mono);
+  font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.08em;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 5;
-  transition: opacity 0.16s ease, transform 0.16s ease;
-}
-
-.flag-wrap:hover::after {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
+  color: var(--ink);
+  background: color-mix(in srgb, var(--accent) 13%, var(--card));
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.16rem 0.42rem;
 }
 
 .ghchart {
@@ -718,6 +713,35 @@ h1:hover .i-tittle {
 @media (max-width: 700px) {
   .status-bubble {
     display: none;
+  }
+}
+
+/* Narrow two-column hero: the bubble would overlap the h1 on the left,
+   so it floats above the photo instead, dots trailing down to the face */
+@media (max-width: 1100px) {
+  .status-bubble {
+    right: auto;
+    left: 50%;
+    top: auto;
+    bottom: calc(100% + 2.1rem);
+    transform: translateX(-50%) translateY(8px) scale(0.9);
+    transform-origin: bottom center;
+  }
+
+  .status-bubble.is-in {
+    transform: translateX(-50%);
+  }
+
+  .status-bubble::before {
+    left: auto;
+    right: 2.6rem;
+    top: calc(100% + 0.3rem);
+  }
+
+  .status-bubble::after {
+    left: auto;
+    right: 1.5rem;
+    top: calc(100% + 1.15rem);
   }
 }
 
@@ -1314,33 +1338,64 @@ h1:hover .i-tittle {
   }
 }
 
-.opinions-wip {
+.values {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1.8rem;
+}
+
+.value {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0.9rem 1.2rem;
+}
+
+.value h3 {
+  font-size: 1.02rem;
+  line-height: 1.3;
+}
+
+.value p:last-child {
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.values-intro {
   display: flex;
-  justify-content: center;
-  margin-top: 2.6rem;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.values-intro .sicon {
+  width: 24px;
+  height: 24px;
   color: var(--accent);
-  transition: opacity 1.1s var(--spring-soft), transform 1.1s var(--spring-soft);
 }
 
-.opinions-wip.is-pre {
-  opacity: 0;
-  transform: translateY(18px) scale(0.9);
-}
-
-.opinions-wip.is-in {
-  opacity: 1;
-  transform: none;
-}
-
-.opinions-wip svg {
-  width: 8.5rem;
-  height: auto;
+.values-sub {
+  color: var(--muted);
+  font-size: 0.92rem;
+  max-width: 36rem;
 }
 
 .fuq {
   display: grid;
   gap: 0.7rem;
   margin-top: 1.8rem;
+}
+
+.fuq-note {
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  background: color-mix(in srgb, var(--accent) 7%, var(--card));
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: var(--muted);
 }
 
 .fuq-col {
@@ -1417,8 +1472,8 @@ h1:hover .i-tittle {
   color: var(--ink);
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 2.2rem 2.4rem 2rem;
-  max-width: min(92vw, 26rem);
+  padding: 2.2rem 2.6rem 2rem;
+  max-width: min(92vw, 30rem);
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
 }
 
@@ -1571,6 +1626,13 @@ h1:hover .i-tittle {
   transition: border-radius 0.35s var(--spring), filter 0.2s ease;
 }
 
+.repaint .sicon {
+  width: 15px;
+  height: 15px;
+  vertical-align: -3px;
+  margin-right: 0.35rem;
+}
+
 .repaint:hover {
   border-radius: 18px;
   filter: brightness(1.08);
@@ -1589,11 +1651,28 @@ h1:hover .i-tittle {
 }
 
 .footer-band {
-  margin-top: 3.5rem;
+  margin-top: 6rem;
   background: color-mix(in srgb, var(--bg) 91%, var(--ink));
   border-top: 1px solid var(--line-strong);
   padding-top: 2.4rem;
   padding-bottom: 2.6rem;
+  position: relative;
+}
+
+.footer-band .tux {
+  position: absolute;
+  bottom: 100%;
+  right: clamp(1.5rem, 7vw, 5rem);
+  height: 5.5rem;
+  width: auto;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 700px) {
+  .footer-band .tux {
+    display: none;
+  }
 }
 
 .footer-band .hosted {
@@ -1616,7 +1695,15 @@ footer {
 }
 
 .hosted.fork {
-  margin-top: 0.7rem;
+  margin-top: 1.4rem;
+}
+
+.hosted .sicon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 0.45rem;
+  color: var(--accent);
 }
 
 .hosted a {
@@ -1768,4 +1855,46 @@ footer {
   .banner {
     display: none;
   }
+}
+
+/* Astro mode extras: keep every photon long-wave and dim */
+:root[data-theme="astro"] img {
+  filter: grayscale(1) sepia(1) hue-rotate(-45deg) saturate(2.6) brightness(0.5);
+}
+
+:root[data-theme="astro"] .hero-photo .flash,
+:root[data-theme="astro"] .hero-photo .flash-veil {
+  display: none;
+}
+
+:root[data-theme="astro"] .hero-photo .halo::before {
+  opacity: 0.3;
+}
+
+:root[data-theme="astro"] .colour-astro {
+  display: block;
+}
+
+:root[data-theme="astro"] .colour-ask,
+:root[data-theme="astro"] .colour-modal .swatches {
+  display: none;
+}
+
+.colour-skip .skip-astro {
+  display: none;
+}
+
+:root[data-theme="astro"] .colour-skip .skip-base {
+  display: none;
+}
+
+:root[data-theme="astro"] .colour-skip .skip-astro {
+  display: inline;
+}
+
+:root[data-theme="astro"] .status-bubble,
+:root[data-theme="astro"] .status-bubble::before,
+:root[data-theme="astro"] .status-bubble::after {
+  background: #2e0c08;
+  color: #dd5a45;
 }
