@@ -7,6 +7,7 @@
   --line: #e6e1d6;
   --line-strong: #c9c2b2;
   --card: #f2eee5;
+  --tint-alpha: 8%;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --serif: Charter, "Bitstream Charter", "Iowan Old Style", Georgia, serif;
   --mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
@@ -25,6 +26,7 @@
     --line: #2e2b25;
     --line-strong: #4a453c;
     --card: #201d18;
+    --tint-alpha: 12%;
   }
 }
 
@@ -37,6 +39,7 @@
   --line: #2e2b25;
   --line-strong: #4a453c;
   --card: #201d18;
+  --tint-alpha: 12%;
 }
 
 /* Astro mode: red-shifted to preserve dark adaptation. Fixed red accent —
@@ -814,7 +817,7 @@ h1:hover .i-tittle {
 
 .section > p,
 .about-prose p {
-  max-width: 40rem;
+  max-width: 46rem;
 }
 
 @media (min-width: 1000px) {
@@ -1009,16 +1012,43 @@ h1:hover .i-tittle {
   margin: 1.8rem auto 0;
 }
 
+@media (min-width: 1280px) {
+  .projects {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: 96rem;
+  }
+}
+
 .project {
   padding: 1.15rem 1.3rem;
-  background: var(--card);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--tint, transparent) var(--tint-alpha, 8%), transparent), transparent 58%),
+    var(--card);
   border: 1px solid var(--line);
   border-radius: 12px;
   transition: border-radius 0.35s var(--spring);
 }
 
+/* one --tint per card, sampled from each project logo
+   (sky-map & snowflake logos are near-black: same hue, lightness lifted
+   so the wash still reads as colour) */
+.tint-lilac { --tint: #d4a5ed; }
+.tint-blurple { --tint: #3647de; }
+.tint-orange { --tint: #f9500d; }
+.tint-gray { --tint: #808080; }
+.tint-cyan { --tint: #00b8ff; }
+.tint-indigo { --tint: #4042bf; }
+.tint-blue { --tint: #4486f4; }
+.tint-slate { --tint: #4067bf; }
+
 .project:hover {
   border-radius: 40px;
+}
+
+/* Astro mode keeps cards neutral: brand-coloured glows would defeat the
+   red-shifted, dark-adaptation-friendly palette. */
+:root[data-theme="astro"] .project {
+  background: var(--card);
 }
 
 .project-head {
@@ -1040,6 +1070,10 @@ h1:hover .i-tittle {
 
 .project-head img.tile-white {
   background: #fff;
+}
+
+.project-head img.tile-blurple {
+  background: #3647de;
 }
 
 .project-head h3 {
@@ -1659,18 +1693,52 @@ h1:hover .i-tittle {
   position: relative;
 }
 
-.footer-band .tux {
+.footer-band .tux-btn {
   position: absolute;
   bottom: 100%;
   right: clamp(1.5rem, 7vw, 5rem);
-  height: 5.5rem;
-  width: auto;
-  pointer-events: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
   z-index: 1;
 }
 
+.footer-band .tux-btn .tux {
+  display: block;
+  height: 5.5rem;
+  width: auto;
+}
+
+.tux-note {
+  position: absolute;
+  bottom: calc(100% + 0.6rem);
+  right: 0;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  white-space: nowrap;
+  background: #171511;
+  color: #eae5da;
+  border: 1px solid color-mix(in srgb, #eae5da 18%, transparent);
+  border-radius: 10px;
+  padding: 0.55rem 0.8rem;
+  box-shadow: 0 6px 18px color-mix(in srgb, #000000 28%, transparent);
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: opacity 0.25s var(--morph), transform 0.25s var(--morph);
+}
+
+.tux-btn:hover .tux-note,
+.tux-btn:focus-visible .tux-note {
+  opacity: 1;
+  transform: none;
+}
+
 @media (max-width: 700px) {
-  .footer-band .tux {
+  .footer-band .tux-btn {
     display: none;
   }
 }
@@ -1692,6 +1760,14 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.6rem;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .hosted.fork {

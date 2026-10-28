@@ -55,6 +55,12 @@ Tengo al software che rispetta i suoi utenti. Per restare in tema, ecco alcune c
 - **[JWStreak](https://github.com/Hiburger/JWStreak)**
   dart / GPLv3 / [jws.olynthe.org](https://jws.olynthe.org)
   Un'app Flutter simpatica che aiuta a costruire un'abitudine quotidiana di lettura della Bibbia. Open source e privacy-friendly.
+- **[DiscordWear](https://github.com/Hiburger/DiscordForWearOS)**
+  discord / wear os / GPLv3
+  Il client Discord open source che i dispositivi Wear OS meritano: DM, server, messaggi vocali e login via QR code.
+- **[Wearstral](https://github.com/Hiburger/Wearstral)**
+  wear os / Mistral AI / GPLv3
+  Client Wear OS nativo per Mistral AI: chatta con Le Chat dal polso usando la tua chiave API, con input vocale elaborato sul dispositivo e cronologia persistente.
 - **[BasaltOS](https://github.com/BasaltOS-org)**
   sistema operativo basato su AlmaLinux
   Project leader di un sistema operativo open source indipendente. Primi giorni, grandi sogni.
@@ -73,7 +79,7 @@ Tengo al software che rispetta i suoi utenti. Per restare in tema, ecco alcune c
 
 ## ~/home/gabrielp/pictures/
 
-L'attrezzatura : Nikon D7000 | GoPro hero 12 | Pixel 9 Pro XL
+L'attrezzatura : Nikon D7000 (con obiettivi Nikkor/Tamron/SAMYANG) | GoPro hero 12 | Pixel 9 Pro XL
 
 Ecco qualche scatto che mi piace ! Spero davvero che ti piaccino anche :)
 
@@ -97,7 +103,7 @@ Ecco qualche scatto che mi piace ! Spero davvero che ti piaccino anche :)
 
 *05*
 
-[![Un passero appollaiato su un ramo](https://gabriel.olynthe.org/photos/06.jpg)](https://gabriel.olynthe.org/photos/06.jpg)
+[![Una Luna quasi piena in un cielo notturno nero](https://gabriel.olynthe.org/photos/06.jpg)](https://gabriel.olynthe.org/photos/06.jpg)
 
 *06*
 
@@ -112,7 +118,7 @@ Le mie tecnologie
 - **Computer:** Troppi (10+). Principale: MacBookPro 2026 (M5 Pro) / Secondario: XPS 15 7590 & Torre Omen HP (ho dimenticato il nome)
 - **OS:** GrapheneOS // Cachy Linux // macOS // Debian Trixie
 - **Mobile:** Pixel 9 Pro XL, iPad Pro (M2), Quest 3, Pixel Watch 5, Sony WH-1000XM6
-- **Foto:** D7000 + 2 zoom Nikkor (portata max 450mm)
+- **Foto:** D7000 + Nikkor 28-300mm + Nikkor 16-85mm + SAMYANG 500mm
 
 gruppi preferiti (l'ordine conta !)
 
@@ -120,6 +126,7 @@ gruppi preferiti (l'ordine conta !)
 - **Computer:** Framework, Apple, Dell
 - **Fotocamere:** Nikon, Lumix, Fujifilm
 - **Schede DIY:** Raspberry Pi, Arduino, Flipper Zero
+- **Stampanti 3D:** Anycubic, Bambu Lab, Creality
 - **IDE:** Zed (Preview)
 - **Gaming:** Nintendo, Steam, Capcom
 
@@ -205,13 +212,13 @@ Lo so, le parole sono solo parole. Purtroppo niente di tutto questo può essere 
 - ### Sicurezza & anonimato
   Tutti ci hanno diritto, sempre. Non su richiesta, ma di default. Mi impegno a mantenere una privacy rigorosa e a proteggere la sicurezza digitale di chiunque usi le mie cose. Vale anche per ciò che le persone mi dicono, direttamente o indirettamente.
 - ### Niente NSFW
-  Sono rigidamente, dal più profondo del cuore, contrario a questo tipo di materiale e non lo tollero. Minore o maggiorenne, non lo considero sano, ma pericoloso. Non lo produrrò mai e non lo consumerò mai volontariamente.
+  Sono rigidamente, dal più profondo del cuore, contrario a questo tipo di materiale e non lo tollero. Minore o maggiorenne, non lo considero sano, ma pericoloso. Non lo produrrò mai, non lo consumerò mai e non lo condividerò mai volontariamente.
 - ### Anti-volgarietà
-  Mi impegno a evitare, per quanto possibile, parolacci ed espressioni inappropriate, odiose o scortesi. Può ancora scappare qualcosa ogni tanto, quindi continuo a lavorare per ridurre gli errori su questo fronte.
-- ### La natura & gli esseri umani
-  Sono profondamente impegnato a rispettare l'ambiente e i suoi abitanti. Non inquinerò mai volontariamente, né per pigrizia, e considero l'ecologia e ogni forma di vita con il dovuto rispetto.
+  Mi impegno a evitare, per quanto possibile, parolacci ed espressioni inappropriate, odiose o scortesi. È una questione di morale, oltre che di rispetto: il mio modo di parlare riflette chi sono e cosa difendo.
+- ### La natura & la vita
+  Sono profondamente impegnato a proteggere l'ambiente. Non inquinerò mai volontariamente, né per pigrizia, e mi prendo cura di ogni ecosistema e di ogni forma di vita. Riduco la mia impronta per quanto possibile, attraverso le scelte che faccio.
 - ### Rispetto
-  Chiunque tu sia, qualunque cosa tu faccia, ovunque tu sia, ti rispetterò e ti apprezzerò sempre. Mi impegno a trattare tutti alla pari, in ogni momento.
+  Chiunque tu sia, qualunque cosa tu faccia, ovunque tu sia, ti rispetterò e ti apprezzerò sempre. Mi impegno a trattare tutti alla pari, in ogni momento. Metto anche gli altri prima di me quando posso.
 
 Lo sapevi ? Questo sito & il dominio olynthe sono ospitati da [Infomaniak](https://www.infomaniak.com/it/about): ospitati ecologicamente in Svizzera // B Corp™ // carbonio compensato al 200%
 

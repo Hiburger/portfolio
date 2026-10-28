@@ -39,6 +39,9 @@ CONTAINER_TAGS = {"div", "section", "aside", "main", "article", "header", "figur
 ROOT_HTACCESS = MARKER + """
 AddType 'text/markdown; charset=utf-8' .md
 
+# Custom 404: unknown paths serve 404.html with a real 404 status
+ErrorDocument 404 /404.html
+
 <IfModule mod_headers.c>
   Header merge Vary Accept
   <Files "index.md">

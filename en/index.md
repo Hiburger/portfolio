@@ -55,6 +55,12 @@ I care about software that respects users. On a similar note, here are a few thi
 - **[JWStreak](https://github.com/Hiburger/JWStreak)**
   dart / GPLv3 / [jws.olynthe.org](https://jws.olynthe.org)
   A friendly Flutter app that helps people build a daily Bible-reading habit. Open source and privacy-friendly.
+- **[DiscordWear](https://github.com/Hiburger/DiscordForWearOS)**
+  discord / wear os / GPLv3
+  The open source Discord client Wear OS watches deserve: DMs, servers, voice messages and QR-code login.
+- **[Wearstral](https://github.com/Hiburger/Wearstral)**
+  wear os / Mistral AI / GPLv3
+  Native Wear OS client for Mistral AI: chat with Le Chat from your wrist using your own API key, with on-device voice input and persistent history.
 - **[BasaltOS](https://github.com/BasaltOS-org)**
   AlmaLinux-based operating system
   Project leader on an independent open source operating system. Early days, big dreams.
@@ -73,7 +79,7 @@ I care about software that respects users. On a similar note, here are a few thi
 
 ## ~/home/gabrielp/pictures/
 
-Gear: Nikon D7000 | GoPro hero 12 | Pixel 9 Pro XL
+Gear: Nikon D7000 (with Nikkor/Tamron/SAMYANG lenses) | GoPro hero 12 | Pixel 9 Pro XL
 
 Here are a few frames I like ! I deeply hope you'll like them too :)
 
@@ -97,7 +103,7 @@ Here are a few frames I like ! I deeply hope you'll like them too :)
 
 *05*
 
-[![A sparrow perched on a branch](https://gabriel.olynthe.org/photos/06.jpg)](https://gabriel.olynthe.org/photos/06.jpg)
+[![A nearly full Moon against a black night sky](https://gabriel.olynthe.org/photos/06.jpg)](https://gabriel.olynthe.org/photos/06.jpg)
 
 *06*
 
@@ -112,7 +118,7 @@ My technologies
 - **Computers:** Too many (10+). Primary: MacBookPro 2026 (M5 Pro) / Secondary: XPS 15 7590 & HP Omen Tower (forgot the name)
 - **OS:** GrapheneOS // Cachy Linux // macOS // Debian Trixie
 - **Mobile:** Pixel 9 Pro XL, iPad Pro (M2), Quest 3, Pixel Watch 5, Sony WH-1000XM6
-- **Photography:** D7000 + 2 Nikkor zoom lenses (450mm max reach)
+- **Photography:** D7000 + Nikkor 28-300mm + Nikkor 16-85mm + SAMYANG 500mm
 
 favorite groups (order matters!)
 
@@ -120,6 +126,7 @@ favorite groups (order matters!)
 - **Computers:** Framework, Apple, Dell
 - **Cameras:** Nikon, Lumix, Fujifilm
 - **DIY boards:** Raspberry Pi, Arduino, Flipper Zero
+- **3D printers:** Anycubic, Bambu Lab, Creality
 - **IDE:** Zed (Preview)
 - **Gaming:** Nintendo, Steam, Capcom
 
@@ -205,13 +212,13 @@ I know, words are words. Sadly, none of these can be proven right now, right her
 - ### Security & anonymity
   Everyone deserves them, always. Not on request, by default. I'm committed to maintaining strict privacy and protecting the digital security of whoever uses my stuff. This also applies to what people tell me, directly or indirectly.
 - ### No NSFW
-  I'm strictly, from the deepest of my heart, against such material and I don't tolerate it. Minor or not, I don't consider it healthy but dangerous. I will never produce or consume such content on purpose.
+  I'm strictly, from the deepest of my heart, against such material and I don't tolerate it. Minor or not, I don't consider it healthy but dangerous. I will never produce, consume or share such content on purpose.
 - ### Anti-vulgarity
-  I'm committed to avoiding bad words and inappropriate, hateful or rude expressions as much as I can. Things may still slip out once in a while, so I keep working on making fewer mistakes here.
-- ### Nature & humans
-  I'm deeply committed to respecting the environment and its inhabitants. I will never pollute on purpose or out of laziness, and I treat ecology and every form of life with proper respect.
+  I'm committed to avoiding bad words and inappropriate, hateful or rude expressions as much as I can. It's a question of morals as much as respect: how I speak reflects who I am and what I stand for.
+- ### Nature & life
+  I'm deeply committed to protecting the environment. I will never pollute on purpose or out of laziness, and I treat every ecosystem and living thing with care. I reduce my footprint whenever possible, through the choices I make.
 - ### Respect
-  Whoever you are, whatever you do, wherever you are, I'll always respect and appreciate you. I'm committed to treating everyone equally, constantly.
+  Whoever you are, whatever you do, wherever you are, I'll always respect and appreciate you. I'm committed to treating everyone equally, constantly. I also put others before myself when I can.
 
 Did you know? This website & the olynthe domain are hosted by [Infomaniak](https://www.infomaniak.com/en/about): ecologically hosted in Switzerland // B Corp™ // carbon compensated 200%
 
