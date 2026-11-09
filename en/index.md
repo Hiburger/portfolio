@@ -24,13 +24,11 @@ We live in a society exquisitely dependent on science and technology, in which h
 
 ## ~/home/gabrielp/quick-facts/
 
-Hi ! I'm Gabriel, an apprentice IT Infrastructure & Operations Specialist at [Infomaniak Network SA](https://www.infomaniak.com/en/about), the friendly ethical cloud provider based in Geneva, Switzerland. A good part of my week goes into learning networking, development, judging big tech, and helping others use and enjoy technology, and I genuinely enjoy doing so.
+Hi ! I'm Gabriel, an apprentice IT Infrastructure & Operations Specialist at [Infomaniak Network SA](https://www.infomaniak.com/en/about), the friendly ethical cloud provider based in Geneva, Switzerland. A good part of my week goes into learning networking, development, judging big tech, and helping others use and enjoy technology when I can. Tech has always been a big thing for me.
 
-The rest goes into photography... mostly wildlife and the night sky even if i am bad at both. I'm also strongly advocating for free, ethical and open source software. I also have a full homelab running Proxmox VE, Snowflakes, Immich, AdGuard, Docker and more self-hosted services i forgot i had. Additionally, I made the GP1 license ([gp1.olynthe.org](https://gp1.olynthe.org/)), which stands for General Photography v1 or Gabriel Paesano, you decide.
+The rest goes into photography... mostly wildlife (I love animals ^^) and the night sky even if i am bad at both. I'm also strongly advocating for free, ethical and open source software and whatever else puts humans before profit or data. I also have a (complex) homelab that runs Proxmox VE as its OS, with Snowflakes proxies, Immich, AdGuard, nginx, BentoPDF, Docker containers and more self-hosted services i forgot i had. I'll probably add GitLab or Forgejo to that list soon. Additionally, I made the GP1 license ([gp1.olynthe.org](https://gp1.olynthe.org/)), which stands for General Photography v1 or Gabriel Paesano, you decide. It's a permissive license for artists with a focus on photography, some will say it's too permissive, which isn't wrong...
 
-I'm also a student at the [CFPT](https://edu.ge.ch/secondaire2/centre-de-formation-professionnelle-technique/le-cfpt). It's a big and confusing school i'm not a fan of, but alright. I am also the founder of [The Olynthe Initiative](https://olynthe.org), a small effort to support digital rights and FOSS.
-
-### roadmap
+I'm also a student at the [CFPT](https://edu.ge.ch/secondaire2/centre-de-formation-professionnelle-technique/le-cfpt), in Geneva. CFPT stands for Centre De Formation Professionnelle Technique (but there's nothing pro there ahah). My school's main prog. language is sadly C#, and now I fear any language that starts with C. Do I like the CFPT? Kinda. I'm not a fan, I'll just say it's *fine*. On a completely unrelated note, I am also the founder of [The Olynthe Initiative](https://olynthe.org), a small effort to support digital rights and FOSS. I use arch btw.
 
 so far
 
@@ -45,7 +43,7 @@ up next
 
 - **next:** Get better at photography and get new gear
 - **next:** Finish my apprenticeship (2.5 years to go)
-- **next:** Have more than 200 CPUs in my collection of CPUs (rn: approx. 120)
+- **next:** Have more than 200 CPUs in my collection of CPUs (rn: approx. 130)
 - **someday:** Stop working at for-profit groups, but for non-profits
 
 ## ~/home/gabrielp/dev/
@@ -79,7 +77,16 @@ I care about software that respects users. On a similar note, here are a few thi
 
 ## ~/home/gabrielp/pictures/
 
-Gear: Nikon D7000 (with Nikkor/Tamron/SAMYANG lenses) | GoPro hero 12 | Pixel 9 Pro XL
+- [Nikon D7500](https://www.nikonusa.com/p/d7500/1581/overview)
+- [Nikon D7000](https://www.nikonusa.com/p/d7000/25468/overview)
+- [Nikkor AF-S 28-300mm f/3.5-5.6G FX ED](https://www.nikonusa.com/p/af-s-nikkor-28-300mm-f35-56g-ed-vr/2191/overview)
+- [Nikkor AF-S 16-85mm f/3.5-5.6G DX ED](https://www.nikonusa.com/p/af-s-dx-nikkor-16-85mm-f35-56g-ed-vr/2178/overview)
+- [Nikkor AF-S 35mm f/1.8G DX](https://www.nikonusa.com/p/af-s-dx-nikkor-35mm-f18g/2183/overview)
+- [SAMYANG 500mm f/6.3 Mirror](https://photographylife.com/lenses/samyang-500mm-f6-3-mirror)
+- [AF Fisheye-NIKKOR 10.5mm f/2.8G DX ED](https://www.nikonusa.com/p/af-dx-fisheye-nikkor-105mm-f28g-ed/2148/overview)
+- [GoPro Hero 12](https://gopro.com/en/us/shop/cameras/hero12-black/CHDHX-121-master.html)
+- [Pixel 9 Pro XL](https://www.gsmarena.com/google_pixel_9_pro_xl-13217.php)
+- Some fluff (tripods and filters)
 
 Here are a few frames I like ! I deeply hope you'll like them too :)
 
@@ -118,7 +125,8 @@ My technologies
 - **Computers:** Too many (10+). Primary: MacBookPro 2026 (M5 Pro) / Secondary: XPS 15 7590 & HP Omen Tower (forgot the name)
 - **OS:** GrapheneOS // Cachy Linux // macOS // Debian Trixie
 - **Mobile:** Pixel 9 Pro XL, iPad Pro (M2), Quest 3, Pixel Watch 5, Sony WH-1000XM6
-- **Photography:** D7000 + Nikkor 28-300mm + Nikkor 16-85mm + SAMYANG 500mm
+- **Photography:** D7500 + a few lenses, [see photography section](https://gabriel.olynthe.org/en#photography)
+- **AI:** mistral.ai, Euria, llama.cpp, oMLX
 
 favorite groups (order matters!)
 
@@ -128,6 +136,7 @@ favorite groups (order matters!)
 - **DIY boards:** Raspberry Pi, Arduino, Flipper Zero
 - **3D printers:** Anycubic, Bambu Lab, Creality
 - **IDE:** Zed (Preview)
+- **Programming:** Python, HTML, Kotlin, Go
 - **Gaming:** Nintendo, Steam, Capcom
 
 ![A messy server rack covered in tangled cables](https://gabriel.olynthe.org/messy_server_rack.jpg)

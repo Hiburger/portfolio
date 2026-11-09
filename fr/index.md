@@ -24,13 +24,11 @@ Nous vivons dans une société extrêmement dépendante de la science et de la t
 
 ## ~/home/gabrielp/quick-facts/
 
-Salut ! Moi c'est Gabriel, apprenti Spécialiste Infrastructure & Opérations IT chez [Infomaniak Network SA](https://www.infomaniak.com/fr/a-propos), le fournisseur de cloud éthique et sympathique basé à Genève, en Suisse. Une bonne partie de ma semaine est consacrée à apprendre le réseau et le développement, à juger le big tech, et à aider les autres à utiliser et apprécier la technologie, et je m'éclate vraiment en le faisant.
+Salut ! Moi c'est Gabriel, apprenti Spécialiste Infrastructure & Opérations IT chez [Infomaniak Network SA](https://www.infomaniak.com/fr/a-propos), le fournisseur de cloud éthique et sympathique basé à Genève, en Suisse. Une bonne partie de ma semaine part à apprendre le réseau et le développement, à juger le big tech, et à aider les autres à utiliser et apprécier la technologie quand je le peux. La tech a toujours été un gros truc pour moi.
 
-Le reste part dans la photo... surtout la faune et le ciel nocturne, même si je suis mauvais aux deux. Je milite aussi activement pour un logiciel libre, éthique et open source. Je fais aussi tourner un homelab complet avec Proxmox VE, Snowflakes, Immich, AdGuard, Docker et plus de services auto-hébergés dont j'avais oublié l'existence. En plus, j'ai créé la licence GP1 ([gp1.olynthe.org](https://gp1.olynthe.org/)), qui veut dire « General Photography v1 » ou « Gabriel Paesano », à toi de choisir :)
+Le reste part dans la photo... surtout la faune (j'adore les animaux ^^) et le ciel nocturne, même si je suis mauvais aux deux. Je milite aussi activement pour un logiciel libre, éthique et open source, et pour tout ce qui met les humains avant le profit ou les données. Je fais aussi tourner un homelab (complexe) qui a Proxmox VE comme OS, avec des proxys Snowflakes, Immich, AdGuard, nginx, BentoPDF, des conteneurs Docker et plus de services auto-hébergés dont j'avais oublié l'existence. J'y ajouterai probablement GitLab ou Forgejo bientôt. En plus, j'ai créé la licence GP1 ([gp1.olynthe.org](https://gp1.olynthe.org/)), qui veut dire « General Photography v1 » ou « Gabriel Paesano », à toi de choisir :) C'est une licence permissive pour les artistes, axée sur la photo — certains diront qu'elle est trop permissive, ce qui n'est pas faux...
 
-Je suis aussi étudiant au [CFPT](https://edu.ge.ch/secondaire2/centre-de-formation-professionnelle-technique/le-cfpt). C'est une grande école déroutante dont je ne suis pas fan, mais bon. Je suis aussi le fondateur de [The Olynthe Initiative](https://olynthe.org), un petit projet pour défendre les droits numériques et le FOSS.
-
-### parcours
+Je suis aussi étudiant au [CFPT](https://edu.ge.ch/secondaire2/centre-de-formation-professionnelle-technique/le-cfpt), à Genève. CFPT veut dire Centre De Formation Professionnelle Technique (mais il n'y a rien de pro là-bas ahah). Le langage principal de mon école est tristement C#, et maintenant j'ai peur de tout langage qui commence par un C. Est-ce que j'aime le CFPT ? Bof. Je ne suis pas fan, je dirai juste que c'est *passable*. Pour changer complètement de sujet, je suis aussi le fondateur de [The Olynthe Initiative](https://olynthe.org), un petit projet pour défendre les droits numériques et le FOSS. J'utilise Arch btw.
 
 jusqu'ici
 
@@ -45,7 +43,7 @@ jusqu'ici
 
 - **bientôt:** Progresser en photo et m'acheter du nouveau matos
 - **bientôt:** Finir mon apprentissage (2.5 ans encore)
-- **bientôt:** Passer la barre des 200 CPU dans ma collection de CPU (actuellement : env. 120)
+- **bientôt:** Passer la barre des 200 CPU dans ma collection de CPU (actuellement : env. 130)
 - **un jour:** Arrêter de travailler pour des groupes à but lucratif, mais pour des non-profits
 
 ## ~/home/gabrielp/dev/
@@ -79,7 +77,16 @@ Je tiens à un logiciel qui respecte ses utilisateurs. Dans la même veine, voic
 
 ## ~/home/gabrielp/pictures/
 
-Le matos : Nikon D7000 (avec des objectifs Nikkor/Tamron/SAMYANG) | GoPro hero 12 | Pixel 9 Pro XL
+- [Nikon D7500](https://www.nikonusa.com/p/d7500/1581/overview)
+- [Nikon D7000](https://www.nikonusa.com/p/d7000/25468/overview)
+- [Nikkor AF-S 28-300mm f/3.5-5.6G FX ED](https://www.nikonusa.com/p/af-s-nikkor-28-300mm-f35-56g-ed-vr/2191/overview)
+- [Nikkor AF-S 16-85mm f/3.5-5.6G DX ED](https://www.nikonusa.com/p/af-s-dx-nikkor-16-85mm-f35-56g-ed-vr/2178/overview)
+- [Nikkor AF-S 35mm f/1.8G DX](https://www.nikonusa.com/p/af-s-dx-nikkor-35mm-f18g/2183/overview)
+- [SAMYANG 500mm f/6.3 Mirror](https://photographylife.com/lenses/samyang-500mm-f6-3-mirror)
+- [AF Fisheye-NIKKOR 10.5mm f/2.8G DX ED](https://www.nikonusa.com/p/af-dx-fisheye-nikkor-105mm-f28g-ed/2148/overview)
+- [GoPro Hero 12](https://gopro.com/en/us/shop/cameras/hero12-black/CHDHX-121-master.html)
+- [Pixel 9 Pro XL](https://www.gsmarena.com/google_pixel_9_pro_xl-13217.php)
+- Le petit bazar (trépieds et filtres)
 
 Voici quelques clichés que j'aime ! J'espère sincèrement qu'ils te plairont aussi :)
 
@@ -118,7 +125,8 @@ Mes technologies
 - **Ordinateurs:** Beaucoup trop (10+). Principal : MacBookPro 2026 (M5 Pro) / Secondaire : XPS 15 7590 & tour Omen HP (j'ai oublié le nom)
 - **OS:** GrapheneOS // Cachy Linux // macOS // Debian Trixie
 - **Mobile:** Pixel 9 Pro XL, iPad Pro (M2), Quest 3, Pixel Watch 5, Sony WH-1000XM6
-- **Photo:** D7000 + Nikkor 28-300mm + Nikkor 16-85mm + SAMYANG 500mm
+- **Photo:** D7500 + quelques objectifs, [voir la section photo](https://gabriel.olynthe.org/fr#photography)
+- **IA:** mistral.ai, Euria, llama.cpp, oMLX
 
 groupes favoris (l'ordre compte !)
 
@@ -128,6 +136,7 @@ groupes favoris (l'ordre compte !)
 - **Cartes DIY:** Raspberry Pi, Arduino, Flipper Zero
 - **Imprimantes 3D:** Anycubic, Bambu Lab, Creality
 - **IDE:** Zed (Preview)
+- **Programming:** Python, HTML, Kotlin, Go
 - **Gaming:** Nintendo, Steam, Capcom
 
 ![Une baie serveur en désordre couverte de câbles emmêlés](https://gabriel.olynthe.org/messy_server_rack.jpg)

@@ -1,6 +1,6 @@
 <IfModule mod_headers.c>
   <Files "index.md">
-    Header set x-markdown-tokens "3409"
-    Header set x-original-tokens "13127"
+    Header set x-markdown-tokens "3792"
+    Header set x-original-tokens "13646"
   </Files>
 </IfModule>

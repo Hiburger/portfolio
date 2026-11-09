@@ -815,9 +815,21 @@ h1:hover .i-tittle {
   margin-top: 1rem;
 }
 
-.section > p,
-.about-prose p {
+.section > p {
   max-width: 46rem;
+}
+
+/* quick-facts prose: runs a little wider when the screen allows it */
+.about-prose p {
+  max-width: 56rem;
+}
+
+.about-prose .hi {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-family: var(--mono);
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 @media (min-width: 1000px) {
@@ -832,16 +844,6 @@ h1:hover .i-tittle {
   border-radius: 28px;
   padding: 2.25rem 2rem;
   margin-top: 4rem;
-}
-
-.roadmap h3 {
-  font-family: var(--mono);
-  font-weight: 500;
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 1.2rem;
 }
 
 .roadmap .lane + .lane {
@@ -1128,11 +1130,38 @@ h1:hover .i-tittle {
   margin-bottom: 0;
 }
 
-.gear {
+.gear-shelf {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1.2rem 0 1.7rem;
+  padding: 0;
+  list-style: none;
+}
+
+.gear-card {
+  padding: 0.45rem 0.7rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
   font-family: var(--mono);
   font-size: 0.78rem;
-  color: var(--muted);
-  letter-spacing: 0.03em;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+  transition: border-radius 0.35s var(--spring);
+}
+
+.gear-card:hover {
+  border-radius: 20px;
+}
+
+a.gear-card {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.gear-card:hover {
+  color: var(--accent);
 }
 
 .gallery {
